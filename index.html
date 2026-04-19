@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HighLife DMV — Studio CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ──────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f0d2e;
+  --bg-card:rgba(30,27,75,.55);
+  --bg-card-hover:rgba(30,27,75,.75);
+  --navy:#1e1b4b;
+  --indigo:#818cf8;
+  --indigo-dim:rgba(129,140,248,.15);
+  --rose:#fb7185;
+  --rose-dim:rgba(251,113,133,.12);
+  --text:#f1f0fb;
+  --text-dim:#a5a3c7;
+  --border:rgba(129,140,248,.18);
+  --border-active:rgba(129,140,248,.45);
+  --glass:rgba(255,255,255,.04);
+  --radius:14px;
+  --radius-sm:10px;
+  --shadow:0 8px 32px rgba(0,0,0,.35);
+  --font:'Manrope',system-ui,-apple-system,sans-serif;
+}
+html{font-size:15px;scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+input,select,textarea,button{font-family:inherit;font-size:inherit}
+a{color:var(--indigo);text-decoration:none}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:8px}
+
+/* ── Layout ────────────────────────────────────────────────── */
+.app{max-width:1440px;margin:0 auto;padding:24px 28px 60px}
+
+/* ── Header ────────────────────────────────────────────────── */
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:16px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-icon{
+  width:44px;height:44px;border-radius:12px;
+  background:linear-gradient(135deg,var(--indigo),var(--rose));
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:#fff;
+}
+.brand h1{font-size:1.45rem;font-weight:800;letter-spacing:-.3px}
+.brand p{font-size:.78rem;color:var(--text-dim);font-weight:500;letter-spacing:.5px;text-transform:uppercase}
+.header-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:10px 18px;border-radius:var(--radius-sm);
+  font-weight:600;font-size:.85rem;cursor:pointer;
+  border:1px solid var(--border);
+  background:var(--glass);color:var(--text);
+  transition:all .2s ease;
+}
+.btn:hover{border-color:var(--border-active);background:var(--indigo-dim)}
+.btn-primary{
+  background:linear-gradient(135deg,var(--indigo),#6366f1);
+  border-color:transparent;color:#fff;
+}
+.btn-primary:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 4px 20px rgba(129,140,248,.3)}
+.btn-rose{
+  background:linear-gradient(135deg,var(--rose),#e11d48);
+  border-color:transparent;color:#fff;
+}
+.btn svg{width:16px;height:16px;fill:currentColor}
+
+/* ── Stats Bar ─────────────────────────────────────────────── */
+.stats-bar{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:14px;margin-bottom:24px;
+}
+.stat-card{
+  background:var(--bg-card);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px 22px;
+  transition:border-color .2s,transform .2s;
+}
+.stat-card:hover{border-color:var(--border-active);transform:translateY(-2px)}
+.stat-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.8px;color:var(--text-dim);font-weight:600;margin-bottom:6px}
+.stat-value{font-size:1.65rem;font-weight:800;letter-spacing:-.5px}
+.stat-value.indigo{color:var(--indigo)}
+.stat-value.rose{color:var(--rose)}
+.stat-value.green{color:#34d399}
+
+/* ── Toolbar ───────────────────────────────────────────────── */
+.toolbar{
+  display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap;align-items:center;
+}
+.search-box{
+  flex:1;min-width:220px;
+  padding:10px 16px 10px 40px;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-sm);color:var(--text);
+  font-size:.88rem;outline:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23a5a3c7' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.156a5 5 0 1 1 0-10 5 5 0 0 1 0 10z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:14px center;
+  transition:border-color .2s;
+}
+.search-box:focus{border-color:var(--indigo)}
+.search-box::placeholder{color:var(--text-dim)}
+.filter-select{
+  padding:10px 14px;
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-sm);color:var(--text);
+  font-size:.85rem;cursor:pointer;outline:none;
+  -webkit-appearance:none;
+}
+.filter-select option{background:var(--navy);color:var(--text)}
+
+/* ── Kanban Board ──────────────────────────────────────────── */
+.board{
+  display:flex;gap:14px;
+  overflow-x:auto;padding-bottom:20px;
+  min-height:calc(100vh - 360px);
+}
+.column{
+  min-width:260px;width:260px;flex-shrink:0;
+  display:flex;flex-direction:column;
+}
+.column-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 14px;margin-bottom:10px;
+  background:var(--bg-card);
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  position:sticky;top:0;z-index:2;
+}
+.column-title{font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.6px}
+.column-count{
+  background:var(--indigo-dim);color:var(--indigo);
+  font-size:.7rem;font-weight:700;padding:3px 9px;
+  border-radius:20px;
+}
+.column-body{
+  flex:1;display:flex;flex-direction:column;gap:10px;
+  padding:4px;border-radius:var(--radius);
+  min-height:80px;
+  transition:background .2s;
+}
+.column-body.drag-over{
+  background:var(--indigo-dim);
+  outline:2px dashed var(--indigo);outline-offset:-2px;
+  border-radius:var(--radius);
+}
+
+/* ── Prospect Cards ────────────────────────────────────────── */
+.prospect-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px;cursor:grab;
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  transition:all .2s ease;
+  position:relative;
+}
+.prospect-card:hover{border-color:var(--border-active);transform:translateY(-2px);box-shadow:var(--shadow)}
+.prospect-card.dragging{opacity:.45;transform:rotate(2deg)}
+.prospect-card .name{font-weight:700;font-size:.92rem;margin-bottom:2px}
+.prospect-card .title-co{font-size:.76rem;color:var(--text-dim);margin-bottom:10px;line-height:1.35}
+.prospect-card .pkg-badge{
+  display:inline-block;padding:3px 10px;
+  border-radius:20px;font-size:.68rem;font-weight:600;
+  background:var(--rose-dim);color:var(--rose);
+  margin-bottom:8px;
+}
+.prospect-card .meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.prospect-card .meta-tag{
+  font-size:.66rem;padding:2px 8px;border-radius:12px;
+  background:var(--indigo-dim);color:var(--indigo);font-weight:600;
+}
+.prospect-card .last-contact{font-size:.68rem;color:var(--text-dim)}
+.prospect-card .card-actions{
+  position:absolute;top:10px;right:10px;
+  display:flex;gap:4px;opacity:0;transition:opacity .2s;
+}
+.prospect-card:hover .card-actions{opacity:1}
+.card-action-btn{
+  width:26px;height:26px;border-radius:6px;
+  background:var(--glass);border:1px solid var(--border);
+  color:var(--text-dim);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;transition:all .15s;
+}
+.card-action-btn:hover{background:var(--indigo-dim);color:var(--indigo);border-color:var(--indigo)}
+.card-action-btn.delete:hover{background:var(--rose-dim);color:var(--rose);border-color:var(--rose)}
+
+/* ── Modal ─────────────────────────────────────────────────── */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.65);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:none;align-items:center;justify-content:center;
+  z-index:100;padding:24px;
+}
+.modal-overlay.active{display:flex}
+.modal{
+  background:var(--navy);border:1px solid var(--border);
+  border-radius:var(--radius);padding:32px;
+  width:100%;max-width:560px;max-height:90vh;overflow-y:auto;
+  box-shadow:0 24px 80px rgba(0,0,0,.5);
+}
+.modal h2{font-size:1.2rem;font-weight:800;margin-bottom:22px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:.72rem;text-transform:uppercase;letter-spacing:.6px;color:var(--text-dim);font-weight:600}
+.form-group input,.form-group select,.form-group textarea{
+  padding:10px 14px;
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--radius-sm);color:var(--text);
+  outline:none;transition:border-color .2s;
+}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--indigo)}
+.form-group textarea{resize:vertical;min-height:70px}
+.form-group select option{background:var(--navy)}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+
+/* ── Toast ─────────────────────────────────────────────────── */
+.toast{
+  position:fixed;bottom:28px;right:28px;
+  padding:14px 22px;border-radius:var(--radius-sm);
+  background:var(--navy);border:1px solid var(--indigo);
+  color:var(--text);font-weight:600;font-size:.85rem;
+  box-shadow:var(--shadow);
+  transform:translateY(100px);opacity:0;
+  transition:all .35s cubic-bezier(.4,0,.2,1);
+  z-index:200;
+}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* ── Empty State ───────────────────────────────────────────── */
+.empty-col{
+  text-align:center;padding:24px 12px;
+  color:var(--text-dim);font-size:.78rem;
+  border:1px dashed var(--border);border-radius:var(--radius-sm);
+  margin:4px 0;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media(max-width:768px){
+  .app{padding:16px 12px 40px}
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .form-grid{grid-template-columns:1fr}
+  .board{gap:10px}
+  .column{min-width:240px;width:240px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="brand-icon">HL</div>
+      <div>
+        <h1>HighLife DMV</h1>
+        <p>Podcast Studio CRM</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn" onclick="exportData()">
+        <svg viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5A1.1 1.1 0 0 0 2.1 14h11.8a1.1 1.1 0 0 0 1.1-1.1V10.4a.5.5 0 0 1 1 0v2.5A2.1 2.1 0 0 1 13.9 15H2.1A2.1 2.1 0 0 1 0 12.9V10.4a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+        Export JSON
+      </button>
+      <button class="btn btn-primary" onclick="openModal()">
+        <svg viewBox="0 0 16 16"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
+        Add Prospect
+      </button>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-label">Total Prospects</div>
+      <div class="stat-value" id="stat-total">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">In Pipeline</div>
+      <div class="stat-value indigo" id="stat-pipeline">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Converted</div>
+      <div class="stat-value green" id="stat-converted">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Revenue Potential</div>
+      <div class="stat-value rose" id="stat-revenue">$0</div>
+    </div>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <input type="text" class="search-box" id="searchInput" placeholder="Search prospects..." oninput="renderBoard()">
+    <select class="filter-select" id="filterStatus" onchange="renderBoard()">
+      <option value="">All Stages</option>
+      <option value="prospect">Prospect</option>
+      <option value="contacted">Contacted</option>
+      <option value="tour_booked">Tour Booked</option>
+      <option value="demo">Demo</option>
+      <option value="client">Client</option>
+      <option value="lost">Lost</option>
+    </select>
+    <select class="filter-select" id="filterPackage" onchange="renderBoard()">
+      <option value="">All Packages</option>
+    </select>
+  </div>
+
+  <!-- Kanban Board -->
+  <div class="board" id="board"></div>
+
+</div>
+
+<!-- Add/Edit Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOverlay(event)">
+  <div class="modal">
+    <h2 id="modalTitle">Add Prospect</h2>
+    <form id="prospectForm" onsubmit="saveProspect(event)">
+      <input type="hidden" id="editId">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Name *</label>
+          <input type="text" id="f-name" required>
+        </div>
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="f-title" placeholder="e.g. Host, Producer">
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" id="f-company">
+        </div>
+        <div class="form-group">
+          <label>Source</label>
+          <select id="f-source">
+            <option value="">Select...</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Referral">Referral</option>
+            <option value="Walk-in">Walk-in</option>
+            <option value="Website">Website</option>
+            <option value="Event">Event</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="f-email">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" id="f-phone">
+        </div>
+        <div class="form-group">
+          <label>LinkedIn URL</label>
+          <input type="url" id="f-linkedin" placeholder="https://linkedin.com/in/...">
+        </div>
+        <div class="form-group">
+          <label>Instagram</label>
+          <input type="text" id="f-instagram" placeholder="@handle">
+        </div>
+        <div class="form-group">
+          <label>Package Interest</label>
+          <select id="f-package">
+            <option value="">Select...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <select id="f-status">
+            <option value="prospect">Prospect</option>
+            <option value="contacted">Contacted</option>
+            <option value="tour_booked">Tour Booked</option>
+            <option value="demo">Demo</option>
+            <option value="client">Client</option>
+            <option value="lost">Lost</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Last Contact</label>
+          <input type="date" id="f-lastContact">
+        </div>
+        <div class="form-group full">
+          <label>Notes</label>
+          <textarea id="f-notes" placeholder="Any relevant details..."></textarea>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn" onclick="closeModal()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save Prospect</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── Data ───────────────────────────────────────────────────── */
+const COLUMNS = [
+  { id: 'prospect',    label: 'Prospect' },
+  { id: 'contacted',   label: 'Contacted' },
+  { id: 'tour_booked', label: 'Tour Booked' },
+  { id: 'demo',        label: 'Demo' },
+  { id: 'client',      label: 'Client' },
+  { id: 'lost',        label: 'Lost' },
+];
+
+const PACKAGES = [
+  { name: 'Hourly Rental',         price: 112, label: 'Hourly Rental ($75-150/hr)' },
+  { name: 'Lunch & Record',        price: 300, label: 'Lunch & Record ($300)' },
+  { name: 'Happy Hour Package',    price: 200, label: 'Happy Hour Package ($200)' },
+  { name: 'Guest Spot',            price: 500, label: 'Guest Spot ($500)' },
+  { name: 'Podcast Launch Kit',    price: 2000, label: 'Podcast Launch Kit ($2,000)' },
+  { name: 'Content Sprint',        price: 2500, label: 'Content Sprint ($2,500)' },
+  { name: 'Monthly Creator',       price: 1500, label: 'Monthly Creator ($1,500/mo)' },
+  { name: 'CEO Brand Suite',       price: 4000, label: 'CEO Brand Suite ($4,000)' },
+  { name: 'Thought Leader Series', price: 5000, label: 'Thought Leader Series ($5,000)' },
+  { name: 'Political Roundtable',  price: 3000, label: 'Political Roundtable ($3,000)' },
+  { name: 'Campaign Package',      price: 5000, label: 'Campaign Package ($5,000)' },
+  { name: 'Managed Podcast',       price: 3000, label: 'Managed Podcast ($3,000/mo)' },
+  { name: 'Studio Membership',     price: 500, label: 'Studio Membership ($500/mo)' },
+];
+
+const STORAGE_KEY = 'highlife_crm_prospects';
+
+function loadProspects() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
+  catch { return []; }
+}
+function saveProspects(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+
+/* ── Init dropdowns ────────────────────────────────────────── */
+function initDropdowns() {
+  const pkgSelect = document.getElementById('f-package');
+  const filterPkg = document.getElementById('filterPackage');
+  PACKAGES.forEach(p => {
+    pkgSelect.innerHTML += `<option value="${p.name}">${p.label}</option>`;
+    filterPkg.innerHTML += `<option value="${p.name}">${p.name}</option>`;
+  });
+}
+
+/* ── Stats ─────────────────────────────────────────────────── */
+function updateStats() {
+  const all = loadProspects();
+  const pipeline = all.filter(p => !['client','lost'].includes(p.status));
+  const converted = all.filter(p => p.status === 'client');
+  const revenue = all.filter(p => p.status !== 'lost').reduce((sum, p) => {
+    const pkg = PACKAGES.find(pk => pk.name === p.package);
+    return sum + (pkg ? pkg.price : 0);
+  }, 0);
+  document.getElementById('stat-total').textContent = all.length;
+  document.getElementById('stat-pipeline').textContent = pipeline.length;
+  document.getElementById('stat-converted').textContent = converted.length;
+  document.getElementById('stat-revenue').textContent = '$' + revenue.toLocaleString();
+}
+
+/* ── Render Board ──────────────────────────────────────────── */
+function renderBoard() {
+  const board = document.getElementById('board');
+  const all = loadProspects();
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const filterStatus = document.getElementById('filterStatus').value;
+  const filterPkg = document.getElementById('filterPackage').value;
+
+  let filtered = all;
+  if (search) filtered = filtered.filter(p =>
+    (p.name || '').toLowerCase().includes(search) ||
+    (p.company || '').toLowerCase().includes(search) ||
+    (p.email || '').toLowerCase().includes(search)
+  );
+  if (filterStatus) filtered = filtered.filter(p => p.status === filterStatus);
+  if (filterPkg) filtered = filtered.filter(p => p.package === filterPkg);
+
+  board.innerHTML = COLUMNS.map(col => {
+    const cards = filtered.filter(p => p.status === col.id);
+    return `
+      <div class="column">
+        <div class="column-header">
+          <span class="column-title">${col.label}</span>
+          <span class="column-count">${cards.length}</span>
+        </div>
+        <div class="column-body" data-status="${col.id}"
+             ondragover="handleDragOver(event)"
+             ondragenter="handleDragEnter(event)"
+             ondragleave="handleDragLeave(event)"
+             ondrop="handleDrop(event)">
+          ${cards.length ? cards.map(cardHTML).join('') : '<div class="empty-col">No prospects</div>'}
+        </div>
+      </div>`;
+  }).join('');
+  updateStats();
+}
+
+function cardHTML(p) {
+  const pkg = PACKAGES.find(pk => pk.name === p.package);
+  const lastContact = p.lastContact ? formatDate(p.lastContact) : '';
+  const meta = [];
+  if (p.source) meta.push(p.source);
+  if (p.linkedin) meta.push('LI');
+  if (p.instagram) meta.push('IG');
+  if (p.phone) meta.push('Phone');
+
+  return `
+    <div class="prospect-card" draggable="true"
+         ondragstart="handleDragStart(event,'${p.id}')"
+         ondragend="handleDragEnd(event)">
+      <div class="card-actions">
+        <button class="card-action-btn" onclick="editProspect('${p.id}')" title="Edit">&#9998;</button>
+        <button class="card-action-btn delete" onclick="deleteProspect('${p.id}')" title="Delete">&#10005;</button>
+      </div>
+      <div class="name">${esc(p.name)}</div>
+      <div class="title-co">${esc(p.jobTitle || '')}${p.jobTitle && p.company ? ' at ' : ''}${esc(p.company || '')}</div>
+      ${pkg ? `<span class="pkg-badge">${esc(pkg.name)}</span>` : ''}
+      ${meta.length ? `<div class="meta">${meta.map(m => `<span class="meta-tag">${m}</span>`).join('')}</div>` : ''}
+      ${lastContact ? `<div class="last-contact">Last contact: ${lastContact}</div>` : ''}
+    </div>`;
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+function formatDate(d) { return new Date(d + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
+
+/* ── Drag & Drop ───────────────────────────────────────────── */
+let draggedId = null;
+
+function handleDragStart(e, id) {
+  draggedId = id;
+  e.target.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+}
+function handleDragEnd(e) {
+  e.target.classList.remove('dragging');
+  document.querySelectorAll('.column-body').forEach(c => c.classList.remove('drag-over'));
+}
+function handleDragOver(e) { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; }
+function handleDragEnter(e) {
+  e.preventDefault();
+  const col = e.target.closest('.column-body');
+  if (col) col.classList.add('drag-over');
+}
+function handleDragLeave(e) {
+  const col = e.target.closest('.column-body');
+  if (col && !col.contains(e.relatedTarget)) col.classList.remove('drag-over');
+}
+function handleDrop(e) {
+  e.preventDefault();
+  const col = e.target.closest('.column-body');
+  if (!col || !draggedId) return;
+  col.classList.remove('drag-over');
+  const newStatus = col.dataset.status;
+  const prospects = loadProspects();
+  const idx = prospects.findIndex(p => p.id === draggedId);
+  if (idx > -1 && prospects[idx].status !== newStatus) {
+    prospects[idx].status = newStatus;
+    saveProspects(prospects);
+    renderBoard();
+    toast(`Moved to ${COLUMNS.find(c => c.id === newStatus).label}`);
+  }
+  draggedId = null;
+}
+
+/* ── Modal ─────────────────────────────────────────────────── */
+function openModal(id) {
+  const overlay = document.getElementById('modalOverlay');
+  const form = document.getElementById('prospectForm');
+  form.reset();
+  document.getElementById('editId').value = '';
+  document.getElementById('modalTitle').textContent = 'Add Prospect';
+
+  if (id) {
+    const p = loadProspects().find(x => x.id === id);
+    if (!p) return;
+    document.getElementById('modalTitle').textContent = 'Edit Prospect';
+    document.getElementById('editId').value = p.id;
+    document.getElementById('f-name').value = p.name || '';
+    document.getElementById('f-title').value = p.jobTitle || '';
+    document.getElementById('f-company').value = p.company || '';
+    document.getElementById('f-source').value = p.source || '';
+    document.getElementById('f-email').value = p.email || '';
+    document.getElementById('f-phone').value = p.phone || '';
+    document.getElementById('f-linkedin').value = p.linkedin || '';
+    document.getElementById('f-instagram').value = p.instagram || '';
+    document.getElementById('f-package').value = p.package || '';
+    document.getElementById('f-status').value = p.status || 'prospect';
+    document.getElementById('f-lastContact').value = p.lastContact || '';
+    document.getElementById('f-notes').value = p.notes || '';
+  }
+  overlay.classList.add('active');
+  setTimeout(() => document.getElementById('f-name').focus(), 100);
+}
+function closeModal() { document.getElementById('modalOverlay').classList.remove('active'); }
+function closeModalOverlay(e) { if (e.target === e.currentTarget) closeModal(); }
+
+function saveProspect(e) {
+  e.preventDefault();
+  const prospects = loadProspects();
+  const editId = document.getElementById('editId').value;
+  const data = {
+    id: editId || genId(),
+    name: document.getElementById('f-name').value.trim(),
+    jobTitle: document.getElementById('f-title').value.trim(),
+    company: document.getElementById('f-company').value.trim(),
+    source: document.getElementById('f-source').value,
+    email: document.getElementById('f-email').value.trim(),
+    phone: document.getElementById('f-phone').value.trim(),
+    linkedin: document.getElementById('f-linkedin').value.trim(),
+    instagram: document.getElementById('f-instagram').value.trim(),
+    package: document.getElementById('f-package').value,
+    status: document.getElementById('f-status').value,
+    lastContact: document.getElementById('f-lastContact').value,
+    notes: document.getElementById('f-notes').value.trim(),
+    createdAt: editId ? (prospects.find(p => p.id === editId) || {}).createdAt || new Date().toISOString() : new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+  if (editId) {
+    const idx = prospects.findIndex(p => p.id === editId);
+    if (idx > -1) prospects[idx] = data;
+  } else {
+    prospects.push(data);
+  }
+  saveProspects(prospects);
+  closeModal();
+  renderBoard();
+  toast(editId ? 'Prospect updated' : 'Prospect added');
+}
+
+function editProspect(id) { openModal(id); }
+
+function deleteProspect(id) {
+  if (!confirm('Delete this prospect?')) return;
+  const prospects = loadProspects().filter(p => p.id !== id);
+  saveProspects(prospects);
+  renderBoard();
+  toast('Prospect deleted');
+}
+
+/* ── Export ─────────────────────────────────────────────────── */
+function exportData() {
+  const data = loadProspects();
+  if (!data.length) { toast('No data to export'); return; }
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `highlife-crm-export-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast('Data exported');
+}
+
+/* ── Toast ─────────────────────────────────────────────────── */
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._timer);
+  el._timer = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+/* ── Keyboard ──────────────────────────────────────────────── */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
+
+/* ── Boot ───────────────────────────────────────────────────── */
+initDropdowns();
+renderBoard();
+</script>
+</body>
+</html>
