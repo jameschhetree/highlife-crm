@@ -536,6 +536,30 @@ function saveProspects(data) {
 }
 function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
 
+/* ── Seed data loader ── */
+async function loadSeedData() {
+  try {
+    const res = await fetch('prospects.json');
+    if (!res.ok) return;
+    const seed = await res.json();
+    const existing = loadProspects();
+    const existingIds = new Set(existing.map(p => p.id));
+    let added = 0;
+    seed.forEach(p => {
+      if (!existingIds.has(p.id)) {
+        existing.push(p);
+        added++;
+      }
+    });
+    if (added > 0) {
+      saveProspects(existing);
+      renderBoard();
+    }
+  } catch (e) {
+    // Seed file not available, continue with localStorage only
+  }
+}
+
 /* ── Init dropdowns ────────────────────────────────────────── */
 function initDropdowns() {
   const pkgSelect = document.getElementById('f-package');
@@ -771,6 +795,7 @@ document.addEventListener('keydown', e => {
 /* ── Boot ───────────────────────────────────────────────────── */
 initDropdowns();
 renderBoard();
+loadSeedData();
 
 /* ── Card spotlight mouse tracking ── */
 document.addEventListener('mousemove',function(e){
