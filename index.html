@@ -335,8 +335,12 @@ a{color:var(--highlight);text-decoration:none}
   .app{padding:16px 12px 40px}
   .stats-bar{grid-template-columns:1fr 1fr}
   .form-grid{grid-template-columns:1fr}
-  .board{gap:10px}
-  .column{min-width:240px;width:240px}
+  .header{flex-direction:column;text-align:center}
+  .board{flex-direction:column;overflow-x:visible;gap:16px}
+  .column{min-width:100%;width:100%}
+  .column-body{min-height:40px}
+  .toolbar{flex-direction:column}
+  .search-box{min-width:100%}
 }
 </style>
 </head>
