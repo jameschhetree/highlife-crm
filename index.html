@@ -263,6 +263,8 @@ a{color:var(--highlight);text-decoration:none}
   font-size:.64rem;padding:3px 9px;border-radius:12px;
   background:var(--accent-dim);color:var(--accent-medium);font-weight:600;
 }
+.prospect-card .meta-link{transition:all .2s;color:var(--highlight)}
+.prospect-card .meta-link:hover{background:var(--highlight-dim);color:var(--highlight);transform:translateY(-1px)}
 .prospect-card .last-contact{font-size:.68rem;color:#bbb}
 .prospect-card .card-actions{
   position:absolute;top:10px;right:10px;
@@ -626,10 +628,10 @@ function cardHTML(p) {
   const pkg = PACKAGES.find(pk => pk.name === p.package);
   const lastContact = p.lastContact ? formatDate(p.lastContact) : '';
   const meta = [];
-  if (p.source) meta.push(p.source);
-  if (p.linkedin) meta.push('LI');
-  if (p.instagram) meta.push('IG');
-  if (p.phone) meta.push('Phone');
+  if (p.source) meta.push(`<span class="meta-tag">${esc(p.source)}</span>`);
+  if (p.linkedin) meta.push(`<a href="${esc(p.linkedin)}" target="_blank" rel="noopener" class="meta-tag meta-link" onclick="event.stopPropagation()" style="cursor:pointer;text-decoration:none">LI ↗</a>`);
+  if (p.instagram) meta.push(`<a href="${esc(p.instagram)}" target="_blank" rel="noopener" class="meta-tag meta-link" onclick="event.stopPropagation()" style="cursor:pointer;text-decoration:none">IG ↗</a>`);
+  if (p.phone) meta.push(`<span class="meta-tag">Phone</span>`);
 
   return `
     <div class="prospect-card" draggable="true"
@@ -642,7 +644,7 @@ function cardHTML(p) {
       <div class="name">${esc(p.name)}</div>
       <div class="title-co">${esc(p.jobTitle || '')}${p.jobTitle && p.company ? ' at ' : ''}${esc(p.company || '')}</div>
       ${pkg ? `<span class="pkg-badge">${esc(pkg.name)}</span>` : ''}
-      ${meta.length ? `<div class="meta">${meta.map(m => `<span class="meta-tag">${m}</span>`).join('')}</div>` : ''}
+      ${meta.length ? `<div class="meta">${meta.join('')}</div>` : ''}
       ${lastContact ? `<div class="last-contact">Last contact: ${lastContact}</div>` : ''}
     </div>`;
 }
