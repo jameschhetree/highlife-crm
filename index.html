@@ -373,9 +373,25 @@ body[data-theme="dark"] .theme-toggle .icon-sun{display:block}
   transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
   position:relative;
   overflow:hidden;
+  /* Motion vocab pass (animations.dev) — per-card entrance with stagger via
+     --i custom prop set inline by JS render. Capped at 12 in cardHTML so
+     50-row columns don't make the user wait 2s for the bottom. */
+  animation:card-enter 420ms var(--ease) both;
+  animation-delay:calc(var(--i, 0) * 35ms);
+}
+@keyframes card-enter{
+  from{opacity:0;transform:translateY(12px) scale(0.985);filter:blur(2px);}
+  to  {opacity:1;transform:translateY(0)    scale(1);    filter:blur(0);}
 }
 .prospect-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-2px)}
+/* Press / tap feedback — quick scale-down on active for physical feel */
+.prospect-card:active{transform:translateY(0) scale(0.985);transition-duration:90ms}
 .prospect-card.dragging{opacity:.4}
+@media (prefers-reduced-motion: reduce){
+  .prospect-card{animation:none}
+  .prospect-card:hover{transform:none}
+  .prospect-card:active{transform:none}
+}
 .prospect-card.has-seller::before{
   /* Subtle assigned-seller accent: thin, low-opacity left hairline only when a
      seller is actually assigned. Dialled WAY down from the old loud gold bar
@@ -2425,7 +2441,7 @@ function renderBoard() {
              ondragenter="handleDragEnter(event)"
              ondragleave="handleDragLeave(event)"
              ondrop="handleDrop(event)">
-          ${cards.length ? cards.map(cardHTML).join('') : '<div class="empty-col">No prospects</div>'}
+          ${cards.length ? cards.map((p, i) => cardHTML(p, i)).join('') : '<div class="empty-col">No prospects</div>'}
         </div>
       </div>`;
   }).join('');
@@ -2493,7 +2509,7 @@ function glassStageLabel(status) {
   return map[status] || 'Prospect · CRM';
 }
 
-function cardHTML(p) {
+function cardHTML(p, i = 0) {
   const pkg = PACKAGES.find(pk => pk.name === p.package);
   const lastContact = p.lastContact ? formatDate(p.lastContact) : '';
   const hasSeller = !!p.seller;
@@ -2508,8 +2524,13 @@ function cardHTML(p) {
   const initials = glassInitials(p.name);
   const stageLabel = glassStageLabel(p.status);
 
+  // --i drives the per-card stagger delay in .prospect-card CSS.
+  // Cap at 12 so columns with 50+ cards don't make the user wait ~2s for the bottom.
+  const stagger = Math.min(i, 12);
+
   return `
     <div class="prospect-card${hasSeller ? ' has-seller' : ''}" draggable="true"
+         style="--i:${stagger}"
          ondragstart="handleDragStart(event,'${p.id}')"
          ondragend="handleDragEnd(event)">
       <div class="glass-topbar">
