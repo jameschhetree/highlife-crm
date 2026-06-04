@@ -1993,12 +1993,16 @@ body:not([data-theme="dark"]) .actor-pill{
 .crm-sidebar{
   position:fixed;top:0;left:0;bottom:0;
   width:264px;
-  background:#07080c;
-  border-right:1px solid rgba(255,255,255,0.08);
+  /* Pulled the sidebar bg up off near-black so the drawer reads on mobile.
+     Previous #07080c vs page #050608 was nearly identical → invisible drawer.
+     James caught this 2026-06-04. */
+  background:#13141a;
+  border-right:1px solid rgba(255,255,255,0.14);
   display:flex;flex-direction:column;
   z-index:50;
   overflow-y:auto;
   overflow-x:hidden;
+  box-shadow:8px 0 32px -8px rgba(0,0,0,0.6);
 }
 .crm-sidebar__header{
   display:flex;align-items:center;gap:12px;
@@ -2024,17 +2028,19 @@ body:not([data-theme="dark"]) .actor-pill{
 .crm-sidebar__nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
 .crm-sidebar__nav-item{
   display:flex;align-items:center;gap:12px;
-  padding:10px 14px;border-radius:10px;
-  font-size:0.8125rem;font-weight:500;
+  padding:11px 14px;border-radius:10px;
+  font-size:0.875rem;font-weight:500;
   letter-spacing:0.02em;
-  color:#a1a1aa;cursor:pointer;
+  /* Bumped from #a1a1aa → #e4e4e7 for mobile readability. Old contrast was
+     too low against the dark drawer background. */
+  color:#e4e4e7;cursor:pointer;
   transition:all 180ms var(--ease);
   border:none;background:transparent;width:100%;
   text-align:left;border-left:2px solid transparent;
   font-family:inherit;
 }
 .crm-sidebar__nav-item:hover{
-  color:#f5f5f5;background:rgba(255,255,255,0.04);
+  color:#ffffff;background:rgba(255,255,255,0.08);
 }
 .crm-sidebar__nav-item.active{
   color:#f5f5f5;
