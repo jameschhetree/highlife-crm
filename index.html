@@ -3383,10 +3383,19 @@ function updateStats() {
     const pkg = PACKAGES.find(pk => pk.name === p.package);
     return sum + (pkg ? pkg.price : 0);
   }, 0);
-  document.getElementById('stat-total').textContent = all.length;
-  document.getElementById('stat-pipeline').textContent = pipeline.length;
-  document.getElementById('stat-converted').textContent = converted.length;
-  document.getElementById('stat-revenue').textContent = '$' + revenue.toLocaleString();
+  // Pipeline-tab stats
+  const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  setText('stat-total', all.length);
+  setText('stat-pipeline', pipeline.length);
+  setText('stat-converted', converted.length);
+  setText('stat-revenue', '$' + revenue.toLocaleString());
+  // Dashboard-tab stats (separate -dash IDs in #sectionDashboard) — pre-3.8 these
+  // were never being written, so Dashboard always showed 0 / 0 / 0 / $0 even when
+  // the Pipeline view had hundreds of prospects. Caught by James 2026-06-04.
+  setText('stat-total-dash', all.length);
+  setText('stat-pipeline-dash', pipeline.length);
+  setText('stat-converted-dash', converted.length);
+  setText('stat-revenue-dash', '$' + revenue.toLocaleString());
 }
 
 /* ── Sort helpers ── */
