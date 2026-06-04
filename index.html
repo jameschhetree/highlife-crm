@@ -5,142 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HighLife DMV — Studio CRM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ── Reset & Base ──────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-/* ── Theme Tokens (Light) ─────────────────────────────────── */
+/* ══════════════════════════════════════════════════════════════
+   HL LIVE ADMIN AESTHETIC — single dark theme (OLED black +
+   multi-radial atmosphere). Matches highlife-live.vercel.app/admin.
+   ══════════════════════════════════════════════════════════════ */
 :root{
-  --bg:#ffffff;
-  --bg-card:#ffffff;
-  --bg-card-hover:#ffffff;
-  --bg-card-60:rgba(255,255,255,0.6);
-  --surface:rgba(0,0,0,0.015);
-  --surface-2:rgba(0,0,0,0.035);
-  --surface-elevated:rgba(255,255,255,0.95);
-  --text:#111111;
-  --text-dim:#3c3c43;
-  --text-muted:#8e8e93;
-  --text-heading:#000000;
-  --border:rgba(0,0,0,0.06);
-  --border-active:rgba(0,0,0,0.22);
-  --border-dashed:rgba(0,0,0,0.10);
-  --border-light:rgba(0,0,0,0.04);
-  --radius:16px;
-  --radius-sm:10px;
-  --radius-btn:12px;
-  --radius-pill:9999px;
-  --shadow-card:0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.03);
-  --shadow-card-hover:0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04), 0 16px 40px rgba(0,0,0,0.06);
-  --shadow-modal:0 24px 80px rgba(0,0,0,0.12);
-  --shadow-sm:0 1px 2px rgba(0,0,0,0.04);
-  --shadow-btn-hover:0 2px 8px rgba(0,0,0,0.06);
-  --shadow-primary:0 2px 8px rgba(0,0,0,0.12);
-  --shadow-primary-hover:0 4px 16px rgba(0,0,0,0.16);
-  --shadow-focus:0 0 0 4px rgba(0,0,0,0.04);
-  --shadow-toast:0 8px 32px rgba(0,0,0,.18);
-  --overlay:rgba(255,255,255,.6);
-  --pill-bg:rgba(0,0,0,0.04);
-  --pill-bg-hover:rgba(0,0,0,0.08);
-  --drag-bg:rgba(0,0,0,0.025);
-  --drag-outline:rgba(0,0,0,0.10);
-  --graveyard-card-bg:rgba(255,255,255,0.6);
-  --graveyard-card-border:rgba(0,0,0,0.04);
-  --graveyard-card-shadow:0 1px 4px rgba(0,0,0,0.02);
-  --graveyard-card-hover-border:rgba(0,0,0,0.1);
-  --graveyard-pill-bg:rgba(0,0,0,0.03);
-  --graveyard-text:#8e8e93;
-  --graveyard-text-sub:#aeaeb2;
-  --primary-bg:#000000;
-  --primary-text:#ffffff;
-  --primary-hover:#1a1a1a;
-  --btn-bg:#ffffff;
-  --btn-bg-hover:#f5f5f7;
-  --btn-border:rgba(0,0,0,0.08);
-  --input-bg:#ffffff;
-  --toast-bg:#000000;
-  --toast-text:#ffffff;
-  --scrollbar-thumb:rgba(0,0,0,0.10);
-  --scrollbar-thumb-hover:rgba(0,0,0,0.18);
-  --wash:rgba(0,0,0,0.018);
-  --product-icon-bg:rgba(0,0,0,0.03);
-  --product-icon-border:rgba(0,0,0,0.04);
-  --product-icon-stroke:#3c3c43;
-  --product-active-dot:#000000;
-  --product-coming-dot:#8e8e93;
-  --product-inactive-dot:#c7c7cc;
-  --product-active-bg:rgba(0,0,0,0.04);
-  --product-soon-bg:rgba(0,0,0,0.02);
-  --product-inactive-bg:rgba(0,0,0,0.01);
-  --brand-filter:none;
-  --font-display:'Inter',system-ui,-apple-system,sans-serif;
-  --font-mono:'JetBrains Mono',monospace;
-  --ease:cubic-bezier(0.16, 1, 0.3, 1);
-  --duration:260ms;
-}
-
-/* ── Theme Tokens (Dark) ──────────────────────────────────── */
-body[data-theme="dark"]{
-  --bg:#1c1c1e;
-  --bg-card:rgba(255,255,255,0.04);
+  --bg:#050608;
+  --bg-card:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  --bg-card-flat:rgba(255,255,255,0.03);
   --bg-card-hover:rgba(255,255,255,0.06);
   --bg-card-60:rgba(255,255,255,0.03);
   --surface:rgba(255,255,255,0.03);
   --surface-2:rgba(255,255,255,0.05);
   --surface-elevated:rgba(255,255,255,0.07);
-  --text:#f0f0f2;
-  --text-dim:#b0b0b5;
-  --text-muted:#6e6e73;
-  --text-heading:#f5f5f7;
+  --text:#f5f5f5;
+  --text-dim:#b8b8b8;
+  --text-muted:#6b6e76;
+  --text-heading:#f5f5f5;
   --border:rgba(255,255,255,0.08);
   --border-active:rgba(255,255,255,0.22);
   --border-dashed:rgba(255,255,255,0.12);
   --border-light:rgba(255,255,255,0.05);
-  --shadow-card:0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2), 0 12px 32px rgba(0,0,0,0.15);
-  --shadow-card-hover:0 1px 2px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2), 0 16px 40px rgba(0,0,0,0.3);
-  --shadow-modal:0 24px 80px rgba(0,0,0,0.5);
-  --shadow-sm:0 1px 2px rgba(0,0,0,0.3);
-  --shadow-btn-hover:0 2px 8px rgba(0,0,0,0.3);
-  --shadow-primary:0 2px 8px rgba(255,255,255,0.08);
-  --shadow-primary-hover:0 4px 16px rgba(255,255,255,0.12);
-  --shadow-focus:0 0 0 4px rgba(255,255,255,0.06);
-  --shadow-toast:0 8px 32px rgba(0,0,0,.4);
-  --overlay:rgba(0,0,0,.65);
-  --pill-bg:rgba(255,255,255,0.06);
-  --pill-bg-hover:rgba(255,255,255,0.10);
+  --radius:16px;
+  --radius-sm:10px;
+  --radius-btn:12px;
+  --radius-pill:9999px;
+  --shadow-card:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
+  --shadow-card-hover:inset 0 1px 0 rgba(255,255,255,0.08), 0 36px 90px -30px rgba(0,0,0,0.85);
+  --shadow-modal:0 24px 80px rgba(0,0,0,0.7);
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.4);
+  --shadow-btn-hover:0 2px 8px rgba(0,0,0,0.4);
+  --shadow-primary:0 2px 8px rgba(236,72,153,0.25);
+  --shadow-primary-hover:0 4px 16px rgba(236,72,153,0.35);
+  --shadow-focus:0 0 0 4px rgba(236,72,153,0.15);
+  --shadow-toast:0 8px 32px rgba(0,0,0,.6);
+  --overlay:rgba(0,0,0,.75);
+  --pill-bg:rgba(255,255,255,0.04);
+  --pill-bg-hover:rgba(255,255,255,0.08);
   --drag-bg:rgba(255,255,255,0.03);
-  --drag-outline:rgba(255,255,255,0.10);
+  --drag-outline:rgba(255,255,255,0.12);
   --graveyard-card-bg:rgba(255,255,255,0.02);
   --graveyard-card-border:rgba(255,255,255,0.04);
-  --graveyard-card-shadow:0 1px 4px rgba(0,0,0,0.2);
+  --graveyard-card-shadow:0 1px 4px rgba(0,0,0,0.3);
   --graveyard-card-hover-border:rgba(255,255,255,0.10);
   --graveyard-pill-bg:rgba(255,255,255,0.04);
-  --graveyard-text:#6e6e73;
+  --graveyard-text:#6b6e76;
   --graveyard-text-sub:#48484a;
-  --primary-bg:#f5f5f7;
-  --primary-text:#000000;
-  --primary-hover:#e5e5e7;
-  --btn-bg:rgba(255,255,255,0.06);
-  --btn-bg-hover:rgba(255,255,255,0.10);
+  --primary-bg:linear-gradient(90deg, #fde047 0%, #ec4899 50%, #a855f7 100%);
+  --primary-text:#0a0a0a;
+  --primary-hover:linear-gradient(90deg, #fde047 0%, #ec4899 50%, #a855f7 100%);
+  --btn-bg:rgba(0,0,0,0.40);
+  --btn-bg-hover:rgba(255,255,255,0.08);
   --btn-border:rgba(255,255,255,0.10);
-  --input-bg:rgba(255,255,255,0.05);
-  --toast-bg:#f5f5f7;
-  --toast-text:#000000;
-  --scrollbar-thumb:rgba(255,255,255,0.12);
-  --scrollbar-thumb-hover:rgba(255,255,255,0.22);
-  --wash:rgba(255,255,255,0.012);
-  --product-icon-bg:rgba(255,255,255,0.05);
-  --product-icon-border:rgba(255,255,255,0.06);
-  --product-icon-stroke:#b0b0b5;
-  --product-active-dot:#f5f5f7;
-  --product-coming-dot:#6e6e73;
-  --product-inactive-dot:#48484a;
-  --product-active-bg:rgba(255,255,255,0.06);
-  --product-soon-bg:rgba(255,255,255,0.03);
-  --product-inactive-bg:rgba(255,255,255,0.02);
+  --input-bg:rgba(255,255,255,0.04);
+  --toast-bg:rgba(15,17,21,0.95);
+  --toast-text:#f5f5f5;
+  --scrollbar-thumb:linear-gradient(180deg, #ec4899, #a855f7);
+  --scrollbar-thumb-hover:linear-gradient(180deg, #fde047, #ec4899);
+  --wash:transparent;
+  --product-icon-bg:rgba(255,255,255,0.04);
+  --product-icon-border:rgba(255,255,255,0.08);
+  --product-icon-stroke:#b8b8b8;
+  --product-active-dot:#34d399;
+  --product-coming-dot:#fde047;
+  --product-inactive-dot:#6b6e76;
+  --product-active-bg:rgba(52,211,153,0.08);
+  --product-soon-bg:rgba(253,224,71,0.06);
+  --product-inactive-bg:rgba(255,255,255,0.03);
   --brand-filter:brightness(10);
+  --font-display:'Geist','Inter',system-ui,-apple-system,sans-serif;
+  --font-heading:'Anton','Impact',sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(0.32, 0.72, 0, 1);
+  --duration:220ms;
 }
+
+/* Dark tokens — same since we are always dark now */
+body[data-theme="dark"]{}
 
 html{font-size:15px;scroll-behavior:smooth}
 body{
@@ -149,12 +95,14 @@ body{
   color:var(--text);
   min-height:100vh;
   -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
   letter-spacing:-0.011em;
   overflow-x:hidden;
   position:relative;
   line-height:1.5;
-  transition:background-color var(--duration) var(--ease), color var(--duration) var(--ease);
 }
+
+::selection{background:rgba(236,72,153,0.35);color:#fff}
 
 /* ── Starfield Canvas ─────────────────────────────────────── */
 #starfield{
@@ -165,83 +113,106 @@ body{
 }
 body[data-theme="dark"] #starfield{opacity:1}
 
-/* ── Subtle Radial Wash Background ──────────────────────────── */
+/* ── Multi-radial atmospheric background (HL Live) ──────── */
 body::before{
   content:'';
   position:fixed;inset:0;z-index:0;
   pointer-events:none;
-  background:radial-gradient(ellipse at 50% 0%, var(--wash) 0%, transparent 70%);
+  background:
+    radial-gradient(900px circle at 18% 22%, rgba(168,85,247,0.28), transparent 55%),
+    radial-gradient(900px circle at 82% 24%, rgba(236,72,153,0.22), transparent 55%),
+    radial-gradient(720px circle at 50% 78%, rgba(253,224,71,0.14), transparent 60%),
+    radial-gradient(640px circle at 12% 78%, rgba(52,211,153,0.12), transparent 60%);
 }
 
-/* ── Glassmorphic mesh-gradient backdrop (clients view, light theme) ── */
-body[data-glass-bg="1"]:not([data-theme="dark"])::after{
-  content:'';
-  position:fixed;inset:0;z-index:0;pointer-events:none;
+/* ── Glass mesh no longer needed — always dark atmosphere ── */
+body[data-glass-bg="1"]:not([data-theme="dark"])::after{display:none}
+
+/* ── Force dark aesthetic even when data-theme is not "dark" ── */
+body:not([data-theme="dark"]){
+  background:#050608;color:#f5f5f5;
+}
+body:not([data-theme="dark"])::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 500px at 0% 0%, #c7d2fe 0%, transparent 55%),
-    radial-gradient(1100px 600px at 100% 30%, #fbcfe8 0%, transparent 60%),
-    radial-gradient(700px 400px at 50% 100%, #ddd6fe 0%, transparent 65%);
-  opacity:0.55;
+    radial-gradient(900px circle at 18% 22%, rgba(168,85,247,0.28), transparent 55%),
+    radial-gradient(900px circle at 82% 24%, rgba(236,72,153,0.22), transparent 55%),
+    radial-gradient(720px circle at 50% 78%, rgba(253,224,71,0.14), transparent 60%),
+    radial-gradient(640px circle at 12% 78%, rgba(52,211,153,0.12), transparent 60%);
 }
 input,select,textarea,button{font-family:inherit;font-size:inherit}
 a{color:var(--text);text-decoration:none}
 
 /* ── Scrollbar ─────────────────────────────────────────────── */
 ::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:var(--scrollbar-thumb);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:var(--scrollbar-thumb-hover)}
+::-webkit-scrollbar-track{background:#050608}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg, #ec4899, #a855f7);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg, #fde047, #ec4899)}
 
 /* ── Layout ────────────────────────────────────────────────── */
 .app{max-width:1680px;margin:0 auto;padding:28px 36px 56px;position:relative;z-index:1}
 
 /* ── Header ────────────────────────────────────────────────── */
-.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:16px}
+.header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:28px;flex-wrap:wrap;gap:16px;
+  padding-bottom:24px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
 .brand{display:flex;align-items:center;gap:14px}
-.brand-icon{width:40px;height:40px;border-radius:12px;object-fit:contain;filter:var(--brand-filter)}
-.brand h1{font-size:1.25rem;font-weight:700;letter-spacing:-.02em;color:var(--text-heading)}
-.brand p{font-size:.7rem;color:var(--text-muted);font-weight:500;letter-spacing:1.5px;text-transform:uppercase}
+.brand-icon{width:36px;height:36px;border-radius:10px;object-fit:contain;filter:brightness(10)}
+.brand h1{
+  font-family:var(--font-heading);
+  font-size:1.35rem;font-weight:400;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:#f5f5f5;
+}
+.brand p{
+  font-size:9px;color:#71717a;font-weight:400;
+  letter-spacing:0.25em;text-transform:uppercase;
+}
 .header-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 
-/* ── View Toggle (Segmented Control) ──────────────────────── */
+/* ── View Toggle (Segmented Control — chip style) ──────────── */
 .view-toggle{
   display:inline-flex;
-  background:var(--pill-bg);
-  border:1px solid var(--border);
-  border-radius:var(--radius-btn);
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:9999px;
   padding:3px;
   gap:2px;
+  backdrop-filter:blur(10px);
 }
 .view-toggle-btn{
-  padding:8px 20px;
-  border-radius:var(--radius-sm);
-  font-size:.8125rem;
-  font-weight:600;
-  letter-spacing:.01em;
+  padding:0.45rem 0.95rem;
+  border-radius:9999px;
+  font-size:0.7rem;
+  font-weight:500;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
   cursor:pointer;
   border:none;
   background:transparent;
-  color:var(--text-muted);
+  color:#d4d4d8;
   transition:all var(--duration) var(--ease);
   white-space:nowrap;
 }
-.view-toggle-btn:hover{color:var(--text-dim)}
+.view-toggle-btn:hover{color:#fff;background:rgba(255,255,255,0.08)}
 .view-toggle-btn.active{
-  background:var(--primary-bg);
-  color:var(--primary-text);
-  box-shadow:var(--shadow-sm);
+  background:rgba(255,255,255,0.12);
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.20);
 }
 
 /* ── Theme Toggle ──────────────────────────────────────────── */
 .theme-toggle{
-  width:40px;height:40px;border-radius:var(--radius-btn);
-  background:var(--btn-bg);border:1px solid var(--border);
-  box-shadow:var(--shadow-sm);
+  width:40px;height:40px;border-radius:12px;
+  background:rgba(0,0,0,0.40);border:1px solid rgba(255,255,255,0.10);
   cursor:pointer;display:flex;align-items:center;justify-content:center;
   transition:all var(--duration) var(--ease);
-  color:var(--text-dim);flex-shrink:0;
+  color:#71717a;flex-shrink:0;
 }
-.theme-toggle:hover{border-color:var(--border-active);color:var(--text-heading);background:var(--btn-bg-hover);transform:translateY(-1px);box-shadow:var(--shadow-btn-hover)}
+.theme-toggle:hover{border-color:rgba(255,255,255,0.25);color:#f5f5f5;background:rgba(255,255,255,0.08);transform:translateY(-1px)}
 .theme-toggle svg{width:18px;height:18px}
 .theme-toggle .icon-moon{display:block}
 .theme-toggle .icon-sun{display:none}
@@ -251,104 +222,155 @@ body[data-theme="dark"] .theme-toggle .icon-sun{display:block}
 /* ── Buttons ───────────────────────────────────────────────── */
 .btn{
   display:inline-flex;align-items:center;gap:7px;
-  padding:10px 22px;border-radius:var(--radius-btn);
-  font-weight:600;font-size:.875rem;cursor:pointer;
-  border:1px solid var(--btn-border);
-  background:var(--btn-bg);color:var(--text-dim);
-  box-shadow:var(--shadow-sm);
-  transition:all var(--duration) var(--ease);letter-spacing:0;
+  padding:10px 22px;border-radius:12px;
+  font-weight:500;font-size:.8125rem;cursor:pointer;
+  border:1px solid rgba(255,255,255,0.10);
+  background:rgba(0,0,0,0.40);color:#d4d4d8;
+  transition:all var(--duration) var(--ease);
+  letter-spacing:0.02em;
+  backdrop-filter:blur(10px);
 }
-.btn:hover{border-color:var(--border-active);color:var(--text);background:var(--btn-bg-hover);transform:translateY(-1px);box-shadow:var(--shadow-btn-hover)}
-.btn-primary{background:var(--primary-bg);border-color:transparent;color:var(--primary-text);box-shadow:var(--shadow-primary)}
-.btn-primary:hover{background:var(--primary-hover);color:var(--primary-text);box-shadow:var(--shadow-primary-hover);transform:translateY(-1px)}
+.btn:hover{border-color:rgba(255,255,255,0.25);color:#f5f5f5;background:rgba(255,255,255,0.08);transform:translateY(-1px)}
+.btn-primary{
+  background:linear-gradient(90deg, #fde047 0%, #ec4899 50%, #a855f7 100%);
+  border-color:transparent;color:#0a0a0a;font-weight:600;
+  box-shadow:var(--shadow-primary);
+}
+.btn-primary:hover{filter:brightness(1.08) saturate(1.15);transform:translateY(-1px);box-shadow:var(--shadow-primary-hover)}
 .btn svg{width:15px;height:15px;fill:currentColor}
-.btn-sm{padding:7px 14px;font-size:.8rem}
+.btn-sm{padding:7px 14px;font-size:.75rem}
 
-/* ── Stats Bar ─────────────────────────────────────────────── */
+/* ── Stats Bar (glass-card + gradient text) ────────────────── */
 .stats-bar{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:16px;margin-bottom:24px;
+  gap:12px;margin-bottom:24px;
 }
 .stat-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:20px;
-  box-shadow:var(--shadow-card);
-  padding:28px 28px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter:blur(28px) saturate(140%);
+  -webkit-backdrop-filter:blur(28px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
+  padding:16px 20px;
   transition:all var(--duration) var(--ease);
 }
-.stat-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-1px)}
+.stat-card:hover{transform:translateY(-1px);border-color:rgba(255,255,255,0.14)}
 .stat-label{
-  font-size:.8rem;text-transform:uppercase;letter-spacing:1px;
-  color:var(--text-muted);font-weight:500;margin-bottom:8px;
+  font-size:10px;text-transform:uppercase;letter-spacing:0.18em;
+  color:#71717a;font-weight:500;margin-bottom:12px;
 }
 .stat-value{
-  font-size:2rem;font-weight:700;letter-spacing:-.02em;
-  color:var(--text-heading);font-variant-numeric:tabular-nums;
-  font-family:var(--font-mono);
+  font-family:var(--font-heading);
+  font-size:2rem;font-weight:400;letter-spacing:-.01em;
+  background:linear-gradient(90deg, #fde047 0%, #fb923c 28%, #ec4899 60%, #a855f7 100%);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;-webkit-text-fill-color:transparent;
+  line-height:1;
 }
-.stat-value.indigo{color:var(--text-heading)}
-.stat-value.rose{color:var(--text-heading)}
-.stat-value.green{color:var(--text-heading)}
+.stat-value.indigo,.stat-value.rose,.stat-value.green{
+  background:linear-gradient(90deg, #fde047 0%, #fb923c 28%, #ec4899 60%, #a855f7 100%);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;-webkit-text-fill-color:transparent;
+}
 
 /* ── Toolbar ───────────────────────────────────────────────── */
-.toolbar{display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
+.toolbar{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap;align-items:center}
 .search-box{
   flex:1;min-width:200px;
-  padding:12px 16px 12px 42px;
-  background:var(--input-bg);
-  border:1px solid var(--border);
-  box-shadow:var(--shadow-card);
-  border-radius:var(--radius-btn);color:var(--text);
-  font-size:.9375rem;outline:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238e8e93' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.156a5 5 0 1 1 0-10 5 5 0 0 1 0 10z'/%3E%3C/svg%3E");
+  padding:10px 16px 10px 42px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;color:#f5f5f5;
+  font-size:.875rem;outline:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%236b6e76' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.156a5 5 0 1 1 0-10 5 5 0 0 1 0 10z'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:14px center;
   transition:all var(--duration) var(--ease);
 }
-.search-box:focus{border-color:var(--border-active);box-shadow:var(--shadow-card), var(--shadow-focus)}
-.search-box::placeholder{color:var(--text-muted);font-size:.875rem}
+.search-box:focus{border-color:rgba(236,72,153,0.40);box-shadow:0 0 0 4px rgba(236,72,153,0.10)}
+.search-box::placeholder{color:#71717a;font-size:.8125rem}
 .filter-select{
-  padding:12px 16px;
-  background:var(--input-bg);
-  border:1px solid var(--border);
-  box-shadow:var(--shadow-card);
-  border-radius:var(--radius-btn);color:var(--text-dim);
-  font-size:.875rem;cursor:pointer;outline:none;
+  padding:10px 16px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;color:#d4d4d8;
+  font-size:.8125rem;cursor:pointer;outline:none;
   -webkit-appearance:none;
   transition:all var(--duration) var(--ease);
 }
-.filter-select:focus{border-color:var(--border-active);box-shadow:var(--shadow-card), var(--shadow-focus)}
-.filter-select option{background:var(--bg);color:var(--text)}
+.filter-select:focus{border-color:rgba(236,72,153,0.40);box-shadow:0 0 0 4px rgba(236,72,153,0.10)}
+.filter-select option{background:#0f1115;color:#f5f5f5}
+.sort-select{
+  margin-left:auto;
+  padding-right:34px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16' fill='none' stroke='%236b6e76' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='M3 6l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+  color:#f5f5f5;
+  font-weight:500;
+}
+
+/* ── DB Reconnecting Banner ─────────────────────────────────── */
+.db-banner{
+  position:fixed;top:0;left:0;right:0;
+  display:flex;align-items:center;gap:10px;justify-content:center;
+  padding:10px 18px;
+  background:rgba(15,17,21,0.95);color:#f5f5f5;
+  font-size:.8125rem;font-weight:500;letter-spacing:-.005em;
+  box-shadow:0 8px 32px rgba(0,0,0,.6);
+  border-bottom:1px solid rgba(236,72,153,0.30);
+  z-index:300;
+  transform:translateY(-100%);opacity:0;
+  transition:transform 280ms var(--ease), opacity 280ms var(--ease);
+}
+.db-banner.show{transform:translateY(0);opacity:1}
+.db-banner[hidden]{display:none}
+.db-banner-spinner{
+  width:12px;height:12px;flex-shrink:0;
+  border:1.5px solid #ec4899;border-top-color:transparent;
+  border-radius:50%;opacity:.85;
+  animation:db-spin 720ms linear infinite;
+}
+.db-banner-text{opacity:.95}
+.db-banner-dismiss{
+  margin-left:6px;background:transparent;border:none;color:inherit;
+  font-size:1.1rem;line-height:1;cursor:pointer;opacity:.6;
+  padding:2px 6px;border-radius:4px;
+  transition:opacity 160ms var(--ease), background 160ms var(--ease);
+}
+.db-banner-dismiss:hover{opacity:1;background:rgba(255,255,255,.08)}
+@keyframes db-spin{to{transform:rotate(360deg)}}
 
 /* ── Kanban Board ──────────────────────────────────────────── */
 .board{
-  display:flex;gap:20px;
+  display:flex;gap:16px;
   overflow-x:auto;padding-bottom:20px;
   min-height:calc(100vh - 320px);
 }
 .column{
-  min-width:240px;flex:1;
+  min-width:300px;flex:1;
   display:flex;flex-direction:column;
   background:transparent;
   border:none;
-  border-radius:var(--radius);
+  border-radius:16px;
   transition:all var(--duration) var(--ease);
 }
 .column-header{
   display:flex;align-items:center;justify-content:space-between;
-  padding:12px 8px 16px;
+  padding:12px 6px 16px;
   background:transparent;
   border-bottom:none;
   position:sticky;top:0;z-index:2;
 }
 .column-title{
-  font-weight:600;font-size:.8rem;text-transform:uppercase;
-  letter-spacing:1px;color:var(--text-dim);
+  font-weight:500;font-size:10px;text-transform:uppercase;
+  letter-spacing:0.18em;color:#71717a;
 }
 .column-count{
-  background:var(--pill-bg);color:var(--text-muted);
-  font-size:.75rem;font-weight:600;padding:3px 10px;
-  border-radius:var(--radius-pill);
+  background:rgba(255,255,255,0.04);color:#71717a;
+  font-size:.7rem;font-weight:600;padding:3px 10px;
+  border-radius:9999px;
+  border:1px solid rgba(255,255,255,0.08);
   font-variant-numeric:tabular-nums;
 }
 .column-body{
@@ -358,17 +380,19 @@ body[data-theme="dark"] .theme-toggle .icon-sun{display:block}
   transition:background var(--duration) var(--ease);
 }
 .column-body.drag-over{
-  background:var(--drag-bg);
-  outline:2px dashed var(--drag-outline);outline-offset:4px;
-  border-radius:var(--radius);
+  background:rgba(255,255,255,0.03);
+  outline:2px dashed rgba(255,255,255,0.12);outline-offset:4px;
+  border-radius:16px;
 }
 
-/* ── Prospect Cards ────────────────────────────────────────── */
+/* ── Prospect Cards (glass-card HL Live style) ─────────────── */
 .prospect-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-card);
+  background:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter:blur(28px) saturate(140%);
+  -webkit-backdrop-filter:blur(28px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
   padding:20px 22px;cursor:grab;
   transition:transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), border-color var(--duration) var(--ease);
   position:relative;
@@ -383,82 +407,60 @@ body[data-theme="dark"] .theme-toggle .icon-sun{display:block}
   from{opacity:0;transform:translateY(12px) scale(0.985);filter:blur(2px);}
   to  {opacity:1;transform:translateY(0)    scale(1);    filter:blur(0);}
 }
-.prospect-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-2px)}
+.prospect-card:hover{
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 36px 90px -30px rgba(0,0,0,0.85);
+  transform:translateY(-2px);
+  border-color:rgba(255,255,255,0.14);
+}
 /* Press / tap feedback — quick scale-down on active for physical feel */
-.prospect-card:active{transform:translateY(0) scale(0.985);transition-duration:90ms}
+.prospect-card:active{
+  transform:translateY(0) scale(0.985);
+  transition-duration:90ms;
+}
 .prospect-card.dragging{opacity:.4}
+/* Reduced-motion respect — kill entrance + press-feedback for users who don't want it */
 @media (prefers-reduced-motion: reduce){
-  .prospect-card{animation:none}
-  .prospect-card:hover{transform:none}
-  .prospect-card:active{transform:none}
+  .prospect-card{animation:none;}
+  .prospect-card:hover{transform:none;}
+  .prospect-card:active{transform:none;}
 }
 .prospect-card.has-seller::before{
-  /* Subtle assigned-seller accent: thin, low-opacity left hairline only when a
-     seller is actually assigned. Dialled WAY down from the old loud gold bar
-     (James: "too colourful" 2026-05-19). */
   content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
-  background:rgba(201,160,74,0.45);
-  border-radius:var(--radius) 0 0 var(--radius);
+  background:rgba(236,72,153,0.55);
+  border-radius:16px 0 0 16px;
 }
 
 /* ══════════════════════════════════════════════════════════════
-   GLASSMORPHIC PROSPECT CARD (Picasso direction #2)
-   James greenlit 2026-05-18. Active when body[data-glass-bg="1"].
-   Scoped to prospect-card so agency-card is unaffected.
+   GLASSMORPHIC PROSPECT CARD — HL Live dark glass aesthetic
+   Light-mode overrides neutralized; all cards use dark glass.
    ══════════════════════════════════════════════════════════════ */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card{
-  background:rgba(255,255,255,0.62);
-  -webkit-backdrop-filter:blur(24px) saturate(1.4);
-  backdrop-filter:blur(24px) saturate(1.4);
-  border:1px solid rgba(255,255,255,0.7);
-  border-radius:22px;
-  padding:22px 20px 16px;
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.9) inset,
-    0 30px 80px -30px rgba(99,102,241,0.35),
-    0 12px 30px -12px rgba(244,63,94,0.18);
-  font-family:'Inter Tight','Inter',system-ui,sans-serif;
+  background:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  -webkit-backdrop-filter:blur(28px) saturate(140%);
+  backdrop-filter:blur(28px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  padding:20px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
   overflow:hidden;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card::before{
-  content:'';
-  position:absolute;
-  top:-100px;right:-100px;
-  width:240px;height:240px;
-  background:radial-gradient(circle, rgba(244,63,94,0.32) 0%, transparent 70%);
-  filter:blur(20px);
-  pointer-events:none;
-  z-index:0;
-  border-radius:0;
-  background-color:transparent;
+  content:none;display:none;
 }
 /* Glass mode: do NOT recolour the corner glow amber for assigned sellers — that
    loud always-on gold wash is what made the cards "too colourful". Keep the
    neutral rose glow; signal the seller with a thin restrained left hairline
    instead (mirrors the toned-down legacy .has-seller stripe). */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card.has-seller{
-  box-shadow:
-    inset 2px 0 0 rgba(201,160,74,0.40),
-    0 1px 0 rgba(255,255,255,0.9) inset,
-    0 30px 80px -30px rgba(99,102,241,0.35),
-    0 12px 30px -12px rgba(244,63,94,0.18);
+  box-shadow:inset 2px 0 0 rgba(236,72,153,0.55), inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card::after{
-  content:'';
-  position:absolute;
-  bottom:-90px;left:-90px;
-  width:230px;height:230px;
-  background:radial-gradient(circle, rgba(99,102,241,0.30) 0%, transparent 70%);
-  filter:blur(20px);
-  pointer-events:none;
-  z-index:0;
+  content:none;display:none;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card:hover{
   transform:translateY(-2px);
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.95) inset,
-    0 36px 90px -30px rgba(99,102,241,0.42),
-    0 16px 36px -12px rgba(244,63,94,0.22);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 36px 90px -30px rgba(0,0,0,0.85);
+  border-color:rgba(255,255,255,0.14);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card > *{position:relative;z-index:1}
 
@@ -469,43 +471,43 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-topbar{
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip{
   font-size:9.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
-  color:#4f46e5;
-  background:rgba(255,255,255,0.7);
-  border:1px solid rgba(99,102,241,0.22);
+  color:#d4d4d8;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
   padding:4px 9px;border-radius:999px;
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-prospect    {color:#4f46e5;border-color:rgba(99,102,241,0.22)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-added_to_crm{color:#4338ca;border-color:rgba(99,102,241,0.30)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-contacted   {color:#0d9488;border-color:rgba(20,184,166,0.30)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-tour_booked {color:#b45309;border-color:rgba(245,158,11,0.32)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-demo        {color:#7c3aed;border-color:rgba(168,85,247,0.30)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-client      {color:#15803d;border-color:rgba(34,197,94,0.32)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-lost        {color:#b91c1c;border-color:rgba(239,68,68,0.30)}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-graveyard   {color:#475569;border-color:rgba(15,23,42,0.18)}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-prospect,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-added_to_crm,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-contacted,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-tour_booked,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-demo,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-client,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-lost,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-stage-chip.s-graveyard{
+  color:#d4d4d8;border-color:rgba(255,255,255,0.20);
+}
 
 /* Card header: avatar + name */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-header{
   display:flex;gap:13px;align-items:center;margin-bottom:14px;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-avatar{
-  width:54px;height:54px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #f43f5e 100%);
+  width:48px;height:48px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg, #fde047 0%, #ec4899 50%, #a855f7 100%);
   display:flex;align-items:center;justify-content:center;
-  color:#fff;font-weight:700;font-size:18px;letter-spacing:0.02em;
-  box-shadow:0 0 0 4px rgba(255,255,255,0.6), 0 14px 28px -10px rgba(99,102,241,0.45);
-  font-family:'Inter Tight','Inter',system-ui,sans-serif;
+  color:#0a0a0a;font-weight:700;font-size:16px;letter-spacing:0.02em;
+  box-shadow:0 0 0 3px rgba(255,255,255,0.08), 0 14px 28px -10px rgba(0,0,0,0.6);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-headtext{flex:1;min-width:0}
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .name{
-  font-family:'Inter Tight','Inter',system-ui,sans-serif;
-  font-weight:700;font-size:19px;letter-spacing:-0.015em;
-  color:#0f172a;margin-bottom:3px;line-height:1.15;
+  font-weight:600;font-size:16px;letter-spacing:-0.015em;
+  color:#f5f5f5;margin-bottom:3px;line-height:1.15;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .title-co{
-  font-size:11.5px;color:#475569;line-height:1.4;
+  font-size:11.5px;color:rgba(255,255,255,0.65);line-height:1.4;
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .title-co .at{color:#94a3b8}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .title-co .company{color:#334155;font-weight:500}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .title-co .at{color:rgba(255,255,255,0.40)}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .title-co .company{color:rgba(255,255,255,0.80);font-weight:500}
 
 /* Tier row */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-tier-row{
@@ -513,20 +515,20 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-tier-row{
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-tier{
   display:inline-flex;align-items:center;gap:5px;
-  font-size:11px;font-weight:600;color:#1e1b4b;
-  background:linear-gradient(135deg, rgba(199,210,254,0.55) 0%, rgba(251,207,232,0.55) 100%);
-  border:1px solid rgba(99,102,241,0.28);
+  font-size:11px;font-weight:600;color:#d4d4d8;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
   padding:5px 10px;border-radius:8px;line-height:1.2;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-tier-dot{
   width:6px;height:6px;border-radius:50%;
-  background:linear-gradient(135deg, #6366f1, #f43f5e);
+  background:linear-gradient(90deg, #fde047, #ec4899);
 }
 
 /* Section labels */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-label{
   font-size:9.5px;font-weight:600;letter-spacing:0.16em;
-  text-transform:uppercase;color:#94a3b8;margin-bottom:7px;
+  text-transform:uppercase;color:rgba(255,255,255,0.50);margin-bottom:7px;
 }
 
 /* Socials: 3-col grid */
@@ -537,13 +539,12 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icons{
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon{
   width:auto;height:auto;border-radius:11px;
   padding:9px 8px;
-  background:rgba(255,255,255,0.78);
-  border:1px solid rgba(15,23,42,0.06);
-  /* Neutral grey at rest — brand colour is an accent revealed on hover/active
-     only (James: "stunning, just might be too colourful" 2026-05-19). */
-  color:#64748b;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d8;
   display:flex;align-items:center;justify-content:center;gap:6px;
   font-size:11px;font-weight:600;
+  min-width:0;overflow:hidden;
   box-shadow:none;
   text-decoration:none;
   transition:color 200ms var(--ease), border-color 200ms var(--ease),
@@ -552,6 +553,7 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon{
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon .glass-soc-label{
   letter-spacing:-0.005em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon svg{
   width:14px;height:14px;
@@ -559,34 +561,54 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon svg
      the brand-colour overrides below on hover/active. */
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon:hover{
-  transform:translateY(-1px);box-shadow:0 4px 12px -4px rgba(15,23,42,0.18);
+  transform:translateY(-1px);border-color:rgba(255,255,255,0.40);
+  background:rgba(255,255,255,0.06);color:#ededed;
+  box-shadow:0 4px 12px -4px rgba(0,0,0,0.6);
 }
-/* ── Brand colour ONLY on hover / active (clicked) — links only ── */
+/* ── Monochrome hover — no brand colours in dark aesthetic ── */
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--linkedin:hover,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--linkedin:active,
-body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--linkedin:focus-visible{
-  color:#0A66C2;border-color:rgba(10,102,194,0.35);background:rgba(10,102,194,0.07);
-}
+body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--linkedin:focus-visible,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--youtube:hover,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--youtube:active,
-body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--youtube:focus-visible{
-  color:#FF0000;border-color:rgba(255,0,0,0.30);background:rgba(255,0,0,0.06);
-}
+body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--youtube:focus-visible,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--instagram:hover,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--instagram:active,
 body[data-glass-bg="1"]:not([data-theme="dark"]) a.social-icon--instagram:focus-visible{
-  color:#E1306C;border-color:rgba(225,48,108,0.32);background:rgba(225,48,108,0.06);
+  color:#ededed;border-color:rgba(255,255,255,0.40);background:rgba(255,255,255,0.06);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--missing,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--broken{
-  color:#cbd5e1;background:rgba(255,255,255,0.42);
-  opacity:1;pointer-events:none;cursor:not-allowed;border-color:rgba(15,23,42,0.05);
+  color:rgba(255,255,255,0.35);background:transparent;
+  opacity:1;pointer-events:none;cursor:not-allowed;border-color:rgba(255,255,255,0.07);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--missing svg,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--broken svg{
-  opacity:0.35;filter:grayscale(1);
+  opacity:0.40;filter:grayscale(1);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--broken{position:relative}
+
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--unverified{
+  color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.03);
+  border-color:rgba(255,255,255,0.07);
+  border-style:dashed;
+}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon--unverified svg{
+  opacity:0.55;filter:grayscale(1);
+}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card a.social-icon--unverified:hover,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card a.social-icon--unverified:focus-visible{
+  color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.18);
+}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card a.social-icon--unverified:hover svg,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card a.social-icon--unverified:focus-visible svg{
+  opacity:0.85;
+}
+.prospect-card .social-icon--unverified .soc-unverified-tag{
+  font-size:8px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;
+  color:#94a3b8;border-bottom:1px dotted currentColor;
+  padding-bottom:1px;line-height:1;
+}
 
 /* Report-broken: unobtrusive flag affordance + inline platform picker */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .channels-label{
@@ -595,22 +617,22 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .channels-label{
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .report-broken-btn{
   display:inline-flex;align-items:center;gap:4px;
   font-size:9px;font-weight:600;letter-spacing:0.10em;text-transform:uppercase;
-  color:#94a3b8;background:transparent;border:none;cursor:pointer;
+  color:rgba(255,255,255,0.45);background:transparent;border:none;cursor:pointer;
   padding:2px 4px;border-radius:6px;
   transition:color 160ms var(--ease),background 160ms var(--ease);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .report-broken-btn:hover{
-  color:#be123c;background:rgba(244,63,94,0.06);
+  color:#d4d4d8;background:rgba(255,255,255,0.06);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .report-broken-btn svg{
   width:11px;height:11px;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .report-broken-panel{
   margin:-6px 0 14px;padding:10px 12px;border-radius:11px;
-  background:rgba(255,255,255,0.6);border:1px solid rgba(15,23,42,0.06);
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-hint{
-  display:block;font-size:10px;color:#94a3b8;margin-bottom:7px;
+  display:block;font-size:10px;color:rgba(255,255,255,0.50);margin-bottom:7px;
   letter-spacing:0.04em;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-row{
@@ -618,14 +640,14 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-row{
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-opt{
   font-size:10px;font-weight:600;padding:7px 0;border-radius:9px;cursor:pointer;
-  background:rgba(255,255,255,0.78);border:1px solid rgba(15,23,42,0.08);
-  color:#64748b;transition:all 160ms var(--ease);
+  background:transparent;border:1px solid rgba(255,255,255,0.20);
+  color:rgba(255,255,255,0.70);transition:all 160ms var(--ease);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-opt:hover{
-  border-color:rgba(244,63,94,0.30);color:#be123c;
+  border-color:rgba(255,255,255,0.55);color:#d4d4d8;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-opt.is-broken{
-  background:rgba(244,63,94,0.08);border-color:rgba(244,63,94,0.30);color:#be123c;
+  background:rgba(255,255,255,0.10);border-color:rgba(255,255,255,0.55);color:#d4d4d8;
 }
 
 /* Sellers: 3-col grid */
@@ -635,49 +657,46 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-row{
 body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-btn{
   padding:9px 0;text-align:center;border-radius:11px;
   font-size:10.5px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;
-  background:rgba(255,255,255,0.7);
-  border:1px solid rgba(15,23,42,0.08);
-  color:#64748b;cursor:pointer;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d8;cursor:pointer;
   transition:all 200ms var(--ease);
   flex:none;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-btn:hover{
-  border-color:rgba(15,23,42,0.18);color:#0f172a;background:rgba(255,255,255,0.85);
+  border-color:rgba(255,255,255,0.40);color:#ededed;background:rgba(255,255,255,0.06);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-btn.active{
-  /* Restrained assigned state — soft amber tint, not a loud gold gradient
-     (James: "too colourful" 2026-05-19). */
-  background:rgba(201,160,74,0.14);
-  color:#92671a;border-color:rgba(201,160,74,0.40);
-  box-shadow:0 1px 0 rgba(255,255,255,0.6) inset;
+  background:#ededed;
+  color:#000;
+  border-color:#ededed;
+  box-shadow:0 1px 0 rgba(0,0,0,0.20) inset;
 }
 
 /* Footer: rating + status pills + graveyard actions */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer{
   display:flex;justify-content:space-between;align-items:center;gap:8px;
   padding-top:12px;margin-top:2px;
-  border-top:1px solid rgba(15,23,42,0.06);
+  border-top:1px solid rgba(255,255,255,0.07);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-row{
   display:flex;gap:5px;margin:0;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-btn{
   width:32px;height:32px;border-radius:9px;
-  background:rgba(255,255,255,0.78);
-  border:1px solid rgba(15,23,42,0.06);
-  color:#475569;font-size:13px;flex-shrink:0;
-  box-shadow:none;filter:grayscale(0) brightness(1);
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d8;font-size:13px;flex-shrink:0;
+  box-shadow:none;filter:grayscale(1) brightness(1.5);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-btn:hover{
-  border-color:rgba(15,23,42,0.14);transform:translateY(-1px);
+  border-color:rgba(255,255,255,0.40);transform:translateY(-1px);
+  background:rgba(255,255,255,0.06);
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-btn.up-active{
-  color:#059669;border-color:rgba(5,150,105,0.35);
-  background:rgba(209,250,229,0.6);
-}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-btn.up-active,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-btn.down-active{
-  color:#dc2626;border-color:rgba(220,38,38,0.35);
-  background:rgba(254,226,226,0.6);
+  color:#000;border-color:#ededed;
+  background:#ededed;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .rating-feedback{
   display:none;
@@ -687,38 +706,33 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .glass-feedback-
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .glass-feedback-row .rating-feedback{
   display:block;width:100%;font-family:inherit;
-  background:rgba(255,255,255,0.85);border:1px solid rgba(15,23,42,0.08);
-  color:#0f172a;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d8;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-row{
   display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:nowrap;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn{
   flex:0 0 auto;padding:5px 9px;border-radius:999px;
-  background:rgba(255,255,255,0.78);
-  border:1px solid rgba(15,23,42,0.06);
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
   font-size:10px;font-weight:600;letter-spacing:0.01em;
-  color:#475569;box-shadow:none;
+  color:#d4d4d8;box-shadow:none;
   white-space:nowrap;text-transform:none;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn:hover{
-  background:rgba(255,255,255,0.95);color:#0f172a;
-  border-color:rgba(15,23,42,0.14);transform:none;
+  background:rgba(255,255,255,0.06);color:#ededed;
+  border-color:rgba(255,255,255,0.40);transform:none;
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.broken{
-  color:#be123c;border-color:rgba(244,63,94,0.30);
-}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.broken:hover{
-  background:rgba(255,228,230,0.7);color:#9f1239;
-}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.thindata{
-  color:#b45309;border-color:rgba(245,158,11,0.30);
-}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.thindata:hover{
-  background:rgba(254,243,199,0.7);color:#92400e;
-}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.broken,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.thindata,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.bury-btn{
-  color:#64748b;
+  color:#d4d4d8;border-color:rgba(255,255,255,0.20);
+}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.broken:hover,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.thindata:hover,
+body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn.bury-btn:hover{
+  background:rgba(255,255,255,0.06);color:#ededed;border-color:rgba(255,255,255,0.40);
 }
 
 /* Card actions: dismiss-style X in topbar */
@@ -727,18 +741,18 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-dismiss-group{
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-dismiss-group .card-action-btn{
   width:28px;height:28px;border-radius:50%;
-  background:rgba(255,255,255,0.7);
-  border:1px solid rgba(15,23,42,0.06);
-  color:#64748b;opacity:1;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d8;opacity:1;
   display:flex;align-items:center;justify-content:center;
   font-size:13px;cursor:pointer;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-dismiss-group .card-action-btn:hover{
-  background:rgba(255,255,255,0.95);color:#0f172a;
-  border-color:rgba(15,23,42,0.14);
+  background:rgba(255,255,255,0.06);color:#ededed;
+  border-color:rgba(255,255,255,0.40);
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-dismiss-group .card-action-btn.delete:hover{
-  background:rgba(254,226,226,0.7);color:#b91c1c;border-color:rgba(220,38,38,0.30);
+  background:#ededed;color:#000;border-color:#ededed;
 }
 
 /* Hide old top-right card-actions; we'll render them inside .glass-topbar */
@@ -746,23 +760,23 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card > .card-actions{
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .card-head,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .card-badges{display:none}
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .last-contact{
-  font-size:11px;color:#94a3b8;margin-top:10px;
+  font-size:11px;color:rgba(255,255,255,0.50);margin-top:10px;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .crm-btn,
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .crm-btn-secondary{
   border-radius:11px;font-size:11px;padding:9px 0;
-  background:rgba(255,255,255,0.78);border-color:rgba(15,23,42,0.08);
-  color:#0f172a;box-shadow:none;
+  background:transparent;border-color:rgba(255,255,255,0.20);
+  color:#d4d4d8;box-shadow:none;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .crm-btn:hover{
-  background:#0f172a;color:#fff;border-color:#0f172a;
+  background:#ededed;color:#000;border-color:#ededed;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card.has-seller{
   /* halo top-right shifts to gold instead of rose */
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .meta-tag{
-  background:rgba(255,255,255,0.78);border:1px solid rgba(15,23,42,0.08);
-  color:#475569;font-size:10.5px;padding:4px 10px;
+  background:transparent;border:1px solid rgba(255,255,255,0.20);
+  color:rgba(255,255,255,0.70);font-size:10.5px;padding:4px 10px;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .meta-missing{
   border-style:dashed;background:transparent;
@@ -770,33 +784,413 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .meta-missing{
 
 /* Column body: more breathing room around glass cards */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .column-body{gap:18px}
-body[data-glass-bg="1"]:not([data-theme="dark"]) .column-title{color:#475569}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .column-title{color:rgba(255,255,255,0.70)}
 
-/* Empty col text on light mesh */
-body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{color:#94a3b8}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{color:rgba(255,255,255,0.40)}
 
-/* Wider columns when glass mesh is active — design needs breathing room */
-body[data-glass-bg="1"]:not([data-theme="dark"]) .board{
-  gap:24px;
+body[data-glass-bg="1"]:not([data-theme="dark"]) .board{gap:16px}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .column{min-width:300px;flex:1}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .column-header{padding:12px 6px 16px}
+body[data-glass-bg="1"]:not([data-theme="dark"]) .column-count{
+  background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.70);
+  border:1px solid rgba(255,255,255,0.08);
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .column{
-  min-width:320px;
-  flex:0 0 320px;
+
+body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{
+  background:rgba(255,255,255,0.02);
+  border:1px dashed rgba(255,255,255,0.12);
+  border-radius:16px;
+  padding:24px;font-size:12px;color:rgba(255,255,255,0.40);
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .column-header{
+
+/* ══════════════════════════════════════════════════════════════
+   DARK MODE PROSPECT CARD — black/monochrome variant
+   James greenlit 2026-05-18 (Telegram #3113 + #3115):
+   "make it black since background is on white for dark mode then
+    light mode for what you have now" — picked option A.
+   Mirrors the glass STRUCTURE above but with pure black card,
+   hairline white-alpha edges, and a fully monochrome accent system
+   (no indigo, rose, gold, red, yellow, or platform brand colours).
+   ══════════════════════════════════════════════════════════════ */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card{
+  background:#0f0f10;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:22px;
+  padding:22px 20px 16px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.04) inset,
+    0 30px 80px -30px rgba(0,0,0,0.9),
+    0 12px 30px -12px rgba(0,0,0,0.7);
+  font-family:'Inter Tight','Inter',system-ui,sans-serif;
+  overflow:hidden;
+}
+/* Kill the rose/indigo radial glows — pure black card, no colour blooms */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card::before,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card::after{
+  content:none;display:none;background:none;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card.has-seller{
+  /* Restrained white hairline on the left edge instead of gold */
+  box-shadow:
+    inset 2px 0 0 rgba(255,255,255,0.55),
+    0 1px 0 rgba(255,255,255,0.04) inset,
+    0 30px 80px -30px rgba(0,0,0,0.9),
+    0 12px 30px -12px rgba(0,0,0,0.7);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card:hover{
+  transform:translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.06) inset,
+    0 36px 90px -30px rgba(0,0,0,0.95),
+    0 16px 36px -12px rgba(0,0,0,0.8);
+  border-color:rgba(255,255,255,0.16);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card > *{position:relative;z-index:1}
+
+/* Topbar (stage chip + dismiss) */
+body[data-glass-bg="1"][data-theme="dark"] .glass-topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:14px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip{
+  font-size:9.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
+  color:#d4d4d4;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.30);
+  padding:4px 9px;border-radius:999px;
+}
+/* All stage variants collapse to monochrome — no semantic colour, just
+   white outline + white text. Differentiation comes from the label itself. */
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-prospect,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-added_to_crm,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-contacted,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-tour_booked,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-demo,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-client,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-lost,
+body[data-glass-bg="1"][data-theme="dark"] .glass-stage-chip.s-graveyard{
+  color:#d4d4d4;border-color:rgba(255,255,255,0.30);
+}
+
+/* Card header: avatar + name */
+body[data-glass-bg="1"][data-theme="dark"] .glass-header{
+  display:flex;gap:13px;align-items:center;margin-bottom:14px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-avatar{
+  width:54px;height:54px;border-radius:50%;flex-shrink:0;
+  background:#ededed;
+  display:flex;align-items:center;justify-content:center;
+  color:#000;font-weight:700;font-size:18px;letter-spacing:0.02em;
+  box-shadow:0 0 0 4px rgba(255,255,255,0.08), 0 14px 28px -10px rgba(0,0,0,0.9);
+  font-family:'Inter Tight','Inter',system-ui,sans-serif;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-headtext{flex:1;min-width:0}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .name{
+  font-family:'Inter Tight','Inter',system-ui,sans-serif;
+  font-weight:700;font-size:19px;letter-spacing:-0.015em;
+  color:#d4d4d4;margin-bottom:3px;line-height:1.15;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .title-co{
+  font-size:11.5px;color:rgba(255,255,255,0.65);line-height:1.4;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .title-co .at{color:rgba(255,255,255,0.40)}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .title-co .company{color:rgba(255,255,255,0.80);font-weight:500}
+
+/* Tier row */
+body[data-glass-bg="1"][data-theme="dark"] .glass-tier-row{
+  display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-tier{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:11px;font-weight:600;color:#d4d4d4;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.30);
+  padding:5px 10px;border-radius:8px;line-height:1.2;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-tier-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:#d4d4d4;
+}
+
+/* Section labels (CHANNELS / ASSIGNED SELLER) — muted white at 60% */
+body[data-glass-bg="1"][data-theme="dark"] .glass-label{
+  font-size:9.5px;font-weight:600;letter-spacing:0.16em;
+  text-transform:uppercase;color:rgba(255,255,255,0.60);margin-bottom:7px;
+}
+
+/* Socials: 3-col grid — monochrome white icons, no brand colours */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icons{
+  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;
+  margin:0 0 14px 0;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon{
+  width:auto;height:auto;border-radius:11px;
+  padding:9px 8px;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.25);
+  color:#d4d4d4;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  font-size:11px;font-weight:600;
+  box-shadow:none;
+  text-decoration:none;
+  transition:color 200ms var(--ease), border-color 200ms var(--ease),
+             background 200ms var(--ease), transform 200ms var(--ease),
+             box-shadow 200ms var(--ease);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon .glass-soc-label{
+  letter-spacing:-0.005em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon svg{
+  width:14px;height:14px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon:hover{
+  transform:translateY(-1px);
+  border-color:rgba(237,237,237,0.55);
+  background:rgba(255,255,255,0.06);
+  color:#ededed;
+  box-shadow:0 4px 12px -4px rgba(0,0,0,0.7);
+}
+/* OVERRIDE brand-colour hovers from the light block — collapse to white-on-black */
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--linkedin:hover,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--linkedin:active,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--linkedin:focus-visible,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--youtube:hover,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--youtube:active,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--youtube:focus-visible,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--instagram:hover,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--instagram:active,
+body[data-glass-bg="1"][data-theme="dark"] a.social-icon--instagram:focus-visible{
+  color:#ededed;border-color:rgba(237,237,237,0.55);background:rgba(255,255,255,0.06);
+}
+/* Broken / missing — same buttons at 30-40% opacity */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--missing,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--broken{
+  color:rgba(255,255,255,0.35);background:transparent;
+  opacity:1;pointer-events:none;cursor:not-allowed;
+  border-color:rgba(255,255,255,0.07);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--missing svg,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--broken svg{
+  opacity:0.40;filter:grayscale(1);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--broken{position:relative}
+
+/* LinkedIn UNVERIFIED (dark) — clickable, neutral, dotted marker. */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--unverified{
+  color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.03);
+  border-color:rgba(255,255,255,0.07);
+  border-style:dashed;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--unverified svg{
+  opacity:0.55;filter:grayscale(1);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card a.social-icon--unverified:hover,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card a.social-icon--unverified:focus-visible{
+  color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.18);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card a.social-icon--unverified:hover svg,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card a.social-icon--unverified:focus-visible svg{
+  opacity:0.85;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon--unverified .soc-unverified-tag{
+  color:rgba(255,255,255,0.45);
+}
+
+/* Report-broken: flag affordance + inline picker */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .channels-label{
+  display:flex;align-items:center;justify-content:space-between;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .report-broken-btn{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:9px;font-weight:600;letter-spacing:0.10em;text-transform:uppercase;
+  color:rgba(255,255,255,0.45);background:transparent;border:none;cursor:pointer;
+  padding:2px 4px;border-radius:6px;
+  transition:color 160ms var(--ease),background 160ms var(--ease);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .report-broken-btn:hover{
+  color:#d4d4d4;background:rgba(255,255,255,0.06);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .report-broken-btn svg{
+  width:11px;height:11px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .report-broken-panel{
+  margin:-6px 0 14px;padding:10px 12px;border-radius:11px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-hint{
+  display:block;font-size:10px;color:rgba(255,255,255,0.50);margin-bottom:7px;
+  letter-spacing:0.04em;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-row{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:6px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-opt{
+  font-size:10px;font-weight:600;padding:7px 0;border-radius:9px;cursor:pointer;
+  background:transparent;border:1px solid rgba(255,255,255,0.20);
+  color:rgba(255,255,255,0.70);transition:all 160ms var(--ease);
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-opt:hover{
+  border-color:rgba(255,255,255,0.55);color:#d4d4d4;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-opt.is-broken{
+  background:rgba(255,255,255,0.10);border-color:rgba(255,255,255,0.55);color:#d4d4d4;
+}
+
+/* Sellers: 3-col grid — active = white-fill black-text + checkmark */
+body[data-glass-bg="1"][data-theme="dark"] .seller-row{
+  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;margin:0 0 14px 0;
+}
+body[data-glass-bg="1"][data-theme="dark"] .seller-btn{
+  padding:9px 0;text-align:center;border-radius:11px;
+  font-size:10.5px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;
+  background:#0f0f10;
+  border:1px solid rgba(255,255,255,0.25);
+  color:#d4d4d4;cursor:pointer;
+  transition:all 200ms var(--ease);
+  flex:none;
+}
+body[data-glass-bg="1"][data-theme="dark"] .seller-btn:hover{
+  border-color:rgba(237,237,237,0.55);color:#ededed;background:rgba(255,255,255,0.06);
+}
+body[data-glass-bg="1"][data-theme="dark"] .seller-btn.active{
+  /* White-fill black-text + checkmark (the prepended &#10003; comes from
+     the existing render template at line 3168 — we just style it black on
+     white). No gold/amber gradient. */
+  background:#ededed;
+  color:#000;
+  border-color:#ededed;
+  box-shadow:0 1px 0 rgba(0,0,0,0.20) inset;
+}
+
+/* Footer: rating + status pills + graveyard actions */
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding-top:12px;margin-top:2px;
+  border-top:1px solid rgba(255,255,255,0.07);
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-row{
+  display:flex;gap:5px;margin:0;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-btn{
+  width:32px;height:32px;border-radius:9px;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.25);
+  color:#d4d4d4;font-size:13px;flex-shrink:0;
+  box-shadow:none;filter:grayscale(1) brightness(1.5);
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-btn:hover{
+  border-color:rgba(237,237,237,0.55);transform:translateY(-1px);
+  background:rgba(255,255,255,0.06);
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-btn.up-active,
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-btn.down-active{
+  color:#000;border-color:#ededed;
+  background:#ededed;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .rating-feedback{
+  display:none;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .glass-feedback-row{
+  margin-top:10px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .glass-feedback-row .rating-feedback{
+  display:block;width:100%;font-family:inherit;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.20);
+  color:#d4d4d4;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-row{
+  display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:nowrap;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn{
+  flex:0 0 auto;padding:5px 9px;border-radius:999px;
+  background:#0f0f10;
+  border:1px solid rgba(212,212,212,0.25);
+  font-size:10px;font-weight:600;letter-spacing:0.01em;
+  color:#d4d4d4;box-shadow:none;
+  white-space:nowrap;text-transform:none;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn:hover{
+  background:rgba(255,255,255,0.06);color:#ededed;
+  border-color:rgba(237,237,237,0.55);transform:none;
+}
+/* All status pill variants collapse to monochrome — no red/yellow/orange */
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.broken,
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.thindata,
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.bury-btn{
+  color:#d4d4d4;border-color:rgba(212,212,212,0.25);background:#0f0f10;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.broken:hover,
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.thindata:hover,
+body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn.bury-btn:hover{
+  background:rgba(255,255,255,0.06);color:#ededed;border-color:rgba(237,237,237,0.55);
+}
+
+/* Card actions: dismiss-style X in topbar */
+body[data-glass-bg="1"][data-theme="dark"] .glass-dismiss-group{
+  display:flex;gap:4px;align-items:center;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-dismiss-group .card-action-btn{
+  width:28px;height:28px;border-radius:50%;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.25);
+  color:#d4d4d4;opacity:1;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;cursor:pointer;
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-dismiss-group .card-action-btn:hover{
+  background:rgba(255,255,255,0.06);color:#ededed;
+  border-color:rgba(237,237,237,0.55);
+}
+body[data-glass-bg="1"][data-theme="dark"] .glass-dismiss-group .card-action-btn.delete:hover{
+  background:#ededed;color:#000;border-color:#ededed;
+}
+
+/* Hide old top-right card-actions; render them inside .glass-topbar */
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card > .card-actions{display:none}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .card-head,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .card-badges{display:none}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .last-contact{
+  font-size:11px;color:rgba(255,255,255,0.50);margin-top:10px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .crm-btn,
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .crm-btn-secondary{
+  border-radius:11px;font-size:11px;padding:9px 0;
+  background:transparent;border-color:rgba(255,255,255,0.25);
+  color:#d4d4d4;box-shadow:none;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .crm-btn:hover{
+  background:#ededed;color:#000;border-color:#ededed;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .meta-tag{
+  background:transparent;border:1px solid rgba(255,255,255,0.20);
+  color:rgba(255,255,255,0.70);font-size:10.5px;padding:4px 10px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .prospect-card .meta-missing{
+  border-style:dashed;background:transparent;
+}
+
+/* Column body breathing room in dark mode */
+body[data-glass-bg="1"][data-theme="dark"] .column-body{gap:18px}
+body[data-glass-bg="1"][data-theme="dark"] .column-title{color:rgba(255,255,255,0.70)}
+body[data-glass-bg="1"][data-theme="dark"] .empty-col{
+  background:rgba(255,255,255,0.02);
+  border:1px dashed rgba(255,255,255,0.12);
+  border-radius:18px;
+  padding:24px;font-size:12px;color:rgba(255,255,255,0.40);
+}
+body[data-glass-bg="1"][data-theme="dark"] .board{gap:24px}
+body[data-glass-bg="1"][data-theme="dark"] .column{
+  min-width:320px;flex:0 0 320px;
+}
+body[data-glass-bg="1"][data-theme="dark"] .column-header{
   padding:14px 6px 18px;
 }
-body[data-glass-bg="1"]:not([data-theme="dark"]) .column-count{
-  background:rgba(255,255,255,0.65);color:#475569;
-  border:1px solid rgba(15,23,42,0.06);
-}
-
-/* Empty column placeholders on glass bg */
-body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{
-  background:rgba(255,255,255,0.40);
-  border:1px dashed rgba(15,23,42,0.10);
-  border-radius:18px;
-  padding:24px;font-size:12px;color:#94a3b8;
+body[data-glass-bg="1"][data-theme="dark"] .column-count{
+  background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.70);
+  border:1px solid rgba(255,255,255,0.15);
 }
 
 .prospect-card .card-head{
@@ -813,16 +1207,16 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{
 }
 
 .prospect-card .name{
-  font-weight:700;font-size:1.25rem;margin-bottom:4px;
-  color:var(--text-heading);letter-spacing:-.02em;line-height:1.2;
+  font-weight:600;font-size:1.1rem;margin-bottom:4px;
+  color:#f5f5f5;letter-spacing:-.02em;line-height:1.2;
   overflow:hidden;text-overflow:ellipsis;
 }
 .prospect-card .title-co{
-  font-size:.875rem;color:var(--text-dim);line-height:1.45;
+  font-size:.8125rem;color:rgba(255,255,255,0.65);line-height:1.45;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
 }
-.prospect-card .title-co .at{color:var(--text-muted);margin:0 4px;font-weight:400}
-.prospect-card .title-co .company{color:var(--text);font-weight:500}
+.prospect-card .title-co .at{color:rgba(255,255,255,0.40);margin:0 4px;font-weight:400}
+.prospect-card .title-co .company{color:rgba(255,255,255,0.80);font-weight:500}
 
 .prospect-card .pkg-badge{
   display:inline-flex;align-items:center;padding:3px 9px;
@@ -835,18 +1229,18 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .empty-col{
   border-radius:var(--radius-pill);font-size:.65rem;font-weight:700;
   letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;line-height:1.4;
 }
-.prospect-card .status-pill.s-added_to_crm{background:rgba(99,102,241,0.12);color:#4F46E5}
-.prospect-card .status-pill.s-contacted  {background:rgba(20,184,166,0.14);color:#0D9488}
-.prospect-card .status-pill.s-tour_booked{background:rgba(245,158,11,0.16);color:#B45309}
-.prospect-card .status-pill.s-demo       {background:rgba(168,85,247,0.14);color:#7C3AED}
-.prospect-card .status-pill.s-client     {background:rgba(34,197,94,0.16);color:#15803D}
-.prospect-card .status-pill.s-lost       {background:rgba(239,68,68,0.10);color:#B91C1C}
-body[data-theme="dark"] .prospect-card .status-pill.s-added_to_crm{background:rgba(129,140,248,0.18);color:#A5B4FC}
-body[data-theme="dark"] .prospect-card .status-pill.s-contacted  {background:rgba(45,212,191,0.18);color:#5EEAD4}
-body[data-theme="dark"] .prospect-card .status-pill.s-tour_booked{background:rgba(251,191,36,0.18);color:#FCD34D}
-body[data-theme="dark"] .prospect-card .status-pill.s-demo       {background:rgba(192,132,252,0.20);color:#D8B4FE}
-body[data-theme="dark"] .prospect-card .status-pill.s-client     {background:rgba(74,222,128,0.20);color:#86EFAC}
-body[data-theme="dark"] .prospect-card .status-pill.s-lost       {background:rgba(248,113,113,0.18);color:#FCA5A5}
+.prospect-card .status-pill.s-added_to_crm{background:rgba(129,140,248,0.10);color:#A5B4FC;border:1px solid rgba(129,140,248,0.20)}
+.prospect-card .status-pill.s-contacted  {background:rgba(45,212,191,0.10);color:#5EEAD4;border:1px solid rgba(45,212,191,0.20)}
+.prospect-card .status-pill.s-tour_booked{background:rgba(251,191,36,0.10);color:#FCD34D;border:1px solid rgba(251,191,36,0.20)}
+.prospect-card .status-pill.s-demo       {background:rgba(192,132,252,0.10);color:#D8B4FE;border:1px solid rgba(192,132,252,0.20)}
+.prospect-card .status-pill.s-client     {background:rgba(74,222,128,0.10);color:#86EFAC;border:1px solid rgba(74,222,128,0.20)}
+.prospect-card .status-pill.s-lost       {background:rgba(248,113,113,0.10);color:#FCA5A5;border:1px solid rgba(248,113,113,0.20)}
+body[data-theme="dark"] .prospect-card .status-pill.s-added_to_crm{background:rgba(129,140,248,0.10);color:#A5B4FC}
+body[data-theme="dark"] .prospect-card .status-pill.s-contacted  {background:rgba(45,212,191,0.10);color:#5EEAD4}
+body[data-theme="dark"] .prospect-card .status-pill.s-tour_booked{background:rgba(251,191,36,0.10);color:#FCD34D}
+body[data-theme="dark"] .prospect-card .status-pill.s-demo       {background:rgba(192,132,252,0.10);color:#D8B4FE}
+body[data-theme="dark"] .prospect-card .status-pill.s-client     {background:rgba(74,222,128,0.10);color:#86EFAC}
+body[data-theme="dark"] .prospect-card .status-pill.s-lost       {background:rgba(248,113,113,0.10);color:#FCA5A5}
 
 /* Social icons row */
 .prospect-card .social-icons{
@@ -1022,10 +1416,10 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
 }
 .modal-overlay.active{display:flex}
 .modal{
-  background:var(--bg);
-  border:1px solid var(--border);
-  box-shadow:var(--shadow-modal);
-  border-radius:24px;padding:32px;
+  background:#0f1115;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 24px 80px rgba(0,0,0,0.7);
+  border-radius:20px;padding:32px;
   width:100%;max-width:540px;max-height:90vh;overflow-y:auto;
   animation:modalIn 340ms var(--ease);
 }
@@ -1034,7 +1428,7 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
   from{opacity:0;transform:scale(0.97) translateY(8px)}
   to{opacity:1;transform:scale(1) translateY(0)}
 }
-.modal h2{font-size:1.25rem;font-weight:700;margin-bottom:24px;color:var(--text-heading);letter-spacing:-.02em}
+.modal h2{font-family:var(--font-heading);font-size:1.5rem;font-weight:400;margin-bottom:24px;color:#f5f5f5;letter-spacing:0.08em;text-transform:uppercase}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-group{display:flex;flex-direction:column;gap:6px}
 .form-group.full{grid-column:1/-1}
@@ -1054,10 +1448,11 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
 /* ── Toast ─────────────────────────────────────────────────── */
 .toast{
   position:fixed;bottom:28px;right:28px;
-  padding:12px 24px;border-radius:var(--radius-btn);
-  background:var(--toast-bg);border:none;
-  color:var(--toast-text);font-weight:600;font-size:.875rem;
-  box-shadow:var(--shadow-toast);
+  padding:12px 24px;border-radius:9999px;
+  background:rgba(15,17,21,0.95);border:1px solid rgba(255,255,255,0.10);
+  color:#f5f5f5;font-weight:500;font-size:.8125rem;
+  box-shadow:0 8px 32px rgba(0,0,0,.6);
+  backdrop-filter:blur(20px);
   transform:translateY(80px);opacity:0;
   transition:all 340ms var(--ease);
   z-index:200;
@@ -1075,32 +1470,32 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
 /* ── Auth User Badge ────────────────────────────────────────── */
 .auth-user{
   display:inline-flex;align-items:center;gap:8px;
-  padding:10px 18px;border-radius:var(--radius-btn);
-  background:var(--btn-bg);border:1px solid var(--border);
-  box-shadow:var(--shadow-sm);
-  font-size:.875rem;font-weight:500;color:var(--text-muted);
+  padding:10px 18px;border-radius:12px;
+  background:rgba(0,0,0,0.40);border:1px solid rgba(255,255,255,0.10);
+  font-size:.8125rem;font-weight:500;color:#71717a;
 }
-.auth-user span{color:var(--text-heading);font-weight:600}
+.auth-user span{color:#f5f5f5;font-weight:600}
 
 /* ── Product Portfolio ──────────────────────────────────────── */
 .portfolio{margin-top:48px}
 .portfolio-heading{display:flex;align-items:baseline;gap:14px;margin-bottom:24px}
-.portfolio-heading h2{font-size:1.25rem;font-weight:700;letter-spacing:-.02em;color:var(--text-heading)}
-.portfolio-heading p{font-size:.75rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)}
+.portfolio-heading h2{font-family:var(--font-heading);font-size:1.5rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:#f5f5f5}
+.portfolio-heading p{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:#71717a}
 .portfolio-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
   gap:16px;
 }
 .product-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  box-shadow:var(--shadow-card);
-  border-radius:var(--radius);
+  background:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter:blur(28px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
+  border-radius:16px;
   padding:24px 22px;
   transition:all var(--duration) var(--ease);
 }
-.product-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-1px)}
+.product-card:hover{transform:translateY(-1px);border-color:rgba(255,255,255,0.14)}
 .product-icon{
   width:40px;height:40px;border-radius:12px;
   background:var(--product-icon-bg);border:1px solid var(--product-icon-border);
@@ -1108,8 +1503,8 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
   margin-bottom:14px;
 }
 .product-icon svg{width:18px;height:18px;fill:none;stroke:var(--product-icon-stroke);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.product-name{font-size:1rem;font-weight:600;color:var(--text-heading);margin-bottom:5px;letter-spacing:-.01em}
-.product-desc{font-size:.8125rem;color:var(--text-muted);line-height:1.5;margin-bottom:14px}
+.product-name{font-size:1rem;font-weight:600;color:#f5f5f5;margin-bottom:5px;letter-spacing:-.01em}
+.product-desc{font-size:.8125rem;color:#71717a;line-height:1.5;margin-bottom:14px}
 .product-status{
   display:inline-flex;align-items:center;gap:5px;
   font-size:.7rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;
@@ -1200,17 +1595,18 @@ body[data-theme="dark"] .card-action-btn.delete:hover{background:rgba(248,113,11
 
 /* ── Agency Card Specifics ────────────────────────────────── */
 .agency-card{
-  background:var(--bg-card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-card);
+  background:linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter:blur(28px) saturate(140%);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.06), 0 30px 80px -30px rgba(0,0,0,0.75);
   padding:22px;cursor:grab;
   transition:all var(--duration) var(--ease);
   position:relative;
 }
-.agency-card:hover{box-shadow:var(--shadow-card-hover);transform:translateY(-1px)}
+.agency-card:hover{transform:translateY(-1px);border-color:rgba(255,255,255,0.14)}
 .agency-card.dragging{opacity:.4}
-.agency-card .agency-name{font-weight:600;font-size:1.1rem;margin-bottom:3px;color:var(--text-heading);letter-spacing:-.01em;line-height:1.3}
+.agency-card .agency-name{font-weight:600;font-size:1.1rem;margin-bottom:3px;color:#f5f5f5;letter-spacing:-.01em;line-height:1.3}
 .agency-card .agency-sub{font-size:.8125rem;color:var(--text-muted);margin-bottom:10px;line-height:1.4}
 .agency-card .agency-phone{
   display:inline-flex;align-items:center;gap:6px;
@@ -1469,30 +1865,399 @@ body[data-theme="dark"] .clay-textarea::selection{background:rgba(255,255,255,0.
   .qa-row{grid-template-columns:1fr}
   .qa-field.span-2{grid-column:span 1}
 }
+
+/* ── Scroll FAB (draggable floating action button) ──────────── */
+.scroll-fab{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  z-index:9000;
+  background:#0f0f10;
+  color:#ededed;
+  border:1px solid rgba(255,255,255,0.07);
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  box-shadow:0 4px 14px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3);
+  transition:transform 180ms var(--ease), box-shadow 180ms var(--ease), background 180ms var(--ease), opacity 180ms var(--ease);
+  touch-action:none;
+  user-select:none;
+  -webkit-user-select:none;
+  padding:0;
+  opacity:1;
+}
+.scroll-fab[hidden]{display:none !important}
+.scroll-fab:hover{
+  transform:scale(1.06);
+  box-shadow:0 6px 18px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.35);
+  background:#171719;
+}
+.scroll-fab:active{transform:scale(0.96)}
+.scroll-fab.is-dragging{
+  cursor:grabbing;
+  transform:scale(1.08);
+  box-shadow:0 10px 28px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.08);
+  transition:none;
+}
+.scroll-fab__icon{
+  display:block;
+  transition:transform 240ms var(--ease);
+}
+.scroll-fab[data-dir="down"] .scroll-fab__icon{transform:rotate(180deg)}
+body[data-theme="dark"] .scroll-fab{
+  background:#0f0f10;
+  color:#ededed;
+  border:1px solid rgba(255,255,255,0.07);
+  box-shadow:0 4px 14px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3);
+}
+body[data-theme="dark"] .scroll-fab:hover{
+  background:#171719;
+  box-shadow:0 6px 18px rgba(0,0,0,0.6), 0 2px 4px rgba(0,0,0,0.35);
+}
+
+/* ── Activity Feed Panel ── */
+.activity-fab{
+  position:fixed; right:24px; bottom:80px; z-index:90;
+  width:44px; height:44px; border-radius:50%;
+  background:#0d0d0f; color:#ededed;
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 4px 14px rgba(0,0,0,0.5);
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; font-size:18px;
+  transition:transform .15s ease, background .15s ease;
+}
+.activity-fab:hover{background:#171719; transform:translateY(-1px);}
+.activity-fab .activity-dot{
+  position:absolute; top:6px; right:6px;
+  width:8px; height:8px; border-radius:50%;
+  background:#34d399; box-shadow:0 0 6px rgba(52,211,153,0.7);
+}
+body:not([data-theme="dark"]) .activity-fab{background:#0d0d0f; color:#ededed; border-color:rgba(255,255,255,0.08);}
+body:not([data-theme="dark"]) .activity-fab:hover{background:#171719;}
+
+.activity-panel{
+  position:fixed; right:24px; bottom:136px; z-index:91;
+  width:360px; max-height:480px;
+  background:rgba(13,13,15,0.92); backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px; padding:16px;
+  display:none; flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  color:#ededed;
+}
+.activity-panel.visible{display:flex;}
+body:not([data-theme="dark"]) .activity-panel{
+  background:rgba(13,13,15,0.92); color:#ededed; border-color:rgba(255,255,255,0.08);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+.activity-panel h3{
+  margin:0 0 12px; font-size:13px; font-weight:600;
+  letter-spacing:.04em; text-transform:uppercase;
+  color:#a1a1a6;
+}
+.activity-list{flex:1; overflow-y:auto; padding-right:4px;}
+.activity-item{
+  font-size:13px; line-height:1.45;
+  padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.activity-item:last-child{border-bottom:none;}
+.activity-actor{font-weight:600; color:#fff;}
+body:not([data-theme="dark"]) .activity-actor{color:#ededed;}
+.activity-time{color:#86868b; font-size:11px; margin-top:2px;}
+body:not([data-theme="dark"]) .activity-item{border-bottom-color:rgba(255,255,255,0.04);}
+
+.actor-pill{
+  position:fixed; top:20px; right:24px; z-index:95;
+  padding:6px 12px; border-radius:999px;
+  background:rgba(13,13,15,0.7); color:#ededed;
+  border:1px solid rgba(255,255,255,0.08);
+  font-size:12px; font-weight:500; letter-spacing:.02em;
+  cursor:pointer; backdrop-filter:blur(10px);
+}
+.actor-pill:hover{background:rgba(13,13,15,0.9);}
+body:not([data-theme="dark"]) .actor-pill{
+  background:rgba(13,13,15,0.7); color:#ededed; border-color:rgba(255,255,255,0.08);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SIDEBAR NAV — HL Live Admin pattern (264px fixed left column)
+   ══════════════════════════════════════════════════════════════ */
+.crm-shell{display:flex;min-height:100vh;position:relative;z-index:1}
+
+.crm-sidebar{
+  position:fixed;top:0;left:0;bottom:0;
+  width:264px;
+  background:#07080c;
+  border-right:1px solid rgba(255,255,255,0.08);
+  display:flex;flex-direction:column;
+  z-index:50;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.crm-sidebar__header{
+  display:flex;align-items:center;gap:12px;
+  padding:20px 20px 16px;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  flex-shrink:0;
+}
+.crm-sidebar__header img{
+  width:36px;height:36px;border-radius:10px;
+  object-fit:contain;filter:brightness(10);flex-shrink:0;
+}
+.crm-sidebar__header-text h1{
+  font-family:var(--font-heading);
+  font-size:1rem;font-weight:400;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:#f5f5f5;line-height:1.2;margin:0;
+}
+.crm-sidebar__header-text p{
+  font-size:9px;color:#71717a;font-weight:400;
+  letter-spacing:0.25em;text-transform:uppercase;margin:0;
+}
+.crm-sidebar__nav{flex:1;padding:16px 8px;overflow-y:auto}
+.crm-sidebar__nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.crm-sidebar__nav-item{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 14px;border-radius:10px;
+  font-size:0.8125rem;font-weight:500;
+  letter-spacing:0.02em;
+  color:#a1a1aa;cursor:pointer;
+  transition:all 180ms var(--ease);
+  border:none;background:transparent;width:100%;
+  text-align:left;border-left:2px solid transparent;
+  font-family:inherit;
+}
+.crm-sidebar__nav-item:hover{
+  color:#f5f5f5;background:rgba(255,255,255,0.04);
+}
+.crm-sidebar__nav-item.active{
+  color:#f5f5f5;
+  background:rgba(255,255,255,0.08);
+  border-left-color:#ec4899;
+}
+.crm-sidebar__nav-item svg{
+  width:15px;height:15px;flex-shrink:0;
+  stroke:currentColor;fill:none;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.crm-sidebar__sep{
+  height:1px;background:rgba(255,255,255,0.06);
+  margin:8px 14px;
+}
+
+/* Main content area: offset by sidebar width */
+.crm-main{
+  flex:1;
+  margin-left:264px;
+  min-height:100vh;
+  position:relative;
+}
+
+/* Section visibility */
+.crm-section{display:none}
+.crm-section.active{display:block}
+
+/* Dashboard section title in header area */
+.crm-header-bar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 0 24px;margin-bottom:0;gap:16px;flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  margin-bottom:24px;
+}
+.crm-header-bar h1{
+  font-family:var(--font-heading);
+  font-size:1.35rem;font-weight:400;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:#f5f5f5;margin:0;
+}
+.crm-header-bar .header-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* Mobile hamburger */
+.crm-hamburger{
+  display:none;
+  position:fixed;top:16px;left:16px;z-index:60;
+  width:44px;height:44px;border-radius:12px;
+  background:rgba(7,8,12,0.92);
+  border:1px solid rgba(255,255,255,0.10);
+  color:#f5f5f5;cursor:pointer;
+  align-items:center;justify-content:center;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 4px 14px rgba(0,0,0,0.4);
+  transition:all 180ms var(--ease);
+}
+.crm-hamburger:hover{background:rgba(255,255,255,0.08)}
+.crm-hamburger svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.crm-sidebar__close{
+  display:none;
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;border-radius:8px;
+  background:transparent;border:1px solid rgba(255,255,255,0.12);
+  color:#a1a1aa;cursor:pointer;
+  align-items:center;justify-content:center;
+  font-size:16px;
+  transition:all 180ms var(--ease);
+}
+.crm-sidebar__close:hover{color:#f5f5f5;background:rgba(255,255,255,0.06)}
+
+/* Sidebar overlay for mobile */
+.crm-sidebar-overlay{
+  display:none;
+  position:fixed;inset:0;z-index:49;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}
+.crm-sidebar-overlay.visible{display:block}
+
+/* Settings section content */
+.settings-grid{display:flex;flex-direction:column;gap:20px;max-width:480px}
+.settings-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 20px;
+  background:var(--bg-card-flat);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+.settings-row label{font-size:.875rem;font-weight:500;color:var(--text-dim)}
+
+/* Prospects table view */
+.prospects-table{width:100%;border-collapse:separate;border-spacing:0}
+.prospects-table th{
+  text-align:left;padding:10px 14px;
+  font-size:10px;text-transform:uppercase;letter-spacing:0.18em;
+  color:#71717a;font-weight:500;
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;background:var(--bg);z-index:2;
+}
+.prospects-table td{
+  padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.04);
+  font-size:.8125rem;color:var(--text-dim);
+  vertical-align:middle;
+}
+.prospects-table tr:hover td{background:rgba(255,255,255,0.02)}
+.prospects-table .pt-name{color:#f5f5f5;font-weight:600;font-size:.875rem}
+.prospects-table .pt-stage{
+  display:inline-block;padding:3px 10px;border-radius:9999px;
+  font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(255,255,255,0.04);color:var(--text-dim);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+/* Import section — full-width card */
+.import-section-card{
+  background:var(--bg-card-flat);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:32px;
+  max-width:680px;
+}
+
+@media(max-width:1024px){
+  .crm-sidebar{
+    transform:translateX(-100%);
+    transition:transform 280ms var(--ease);
+    z-index:55;
+  }
+  .crm-sidebar.open{transform:translateX(0)}
+  .crm-sidebar__close{display:flex}
+  .crm-hamburger{display:flex}
+  .crm-main{margin-left:0}
+  .crm-main .app{padding-top:68px}
+}
 </style>
+<!-- Supabase shared backend wiring -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.46.1/dist/umd/supabase.min.js"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase-client.js"></script>
 </head>
 <body>
 
 <!-- Starfield Canvas (dark mode only) -->
 <canvas id="starfield"></canvas>
 
-<div class="app">
+<!-- DB reconnecting banner (shown only when HLDB unavailable) -->
+<div class="db-banner" id="dbBanner" role="status" aria-live="polite" hidden>
+  <span class="db-banner-spinner" aria-hidden="true"></span>
+  <span class="db-banner-text">Reconnecting to database…</span>
+  <button class="db-banner-dismiss" type="button" aria-label="Dismiss" onclick="dismissDbBanner()">&times;</button>
+</div>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="brand">
-      <img src="logo.webp" alt="HL" class="brand-icon">
-      <div>
+<!-- Mobile hamburger -->
+<button class="crm-hamburger" id="crmHamburger" onclick="toggleCrmSidebar()" aria-label="Open navigation">
+  <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+<div class="crm-sidebar-overlay" id="crmSidebarOverlay" onclick="closeCrmSidebar()"></div>
+
+<div class="crm-shell">
+  <!-- ═══════ SIDEBAR ═══════ -->
+  <aside class="crm-sidebar" id="crmSidebar">
+    <button class="crm-sidebar__close" id="crmSidebarClose" onclick="closeCrmSidebar()" aria-label="Close navigation">&times;</button>
+    <div class="crm-sidebar__header">
+      <img src="logo.webp" alt="HL">
+      <div class="crm-sidebar__header-text">
         <h1>HighLife DMV</h1>
         <p>Podcast Studio CRM</p>
       </div>
     </div>
+    <nav class="crm-sidebar__nav">
+      <ul>
+        <li><button class="crm-sidebar__nav-item active" data-section="dashboard" onclick="switchSection('dashboard')">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Dashboard
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="pipeline" onclick="switchSection('pipeline')">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="5" height="18" rx="1"/><rect x="10" y="8" width="5" height="13" rx="1"/><rect x="17" y="5" width="5" height="16" rx="1"/></svg>
+          Pipeline
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="prospects" onclick="switchSection('prospects')">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Prospects
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="agencies" onclick="switchSection('agencies')">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Agencies
+        </button></li>
+        <li><div class="crm-sidebar__sep"></div></li>
+        <li><button class="crm-sidebar__nav-item" data-section="portfolio" onclick="switchSection('portfolio')">
+          <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          Portfolio
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="templates" onclick="switchSection('templates')">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Templates
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="import" onclick="switchSection('import')">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Import
+        </button></li>
+        <li><button class="crm-sidebar__nav-item" data-section="clay" onclick="switchSection('clay')">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg>
+          Clay Panel
+        </button></li>
+        <li><div class="crm-sidebar__sep"></div></li>
+        <li><button class="crm-sidebar__nav-item" data-section="settings" onclick="switchSection('settings')">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Settings
+        </button></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ═══════ MAIN CONTENT ═══════ -->
+  <div class="crm-main">
+<div class="app">
+
+  <!-- Header bar (replaces old header) -->
+  <div class="crm-header-bar">
+    <h1 id="crmSectionTitle">Dashboard</h1>
     <div class="header-actions">
-      <!-- View Toggle -->
-      <div class="view-toggle" id="viewToggle">
-        <button class="view-toggle-btn active" data-view="clients" onclick="switchView('clients')">Clients</button>
-        <button class="view-toggle-btn" data-view="agency" onclick="switchView('agency')">Agency</button>
-      </div>
       <a href="https://highlife-playlists.vercel.app" target="_blank" class="btn btn-sm" style="gap:5px;font-size:.75rem" title="Playlist Intel">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         Playlist Intel
@@ -1508,9 +2273,42 @@ body[data-theme="dark"] .clay-textarea::selection{background:rgba(255,255,255,0.
         </svg>
       </button>
     </div>
-  </header>
+  </div>
 
-  <!-- ═══════════════ CLIENTS VIEW ═══════════════ -->
+  <!-- Hidden view-toggle for JS compatibility -->
+  <div class="view-toggle" id="viewToggle" style="display:none">
+    <button class="view-toggle-btn active" data-view="clients" onclick="switchView('clients')">Clients</button>
+    <button class="view-toggle-btn" data-view="agency" onclick="switchView('agency')">Agency</button>
+  </div>
+
+  <!-- ═══════════════ SECTION: DASHBOARD ═══════════════ -->
+  <div class="crm-section active" data-section="dashboard" id="sectionDashboard">
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-label">Total Prospects</div>
+        <div class="stat-value" id="stat-total-dash">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">In Pipeline</div>
+        <div class="stat-value indigo" id="stat-pipeline-dash">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Converted</div>
+        <div class="stat-value green" id="stat-converted-dash">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Revenue Potential</div>
+        <div class="stat-value rose" id="stat-revenue-dash">$0</div>
+      </div>
+    </div>
+    <div style="margin-top:16px">
+      <h2 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:#f5f5f5;margin-bottom:16px">Recent Activity</h2>
+      <div id="dashboardActivity" style="display:flex;flex-direction:column;gap:10px"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SECTION: PIPELINE ═══════════════ -->
+  <div class="crm-section" data-section="pipeline" id="sectionPipeline">
   <div id="clientsView">
     <!-- Stats -->
     <div class="stats-bar">
@@ -1548,6 +2346,12 @@ body[data-theme="dark"] .clay-textarea::selection{background:rgba(255,255,255,0.
       </select>
       <select class="filter-select" id="filterPackage" onchange="renderBoard()">
         <option value="">All Packages</option>
+      </select>
+      <select class="filter-select sort-select" id="sortBy" onchange="onSortChange()" title="Sort prospects" aria-label="Sort prospects">
+        <option value="recent">Recently modified</option>
+        <option value="name_asc">Name A→Z</option>
+        <option value="name_desc">Name Z→A</option>
+        <option value="status">Status</option>
       </select>
       <button class="btn" onclick="exportData()">
         <svg viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5A1.1 1.1 0 0 0 2.1 14h11.8a1.1 1.1 0 0 0 1.1-1.1V10.4a.5.5 0 0 1 1 0v2.5A2.1 2.1 0 0 1 13.9 15H2.1A2.1 2.1 0 0 1 0 12.9V10.4a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
@@ -1644,9 +2448,38 @@ body[data-theme="dark"] .clay-textarea::selection{background:rgba(255,255,255,0.
 
     <!-- Kanban Board -->
     <div class="board" id="board"></div>
+  </div><!-- /clientsView -->
+  </div><!-- /sectionPipeline -->
 
-    <!-- Product Portfolio -->
-    <section class="portfolio">
+  <!-- ═══════════════ SECTION: PROSPECTS (list view) ═══════════════ -->
+  <div class="crm-section" data-section="prospects" id="sectionProspects">
+    <div class="toolbar">
+      <input type="text" class="search-box" id="prospectsSearchInput" placeholder="Search all prospects..." oninput="renderProspectsTable()">
+      <select class="filter-select" id="prospectsFilterStatus" onchange="renderProspectsTable()">
+        <option value="">All Stages</option>
+        <option value="prospect">Prospect</option>
+        <option value="added_to_crm">Added to CRM</option>
+        <option value="contacted">Contacted</option>
+        <option value="tour_booked">Tour Booked</option>
+        <option value="demo">Demo</option>
+        <option value="client">Client</option>
+        <option value="lost">Lost</option>
+        <option value="graveyard">Graveyard</option>
+      </select>
+      <select class="filter-select" id="prospectsFilterPackage" onchange="renderProspectsTable()">
+        <option value="">All Packages</option>
+      </select>
+      <button class="btn btn-primary" onclick="openModal()">
+        <svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
+        Add Prospect
+      </button>
+    </div>
+    <div id="prospectsTableContainer" style="overflow-x:auto"></div>
+  </div>
+
+  <!-- ═══════════════ SECTION: PORTFOLIO ═══════════════ -->
+  <div class="crm-section" data-section="portfolio" id="sectionPortfolio">
+    <section class="portfolio" style="margin-top:0">
       <div class="portfolio-heading">
         <h2>Product Portfolio</h2>
         <p>HighLife Services</p>
@@ -1714,8 +2547,10 @@ body[data-theme="dark"] .clay-textarea::selection{background:rgba(255,255,255,0.
         </div>
       </div>
     </section>
-  </div>
+  </div><!-- /sectionPortfolio -->
 
+  <!-- ═══════════════ SECTION: AGENCIES ═══════════════ -->
+  <div class="crm-section" data-section="agencies" id="sectionAgencies">
   <!-- ═══════════════ AGENCY VIEW ═══════════════ -->
   <div id="agencyView" style="display:none">
     <!-- Agency Stats -->
@@ -1885,8 +2720,107 @@ James</pre>
     <!-- Agency Kanban Board -->
     <div class="board" id="agencyBoard"></div>
   </div>
+  </div><!-- /sectionAgencies -->
 
-</div>
+  <!-- ═══════════════ SECTION: TEMPLATES ═══════════════ -->
+  <div class="crm-section" data-section="templates" id="sectionTemplates">
+    <div style="max-width:680px">
+      <h2 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:#f5f5f5;margin-bottom:20px">Outreach Templates</h2>
+      <div class="template-block" style="display:block;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-sm);padding:18px;margin-bottom:16px">
+        <h3 style="font-size:.875rem;font-weight:600;color:var(--text-heading);margin-bottom:10px;letter-spacing:-.01em">Call Opener</h3>
+        <pre id="callTemplateSidebar" style="font-family:var(--font-display);font-size:.8125rem;color:var(--text-dim);line-height:1.6;white-space:pre-wrap;word-wrap:break-word;margin-bottom:12px">Hey, this is James from HighLife Studios in DC. We work with agencies that need podcast, interview, and thought-leadership content production for their clients. I wanted to see if you ever partner with outside studios for client work.</pre>
+        <div class="template-actions" style="display:flex;gap:8px">
+          <button class="btn btn-sm" onclick="copyTemplate('callTemplateSidebar')">Copy</button>
+        </div>
+      </div>
+      <div class="template-block" style="display:block;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-sm);padding:18px;margin-bottom:16px">
+        <h3 style="font-size:.875rem;font-weight:600;color:var(--text-heading);margin-bottom:10px;letter-spacing:-.01em">Email Template</h3>
+        <pre id="emailTemplateSidebar" style="font-family:var(--font-display);font-size:.8125rem;color:var(--text-dim);line-height:1.6;white-space:pre-wrap;word-wrap:break-word;margin-bottom:12px">Subject: DC content production partner for your agency
+
+Hey {{first_name or team}},
+
+I'm James from HighLife Studios, a podcast and video production studio in DC.
+
+We're reaching out to PR, marketing, and public affairs firms that may need a reliable production partner for client podcasts, executive interviews, thought-leadership clips, and branded content.
+
+The idea is simple: your agency can offer the service to clients without hiring a production team or building a studio. We can work as a referral partner, white-label production team, or co-branded studio partner.
+
+Would it be worth a quick conversation?
+
+Best,
+James</pre>
+        <div class="template-actions" style="display:flex;gap:8px">
+          <button class="btn btn-sm" onclick="copyTemplate('emailTemplateSidebar')">Copy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SECTION: IMPORT ═══════════════ -->
+  <div class="crm-section" data-section="import" id="sectionImport">
+    <div class="import-section-card">
+      <h2 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:#f5f5f5;margin-bottom:16px">Import Agencies from CSV</h2>
+      <p style="color:var(--text-muted);font-size:.875rem;margin-bottom:20px">Select a CSV file with columns: Company Name, Website, Phone, Email, LinkedIn, Category, City, State, Notes, Source</p>
+      <input type="file" id="csvFileInputSidebar" accept=".csv" onchange="handleCsvFile(event)" style="display:none">
+      <button class="btn btn-primary" onclick="document.getElementById('csvFileInputSidebar').click()">
+        <svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:currentColor"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5A1.1 1.1 0 0 0 2.1 14h11.8a1.1 1.1 0 0 0 1.1-1.1V10.4a.5.5 0 0 1 1 0v2.5A2.1 2.1 0 0 1 13.9 15H2.1A2.1 2.1 0 0 1 0 12.9V10.4a.5.5 0 0 1 .5-.5z"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+        Choose CSV File
+      </button>
+      <div id="csvSidebarPreview" style="margin-top:20px"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SECTION: CLAY ═══════════════ -->
+  <div class="crm-section" data-section="clay" id="sectionClay">
+    <div style="max-width:800px">
+      <div class="clay-panel" style="display:block;margin-top:0">
+        <div class="clay-panel-header">
+          <h3 style="font-size:.875rem;font-weight:600;color:var(--text-heading);letter-spacing:-.01em">New Prospects for Clay</h3>
+          <button class="clay-panel-refresh" onclick="refreshClayPanel()" title="Refresh list">
+            <svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </button>
+        </div>
+        <div id="clayContentSidebar"></div>
+        <div class="clay-actions" id="clayActionsSidebar" style="display:none">
+          <button class="btn btn-primary" onclick="copyClayToClipboard()">
+            <svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:currentColor"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
+            Copy to Clipboard
+          </button>
+          <button class="btn" onclick="markAllPushedToClay()">
+            <svg viewBox="0 0 16 16" style="width:14px;height:14px;fill:currentColor"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>
+            Mark All as Pushed
+          </button>
+        </div>
+        <div class="clay-hint" style="display:none">Pushed to Clay? Click "Mark All as Pushed" so they don't show tomorrow.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ SECTION: SETTINGS ═══════════════ -->
+  <div class="crm-section" data-section="settings" id="sectionSettings">
+    <div class="settings-grid">
+      <div class="settings-row">
+        <label>Theme</label>
+        <button class="btn btn-sm" onclick="toggleTheme()">Toggle Dark / Light</button>
+      </div>
+      <div class="settings-row">
+        <label>Export Prospect Data</label>
+        <button class="btn btn-sm" onclick="exportData()">Export JSON</button>
+      </div>
+      <div class="settings-row">
+        <label>Export Feedback</label>
+        <button class="btn btn-sm" onclick="exportFeedback()">Export Feedback</button>
+      </div>
+      <div class="settings-row">
+        <label>Export Agency Data</label>
+        <button class="btn btn-sm" onclick="exportAgencyData()">Export JSON</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.app -->
+  </div><!-- /.crm-main -->
+</div><!-- /.crm-shell -->
 
 <!-- Add/Edit Prospect Modal -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOverlay(event)">
@@ -2166,6 +3100,28 @@ James</pre>
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<!-- Actor identity pill (top-right) -->
+<button class="actor-pill" id="actorPill" onclick="promptActor()" title="Switch user">Who are you?</button>
+
+<!-- Activity feed (right side) -->
+<div class="activity-panel" id="activityPanel" aria-hidden="true">
+  <h3>Recent activity</h3>
+  <div class="activity-list" id="activityList"></div>
+</div>
+<button class="activity-fab" id="activityFab" onclick="toggleActivityPanel()" aria-label="Activity feed" title="Activity feed">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+  </svg>
+  <span class="activity-dot" id="activityDot"></span>
+</button>
+
+<!-- Scroll FAB (draggable) -->
+<button class="scroll-fab" id="scroll-fab" type="button" aria-label="Scroll to top or bottom" hidden>
+  <svg class="scroll-fab__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+    <path d="M12 5v14M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
 <script>
 /* ══════════════════════════════════════════════════════════════
    THEME
@@ -2289,21 +3245,22 @@ function switchView(view) {
   document.getElementById('clientsView').style.display = view === 'clients' ? '' : 'none';
   document.getElementById('agencyView').style.display = view === 'agency' ? '' : 'none';
   // Glassmorphic mesh-gradient backdrop active on prospects (clients) view.
-  // The glass design is intentionally light (Picasso/James greenlight 2026-05-18):
-  // force light theme on entry, restore user's saved theme when leaving.
+  // The glass design ships in BOTH light and dark variants (James greenlight
+  // 2026-05-18 Telegram #3113/#3115 — "make it black since background is on
+  // white for dark mode then light mode for what you have now"). Respect the
+  // user's saved theme on every view; only the glass-bg flag differs.
+  const savedTheme = localStorage.getItem('theme') || 'dark';
   if (view === 'clients') {
     document.body.setAttribute('data-glass-bg', '1');
-    document.body.removeAttribute('data-theme');
-    if (typeof stopStarfield === 'function') stopStarfield();
   } else {
     document.body.setAttribute('data-glass-bg', '0');
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    if (savedTheme === 'dark') {
-      document.body.setAttribute('data-theme', 'dark');
-      if (typeof startStarfield === 'function') startStarfield();
-    } else {
-      document.body.removeAttribute('data-theme');
-    }
+  }
+  if (savedTheme === 'dark') {
+    document.body.setAttribute('data-theme', 'dark');
+    if (typeof startStarfield === 'function') startStarfield();
+  } else {
+    document.body.removeAttribute('data-theme');
+    if (typeof stopStarfield === 'function') stopStarfield();
   }
   if (view === 'agency') {
     renderAgencyBoard();
@@ -2342,56 +3299,78 @@ const PACKAGES = [
   { name: 'Studio Membership',     price: 500, label: 'Studio Membership ($500/mo)' },
 ];
 
-const STORAGE_KEY = 'highlife_crm_prospects';
+const STORAGE_KEY = 'highlife_crm_prospects';  // legacy — wiped on first HLDB load, never read/written again
+const SORT_PREF_KEY = 'hl_crm_sort_by';
 
+// ── DB reconnecting banner + write queue ─────────────────────────────
+// If HLDB isn't available at read time, we refuse to serve stale
+// localStorage. Show a banner, return [], and let HLDB's async load
+// repopulate the cache. Writes get queued in memory until HLDB shows up.
+const __hlWriteQueue = [];
+function showDbBanner() {
+  const el = document.getElementById('dbBanner');
+  if (!el || el.dataset.dismissed === '1') return;
+  el.hidden = false;
+  requestAnimationFrame(() => el.classList.add('show'));
+}
+function hideDbBanner() {
+  const el = document.getElementById('dbBanner');
+  if (!el) return;
+  el.classList.remove('show');
+  setTimeout(() => { el.hidden = true; }, 320);
+}
+function dismissDbBanner() {
+  const el = document.getElementById('dbBanner');
+  if (!el) return;
+  el.dataset.dismissed = '1';
+  hideDbBanner();
+}
+function flushWriteQueue() {
+  if (!window.HLDB || !__hlWriteQueue.length) return;
+  while (__hlWriteQueue.length) {
+    const data = __hlWriteQueue.shift();
+    window.HLDB.setProspects(data);
+  }
+}
+
+// ── Supabase-backed prospects ────────────────────────────────────────
+// HLDB is defined in supabase-client.js. The UI keeps its synchronous
+// loadProspects()/saveProspects(arr) contract; HLDB caches in memory and
+// debounces writes to Supabase (300ms) and polls peers every 30s.
+//
+// No localStorage fallback for prospect data — stale local copies were
+// silently overriding fresh DB state for some team-members (Liam couldn't
+// see Jaco's seller assignments). When HLDB is unavailable we surface a
+// banner and serve an empty list rather than drift.
 function loadProspects() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
-  catch { return []; }
+  if (window.HLDB) return window.HLDB.getProspects();
+  showDbBanner();
+  return [];
 }
 function saveProspects(data) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  if (window.HLDB) { window.HLDB.setProspects(data); return; }
+  // Queue the write so it doesn't get dropped if HLDB shows up after boot.
+  __hlWriteQueue.push(data);
+  showDbBanner();
 }
 function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
 
-/* ── Seed data loader ── */
-async function loadSeedData() {
-  try {
-    const res = await fetch('prospects.json');
-    if (!res.ok) return;
-    const seed = await res.json();
-    const existing = loadProspects();
-    const existingById = new Map(existing.map(p => [p.id, p]));
-    let added = 0;
-    let backfilled = 0;
-    const backfillFields = ['email', 'phone'];
-    seed.forEach(p => {
-      const current = existingById.get(p.id);
-      if (!current) {
-        existing.push(p);
-        added++;
-      } else {
-        backfillFields.forEach(f => {
-          if (!current[f] && p[f]) {
-            current[f] = p[f];
-            backfilled++;
-          }
-        });
-      }
-    });
-    if (added > 0 || backfilled > 0) {
-      saveProspects(existing);
-      renderBoard();
-    }
-  } catch (e) {}
-}
+/* ── Seed data loader ──
+   No-op now that Supabase is the source of truth. prospects.json was
+   already mirrored into the DB during the May-20 migration; future seeds
+   happen server-side via _migrate_seed.py if/when prospects.json gets
+   regenerated by the cron jobs. */
+async function loadSeedData() { return; }
 
 /* ── Init dropdowns ── */
 function initDropdowns() {
   const pkgSelect = document.getElementById('f-package');
   const filterPkg = document.getElementById('filterPackage');
+  const prospectsPkg = document.getElementById('prospectsFilterPackage');
   PACKAGES.forEach(p => {
     pkgSelect.innerHTML += `<option value="${p.name}">${p.label}</option>`;
     filterPkg.innerHTML += `<option value="${p.name}">${p.name}</option>`;
+    if (prospectsPkg) prospectsPkg.innerHTML += `<option value="${p.name}">${p.name}</option>`;
   });
 }
 
@@ -2410,6 +3389,44 @@ function updateStats() {
   document.getElementById('stat-revenue').textContent = '$' + revenue.toLocaleString();
 }
 
+/* ── Sort helpers ── */
+const STATUS_SORT_ORDER = {
+  prospect: 0, added_to_crm: 1, contacted: 2, tour_booked: 3,
+  demo: 4, client: 5, lost: 6, graveyard: 7,
+};
+function getSortPref() {
+  return localStorage.getItem(SORT_PREF_KEY) || 'recent';
+}
+function sortProspects(list, mode) {
+  const arr = list.slice();
+  if (mode === 'name_asc') {
+    arr.sort((a, b) => (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' }));
+  } else if (mode === 'name_desc') {
+    arr.sort((a, b) => (b.name || '').localeCompare(a.name || '', undefined, { sensitivity: 'base' }));
+  } else if (mode === 'status') {
+    arr.sort((a, b) => {
+      const sa = STATUS_SORT_ORDER[a.status] ?? 99;
+      const sb = STATUS_SORT_ORDER[b.status] ?? 99;
+      if (sa !== sb) return sa - sb;
+      return (a.name || '').localeCompare(b.name || '', undefined, { sensitivity: 'base' });
+    });
+  } else {
+    // "recent" — most-recently-updated first, fall back to createdAt
+    arr.sort((a, b) => {
+      const ta = Date.parse(a.updatedAt || a.createdAt || 0) || 0;
+      const tb = Date.parse(b.updatedAt || b.createdAt || 0) || 0;
+      return tb - ta;
+    });
+  }
+  return arr;
+}
+function onSortChange() {
+  const sel = document.getElementById('sortBy');
+  if (!sel) return;
+  localStorage.setItem(SORT_PREF_KEY, sel.value);
+  renderBoard();
+}
+
 /* ── Render Board ── */
 function renderBoard() {
   const board = document.getElementById('board');
@@ -2417,6 +3434,7 @@ function renderBoard() {
   const search = document.getElementById('searchInput').value.toLowerCase();
   const filterStatus = document.getElementById('filterStatus').value;
   const filterPkg = document.getElementById('filterPackage').value;
+  const sortMode = getSortPref();
 
   let filtered = all;
   if (search) filtered = filtered.filter(p =>
@@ -2426,6 +3444,8 @@ function renderBoard() {
   );
   if (filterStatus) filtered = filtered.filter(p => p.status === filterStatus);
   if (filterPkg) filtered = filtered.filter(p => p.package === filterPkg);
+
+  filtered = sortProspects(filtered, sortMode);
 
   board.innerHTML = COLUMNS.map(col => {
     const cards = filtered.filter(p => p.status === col.id);
@@ -2476,6 +3496,15 @@ function socialIcon(kind, url, status) {
     state = url ? 'valid' : 'missing';
   }
   const labelSpan = `<span class="glass-soc-label">${label}</span>`;
+  // LinkedIn cannot be machine-verified: validate_links.py only does a
+  // syntactic check (LinkedIn blocks all unauthed crawlers, returns an
+  // identical login wall for valid and dead profiles). So "valid" here means
+  // "well-formed URL", NOT "profile confirmed to exist". Render it in a
+  // neutral UNVERIFIED state — still clickable, but never styled as confirmed.
+  if (kind === 'linkedin' && state === 'valid' && url) {
+    const liTip = 'LinkedIn not verified — LinkedIn blocks automated checks. Click to open and confirm manually.';
+    return `<a href="${esc(url)}" target="_blank" rel="noopener" class="social-icon social-icon--${kind} social-icon--unverified" onclick="event.stopPropagation()" title="${liTip}" aria-label="${label} (unverified — not checked)">${svg}${labelSpan}<span class="soc-unverified-tag" aria-hidden="true">unverified</span></a>`;
+  }
   if (state === 'valid' && url) {
     return `<a href="${esc(url)}" target="_blank" rel="noopener" class="social-icon social-icon--${kind}" onclick="event.stopPropagation()" title="${label}" aria-label="${label}">${svg}${labelSpan}</a>`;
   }
@@ -2524,8 +3553,8 @@ function cardHTML(p, i = 0) {
   const initials = glassInitials(p.name);
   const stageLabel = glassStageLabel(p.status);
 
-  // --i drives the per-card stagger delay in .prospect-card CSS.
-  // Cap at 12 so columns with 50+ cards don't make the user wait ~2s for the bottom.
+  // --i drives the per-card stagger delay defined in .prospect-card CSS.
+  // Cap at 12 so columns with 50+ cards don't make the user wait 2s for the bottom of the list.
   const stagger = Math.min(i, 12);
 
   return `
@@ -2638,20 +3667,13 @@ function moveToGraveyard(id, reason) {
 /* ──────────────────────────────────────────────────────────────
    REPORT BROKEN LINK  (James approved option b, 2026-05-19)
 
-   PERSISTENCE MODEL — static site, no backend:
-   This is a static Vercel deploy serving a read-only prospects.json
-   (a cron owns writes to that file in the repo; the page must NOT and
-   CANNOT POST to it). So localStorage is the SOURCE OF TRUTH at runtime:
-     1. reportBroken() sets p.{platform}_status = 'broken' in the
-        localStorage prospect array (loadProspects/saveProspects) AND in
-        the in-memory render, so the card greys that icon immediately and
-        the change survives reloads.
-     2. To sync the flag back to the repo / sellers' reports, the user
-        clicks the existing toolbar "Export JSON" button — exportData()
-        now downloads the full, edited array AS prospects.json, which can
-        be dropped straight into the repo (or fed to the cron) to make the
-        broken flag durable beyond this browser.
-   No invented API. Matches the current static-site architecture exactly.
+   PERSISTENCE MODEL — Supabase shared backend (since 2026-05-20):
+   reportBroken() flips p.{platform}_status to 'broken' through
+   saveProspects(), which delegates to HLDB and debounce-writes the row
+   to the prospects table. The validator crons (ig_revalidate_cron.py /
+   validate_links.py / graveyard_check_cron.py) still own prospects.json
+   as their seed, but live edits are written to and read from Supabase
+   directly — no Export JSON dance required between team members.
    ────────────────────────────────────────────────────────────── */
 function toggleReportBroken(id) {
   const panel = document.getElementById('rbp-' + id);
@@ -4020,6 +5042,196 @@ function getAuthUser() {
 })();
 
 /* ══════════════════════════════════════════════════════════════
+   ACTIVITY FEED + ACTOR IDENTITY
+   ══════════════════════════════════════════════════════════════ */
+const ACTORS = ['James', 'Jaco', 'Liam', 'Hayden'];
+
+function getCurrentActor() {
+  return (window.HLDB && window.HLDB.getActor && window.HLDB.getActor()) || '';
+}
+
+function promptActor() {
+  const current = getCurrentActor();
+  const opts = ACTORS.join(' / ');
+  const name = (window.prompt(`Who are you? (${opts})`, current) || '').trim();
+  if (!name) return;
+  // Allow any name but match-case to known sellers
+  const canonical = ACTORS.find(a => a.toLowerCase() === name.toLowerCase()) || name;
+  if (window.HLDB && window.HLDB.setActor) window.HLDB.setActor(canonical);
+  renderActorPill();
+  toast(`Signed in as ${canonical}`);
+}
+
+function renderActorPill() {
+  const el = document.getElementById('actorPill');
+  if (!el) return;
+  const a = getCurrentActor();
+  el.textContent = a ? a : 'Who are you?';
+}
+
+function ensureActor() {
+  // Returns the current actor, prompting if unset.
+  let a = getCurrentActor();
+  if (!a) { promptActor(); a = getCurrentActor() || 'unknown'; }
+  return a;
+}
+
+function timeAgo(iso) {
+  if (!iso) return '';
+  const ms = Date.now() - new Date(iso).getTime();
+  const s = Math.max(0, Math.floor(ms / 1000));
+  if (s < 60) return `${s}s ago`;
+  const m = Math.floor(s / 60);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  const d = Math.floor(h / 24);
+  return `${d}d ago`;
+}
+
+function actionLine(a) {
+  const actor = a.actor_name || 'someone';
+  const payload = a.payload || {};
+  let prospectName = '';
+  if (a.prospect_id) {
+    const p = (loadProspects() || []).find(x => x.id === a.prospect_id);
+    if (p) prospectName = p.name || a.prospect_id;
+    else prospectName = a.prospect_id;
+  }
+  switch (a.action_type) {
+    case 'seller_assigned':
+      return `<span class="activity-actor">${esc(actor)}</span> assigned ${esc(prospectName)} to ${esc(payload.seller || '?')}`;
+    case 'status_change':
+      return `<span class="activity-actor">${esc(actor)}</span> moved ${esc(prospectName)} to ${esc(STATUS_PILL_LABELS[payload.status] || payload.status || '?')}`;
+    case 'added_to_crm':
+      return `<span class="activity-actor">${esc(actor)}</span> added ${esc(prospectName)} to CRM`;
+    case 'report_broken':
+      return `<span class="activity-actor">${esc(actor)}</span> flagged ${esc(prospectName)} link broken`;
+    case 'dismissed':
+      return `<span class="activity-actor">${esc(actor)}</span> dismissed ${esc(prospectName)}`;
+    case 'edited':
+      return `<span class="activity-actor">${esc(actor)}</span> edited ${esc(prospectName)}`;
+    case 'added_prospect':
+      return `<span class="activity-actor">${esc(actor)}</span> added prospect ${esc(prospectName)}`;
+    case 'deleted':
+      return `<span class="activity-actor">${esc(actor)}</span> deleted ${esc(prospectName)}`;
+    case 'seeded':
+      return `<span class="activity-actor">system</span> ${esc(payload.message || 'seeded')}`;
+    default:
+      return `<span class="activity-actor">${esc(actor)}</span> ${esc(a.action_type)} ${esc(prospectName)}`;
+  }
+}
+
+function renderActivityFeed() {
+  const list = document.getElementById('activityList');
+  if (!list || !window.HLDB) return;
+  const items = window.HLDB.getActions() || [];
+  if (!items.length) {
+    list.innerHTML = '<div class="activity-item" style="color:#86868b">No activity yet</div>';
+    return;
+  }
+  list.innerHTML = items.map(a => `
+    <div class="activity-item">
+      <div>${actionLine(a)}</div>
+      <div class="activity-time">${timeAgo(a.created_at)}</div>
+    </div>
+  `).join('');
+}
+
+function toggleActivityPanel() {
+  const panel = document.getElementById('activityPanel');
+  if (!panel) return;
+  panel.classList.toggle('visible');
+  renderActivityFeed();
+}
+
+// Tick once a minute to refresh "Xm ago" labels
+setInterval(() => {
+  const panel = document.getElementById('activityPanel');
+  if (panel && panel.classList.contains('visible')) renderActivityFeed();
+}, 60000);
+
+// Wrap key mutation functions so they log actions to Supabase
+(function wrapForActivity() {
+  const origSetSeller = window.setSeller;
+  if (origSetSeller) {
+    window.setSeller = function(id, name) {
+      const actor = ensureActor();
+      origSetSeller(id, name);
+      const p = loadProspects().find(x => x.id === id);
+      const newSeller = p ? p.seller : '';
+      if (window.HLDB) window.HLDB.logAction(id, actor, 'seller_assigned', { seller: newSeller || null });
+    };
+  }
+
+  const origMarkAdded = window.markAddedToCRM;
+  if (origMarkAdded) {
+    window.markAddedToCRM = function(id) {
+      const actor = ensureActor();
+      origMarkAdded(id);
+      if (window.HLDB) window.HLDB.logAction(id, actor, 'added_to_crm', {});
+    };
+  }
+
+  const origReportBroken = window.reportBroken;
+  if (origReportBroken) {
+    window.reportBroken = function(id, platform) {
+      const actor = ensureActor();
+      origReportBroken(id, platform);
+      if (window.HLDB) window.HLDB.logAction(id, actor, 'report_broken', { platform });
+    };
+  }
+
+  const origMoveToGraveyard = window.moveToGraveyard;
+  if (origMoveToGraveyard) {
+    window.moveToGraveyard = function(id, reason) {
+      const actor = ensureActor();
+      origMoveToGraveyard(id, reason);
+      if (window.HLDB) window.HLDB.logAction(id, actor, 'dismissed', { reason });
+    };
+  }
+
+  const origHandleDrop = window.handleDrop;
+  if (origHandleDrop) {
+    window.handleDrop = function(e) {
+      const movedId = draggedId; // captured before origHandleDrop nulls it
+      const newStatus = (e.target && e.target.closest && e.target.closest('.column-body') || {}).dataset?.status;
+      origHandleDrop(e);
+      if (movedId && newStatus && currentView !== 'agency' && window.HLDB) {
+        window.HLDB.logAction(movedId, getCurrentActor() || 'unknown', 'status_change', { status: newStatus });
+      }
+    };
+  }
+
+  const origSaveProspect = window.saveProspect;
+  if (origSaveProspect) {
+    window.saveProspect = function(e) {
+      const actor = ensureActor();
+      const editId = document.getElementById('editId') ? document.getElementById('editId').value : '';
+      origSaveProspect(e);
+      // Re-find the prospect that was just saved to get its id (newest if no editId)
+      const list = loadProspects();
+      const target = editId ? list.find(x => x.id === editId) : list[list.length - 1];
+      if (target && window.HLDB) {
+        window.HLDB.logAction(target.id, actor, editId ? 'edited' : 'added_prospect', { name: target.name });
+      }
+    };
+  }
+
+  const origDelete = window.deleteProspect;
+  if (origDelete) {
+    window.deleteProspect = function(id) {
+      const actor = ensureActor();
+      const p = loadProspects().find(x => x.id === id);
+      const name = p ? p.name : id;
+      origDelete(id);
+      // Note: row is gone from DB after delete; log uses null prospect_id (still valid)
+      if (window.HLDB) window.HLDB.logAction(null, actor, 'deleted', { id, name });
+    };
+  }
+})();
+
+/* ══════════════════════════════════════════════════════════════
    INIT
    ══════════════════════════════════════════════════════════════ */
 // Populate agency status filter dropdown
@@ -4038,11 +5250,45 @@ function getAuthUser() {
 initDropdowns();
 initQuickAddPackages();
 
-// Boot the correct view
+// Hydrate sort select from saved preference (UI pref, ok to use localStorage)
+(function initSortSelect(){
+  const sel = document.getElementById('sortBy');
+  if (sel) sel.value = getSortPref();
+})();
+
+// Boot the correct view (uses empty cache initially)
 switchView(currentView);
 
-// Load seed data
-loadSeedData();
+// Wire to Supabase shared backend, then render real data
+(async function bootShared() {
+  if (!window.HLDB) {
+    console.error('[HL] HLDB not loaded');
+    showDbBanner();
+    return;
+  }
+  try {
+    await window.HLDB.boot();
+    // One-time wipe of legacy prospect localStorage — stale pre-Supabase
+    // copies were silently overriding fresh DB state on some browsers
+    // (Liam couldn't see Jaco's seller assignments). Wipe runs once per
+    // device, on first successful HLDB load.
+    if (localStorage.getItem(STORAGE_KEY) !== null) {
+      localStorage.removeItem(STORAGE_KEY);
+      console.log('[HL] Wiped legacy prospect localStorage (one-time, per-device)');
+    }
+    hideDbBanner();
+    flushWriteQueue();
+    if (typeof renderBoard === 'function') renderBoard();
+    if (typeof renderActivityFeed === 'function') renderActivityFeed();
+    if (typeof renderActorPill === 'function') renderActorPill();
+  } catch (e) {
+    console.error('[HL] boot failed', e);
+    showDbBanner();
+    toast('Sync error — refresh to retry');
+  }
+})();
+
+// Agencies stay on localStorage for now (separate from CRM scope)
 loadAgencySeedData();
 
 /* ── Card spotlight mouse tracking ── */
@@ -4055,5 +5301,365 @@ document.addEventListener('mousemove',function(e){
     }
   });
 });
+
+/* ── Scroll FAB (draggable + persisted position) ── */
+(function(){
+  var fab=document.getElementById('scroll-fab');
+  if(!fab) return;
+  var STORAGE_KEY='hl-scroll-fab-pos';
+  var EDGE_MARGIN=8;
+  var DEFAULT_OFFSET=24;
+  var LONG_PRESS_MS=500;
+  var DRAG_THRESHOLD=4;
+  var SIZE=44;
+
+  function clamp(v,min,max){return v<min?min:(v>max?max:v)}
+  function snapToEdge(x,y){
+    var vw=window.innerWidth, vh=window.innerHeight;
+    var maxX=vw-SIZE-EDGE_MARGIN, maxY=vh-SIZE-EDGE_MARGIN;
+    x=clamp(x,EDGE_MARGIN,maxX);
+    y=clamp(y,EDGE_MARGIN,maxY);
+    var distLeft=x-EDGE_MARGIN, distRight=maxX-x;
+    if(distLeft<distRight){x=EDGE_MARGIN}else{x=maxX}
+    return {x:x,y:y};
+  }
+  function applyPos(pos){
+    fab.style.left=pos.x+'px';
+    fab.style.top=pos.y+'px';
+    fab.style.right='auto';
+    fab.style.bottom='auto';
+  }
+  function loadPos(){
+    try{
+      var raw=localStorage.getItem(STORAGE_KEY);
+      if(!raw) return null;
+      var p=JSON.parse(raw);
+      if(typeof p.x!=='number'||typeof p.y!=='number') return null;
+      var vw=window.innerWidth, vh=window.innerHeight;
+      if(p.x<0||p.y<0||p.x>vw-SIZE||p.y>vh-SIZE) return null;
+      return p;
+    }catch(e){return null}
+  }
+  function savePos(pos){
+    try{localStorage.setItem(STORAGE_KEY,JSON.stringify(pos))}catch(e){}
+  }
+  function defaultPos(){
+    return {
+      x:window.innerWidth-SIZE-DEFAULT_OFFSET,
+      y:window.innerHeight-SIZE-DEFAULT_OFFSET
+    };
+  }
+
+  var stored=loadPos();
+  applyPos(stored||defaultPos());
+
+  /* Visibility + direction based on scroll position */
+  function updateState(){
+    var docH=document.documentElement.scrollHeight;
+    var winH=window.innerHeight;
+    if(docH<=winH+100){
+      fab.hidden=true;
+      return;
+    }
+    fab.hidden=false;
+    var y=window.scrollY||document.documentElement.scrollTop||0;
+    var maxScroll=docH-winH;
+    var pct=maxScroll>0?(y/maxScroll):0;
+    fab.dataset.dir=pct>0.5?'up':'down';
+  }
+  updateState();
+  window.addEventListener('scroll',updateState,{passive:true});
+  window.addEventListener('resize',function(){
+    var p=loadPos();
+    if(!p){applyPos(defaultPos())}else{
+      var vw=window.innerWidth,vh=window.innerHeight;
+      if(p.x>vw-SIZE||p.y>vh-SIZE){applyPos(defaultPos())}
+    }
+    updateState();
+  });
+
+  /* Drag (long-press to initiate) */
+  var pressTimer=null, dragging=false, startX=0, startY=0, offsetX=0, offsetY=0, moved=false;
+
+  function pointerDown(e){
+    var pt=e.touches?e.touches[0]:e;
+    startX=pt.clientX; startY=pt.clientY; moved=false; dragging=false;
+    var rect=fab.getBoundingClientRect();
+    offsetX=pt.clientX-rect.left;
+    offsetY=pt.clientY-rect.top;
+    pressTimer=setTimeout(function(){
+      dragging=true;
+      fab.classList.add('is-dragging');
+    },LONG_PRESS_MS);
+    document.addEventListener('mousemove',pointerMove);
+    document.addEventListener('mouseup',pointerUp);
+    document.addEventListener('touchmove',pointerMove,{passive:false});
+    document.addEventListener('touchend',pointerUp);
+    document.addEventListener('touchcancel',pointerUp);
+  }
+  function pointerMove(e){
+    var pt=e.touches?e.touches[0]:e;
+    var dx=pt.clientX-startX, dy=pt.clientY-startY;
+    if(!moved && (Math.abs(dx)>DRAG_THRESHOLD||Math.abs(dy)>DRAG_THRESHOLD)){
+      moved=true;
+    }
+    if(dragging){
+      if(e.cancelable) e.preventDefault();
+      var nx=pt.clientX-offsetX;
+      var ny=pt.clientY-offsetY;
+      var vw=window.innerWidth, vh=window.innerHeight;
+      nx=clamp(nx,EDGE_MARGIN,vw-SIZE-EDGE_MARGIN);
+      ny=clamp(ny,EDGE_MARGIN,vh-SIZE-EDGE_MARGIN);
+      fab.style.left=nx+'px';
+      fab.style.top=ny+'px';
+      fab.style.right='auto';
+      fab.style.bottom='auto';
+    }
+  }
+  function pointerUp(e){
+    clearTimeout(pressTimer);
+    document.removeEventListener('mousemove',pointerMove);
+    document.removeEventListener('mouseup',pointerUp);
+    document.removeEventListener('touchmove',pointerMove);
+    document.removeEventListener('touchend',pointerUp);
+    document.removeEventListener('touchcancel',pointerUp);
+    if(dragging){
+      fab.classList.remove('is-dragging');
+      var rect=fab.getBoundingClientRect();
+      var snapped=snapToEdge(rect.left,rect.top);
+      fab.style.transition='left 220ms var(--ease), top 220ms var(--ease)';
+      applyPos(snapped);
+      savePos(snapped);
+      setTimeout(function(){fab.style.transition=''},260);
+      dragging=false;
+      return;
+    }
+    dragging=false;
+    if(!moved){
+      /* Treat as click: scroll to top or bottom based on icon direction */
+      var dir=fab.dataset.dir||'down';
+      if(dir==='up'){
+        window.scrollTo({top:0,behavior:'smooth'});
+      }else{
+        window.scrollTo({top:document.documentElement.scrollHeight,behavior:'smooth'});
+      }
+    }
+  }
+  fab.addEventListener('mousedown',pointerDown);
+  fab.addEventListener('touchstart',pointerDown,{passive:true});
+  /* Prevent native context menu interfering with long-press on touch */
+  fab.addEventListener('contextmenu',function(e){if(dragging||pressTimer)e.preventDefault()});
+})();
+
+
+/* ══════════════════════════════════════════════════════════════
+   SECTION ROUTER (sidebar nav)
+   ══════════════════════════════════════════════════════════════ */
+const SECTION_TITLES = {
+  dashboard: 'Dashboard',
+  pipeline: 'Pipeline',
+  prospects: 'Prospects',
+  agencies: 'Agencies',
+  portfolio: 'Portfolio',
+  templates: 'Templates',
+  import: 'Import',
+  clay: 'Clay Panel',
+  settings: 'Settings',
+};
+
+function switchSection(section) {
+  // Update sidebar active state
+  document.querySelectorAll('.crm-sidebar__nav-item').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.section === section);
+  });
+
+  // Show/hide sections
+  document.querySelectorAll('.crm-section').forEach(function(el) {
+    el.classList.toggle('active', el.dataset.section === section);
+  });
+
+  // Update header title
+  var titleEl = document.getElementById('crmSectionTitle');
+  if (titleEl) titleEl.textContent = SECTION_TITLES[section] || section;
+
+  // Ensure clientsView/agencyView are in the right display state for JS compatibility
+  var cv = document.getElementById('clientsView');
+  var av = document.getElementById('agencyView');
+  if (section === 'pipeline') {
+    if (cv) cv.style.display = '';
+    if (av) av.style.display = 'none';
+    document.body.setAttribute('data-glass-bg', '1');
+    switchView('clients');
+  } else if (section === 'agencies') {
+    if (cv) cv.style.display = 'none';
+    if (av) av.style.display = '';
+    document.body.setAttribute('data-glass-bg', '0');
+    switchView('agency');
+  } else {
+    // For all other sections, keep views hidden so they don't interfere
+    // but don't change their internal state
+    document.body.setAttribute('data-glass-bg', '0');
+  }
+
+  // Dashboard: sync stats
+  if (section === 'dashboard') {
+    updateDashboardStats();
+    renderDashboardActivity();
+  }
+
+  // Prospects: render table
+  if (section === 'prospects') {
+    renderProspectsTable();
+    document.body.setAttribute('data-glass-bg', '0');
+  }
+
+  // Clay sidebar: sync content
+  if (section === 'clay') {
+    syncClayContent();
+  }
+
+  // Save preference
+  localStorage.setItem('hl_crm_section', section);
+
+  // Close mobile sidebar
+  closeCrmSidebar();
+
+  // Scroll to top
+  window.scrollTo(0, 0);
+}
+
+/* Dashboard stats sync */
+function updateDashboardStats() {
+  var all = loadProspects();
+  var pipeline = all.filter(function(p) { return !['client','lost','graveyard'].includes(p.status); });
+  var converted = all.filter(function(p) { return p.status === 'client'; });
+  var revenue = all.filter(function(p) { return !['lost','graveyard'].includes(p.status); }).reduce(function(sum, p) {
+    var pkg = PACKAGES.find(function(pk) { return pk.name === p.package; });
+    return sum + (pkg ? pkg.price : 0);
+  }, 0);
+  var el;
+  el = document.getElementById('stat-total-dash'); if (el) el.textContent = all.length;
+  el = document.getElementById('stat-pipeline-dash'); if (el) el.textContent = pipeline.length;
+  el = document.getElementById('stat-converted-dash'); if (el) el.textContent = converted.length;
+  el = document.getElementById('stat-revenue-dash'); if (el) el.textContent = '$' + revenue.toLocaleString();
+}
+
+/* Dashboard recent activity */
+function renderDashboardActivity() {
+  var container = document.getElementById('dashboardActivity');
+  if (!container) return;
+  var all = loadProspects();
+  // Sort by most recent update
+  var sorted = all.slice().sort(function(a, b) {
+    var ta = Date.parse(a.updatedAt || a.createdAt || 0) || 0;
+    var tb = Date.parse(b.updatedAt || b.createdAt || 0) || 0;
+    return tb - ta;
+  }).slice(0, 12);
+  if (!sorted.length) {
+    container.innerHTML = '<div style="color:var(--text-muted);font-size:.875rem;padding:20px 0">No prospects yet. Add some from the Pipeline section.</div>';
+    return;
+  }
+  container.innerHTML = sorted.map(function(p) {
+    var stage = (p.status || 'prospect').replace(/_/g, ' ');
+    var timeAgo = p.updatedAt ? relativeTime(p.updatedAt) : (p.createdAt ? relativeTime(p.createdAt) : '');
+    return '<div style="display:flex;align-items:center;gap:14px;padding:12px 16px;background:var(--bg-card-flat);border:1px solid var(--border);border-radius:12px">' +
+      '<div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#fde047 0%,#ec4899 50%,#a855f7 100%);display:flex;align-items:center;justify-content:center;color:#0a0a0a;font-weight:700;font-size:12px;flex-shrink:0">' + glassInitials(p.name) + '</div>' +
+      '<div style="flex:1;min-width:0">' +
+        '<div style="font-weight:600;font-size:.875rem;color:#f5f5f5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(p.name) + '</div>' +
+        '<div style="font-size:.75rem;color:var(--text-muted)">' + esc(stage) + (p.company ? ' at ' + esc(p.company) : '') + '</div>' +
+      '</div>' +
+      '<div style="font-size:11px;color:var(--text-muted);flex-shrink:0;white-space:nowrap">' + timeAgo + '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function relativeTime(dateStr) {
+  var d = new Date(dateStr);
+  var now = new Date();
+  var diff = Math.floor((now - d) / 1000);
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+  if (diff < 604800) return Math.floor(diff / 86400) + 'd ago';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+/* Prospects table */
+function renderProspectsTable() {
+  var container = document.getElementById('prospectsTableContainer');
+  if (!container) return;
+  var all = loadProspects();
+  var search = (document.getElementById('prospectsSearchInput') || {}).value || '';
+  search = search.toLowerCase();
+  var filterStatus = (document.getElementById('prospectsFilterStatus') || {}).value || '';
+  var filterPkg = (document.getElementById('prospectsFilterPackage') || {}).value || '';
+
+  var filtered = all;
+  if (search) filtered = filtered.filter(function(p) {
+    return (p.name || '').toLowerCase().includes(search) ||
+           (p.company || '').toLowerCase().includes(search) ||
+           (p.email || '').toLowerCase().includes(search);
+  });
+  if (filterStatus) filtered = filtered.filter(function(p) { return p.status === filterStatus; });
+  if (filterPkg) filtered = filtered.filter(function(p) { return p.package === filterPkg; });
+
+  filtered = sortProspects(filtered, 'name_asc');
+
+  if (!filtered.length) {
+    container.innerHTML = '<div style="color:var(--text-muted);font-size:.875rem;padding:40px 0;text-align:center">No prospects match your filters.</div>';
+    return;
+  }
+
+  var stageLabels = {prospect:'Prospect',added_to_crm:'In CRM',contacted:'Contacted',tour_booked:'Tour Booked',demo:'Demo',client:'Client',lost:'Lost',graveyard:'Graveyard'};
+
+  container.innerHTML = '<table class="prospects-table"><thead><tr>' +
+    '<th>Name</th><th>Company</th><th>Stage</th><th>Package</th><th>Source</th><th>Last Contact</th><th>Actions</th>' +
+    '</tr></thead><tbody>' +
+    filtered.map(function(p) {
+      return '<tr>' +
+        '<td><span class="pt-name">' + esc(p.name || '') + '</span>' +
+          (p.title ? '<br><span style="font-size:11px;color:var(--text-muted)">' + esc(p.title) + '</span>' : '') +
+        '</td>' +
+        '<td>' + esc(p.company || '-') + '</td>' +
+        '<td><span class="pt-stage">' + (stageLabels[p.status] || p.status || '') + '</span></td>' +
+        '<td style="font-size:.75rem">' + esc(p.package || '-') + '</td>' +
+        '<td style="font-size:.75rem">' + esc(p.source || '-') + '</td>' +
+        '<td style="font-size:.75rem">' + (p.lastContact || '-') + '</td>' +
+        '<td><button class="btn btn-sm" style="padding:5px 10px;font-size:.7rem" onclick="editProspect(\'' + p.id + '\')">Edit</button></td>' +
+      '</tr>';
+    }).join('') +
+    '</tbody></table>';
+}
+
+/* Clay sidebar sync */
+function syncClayContent() {
+  var src = document.getElementById('clayContent');
+  var dest = document.getElementById('clayContentSidebar');
+  if (src && dest) dest.innerHTML = src.innerHTML;
+}
+
+/* Mobile sidebar toggle */
+function toggleCrmSidebar() {
+  var sidebar = document.getElementById('crmSidebar');
+  var overlay = document.getElementById('crmSidebarOverlay');
+  if (sidebar) sidebar.classList.toggle('open');
+  if (overlay) overlay.classList.toggle('visible');
+}
+function closeCrmSidebar() {
+  var sidebar = document.getElementById('crmSidebar');
+  var overlay = document.getElementById('crmSidebarOverlay');
+  if (sidebar) sidebar.classList.remove('open');
+  if (overlay) overlay.classList.remove('visible');
+}
+
+/* Restore last section on page load */
+(function() {
+  var saved = localStorage.getItem('hl_crm_section');
+  if (saved && SECTION_TITLES[saved]) {
+    switchSection(saved);
+  } else {
+    switchSection('dashboard');
+  }
+})();
 </script></body>
 </html>
