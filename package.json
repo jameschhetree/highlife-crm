@@ -1,10 +1,11 @@
 {
-  "name": "highlife-crm",
+  "name": "bright-ent-crm",
   "version": "1.0.0",
-  "description": "HighLife DMV Podcast Studio — Prospect CRM",
-  "scripts": {
-    "dev": "npx serve -s . -l 3000",
-    "start": "npx serve -s . -l 3000"
-  },
-  "private": true
+  "type": "module",
+  "description": "Bright Entertainment LLC — B2B Sales CRM",
+  "private": true,
+  "dependencies": {
+    "@upstash/redis": "^1.38.0",
+    "@vercel/functions": "^3.4.4"
+  }
 }
