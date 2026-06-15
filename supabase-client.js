@@ -35,6 +35,18 @@
   const POLL_INTERVAL_MS = 30000;
   const ACTIONS_POLL_MS = 15000;
 
+  // ── Status mapping ──────────────────────────────────────────────────
+  const VALID_STATUSES = new Set([
+    'new_lead', 'contacted', 'call_booked', 'call_completed',
+    'proposal_sent', 'closed_won', 'closed_lost', 'inactive',
+  ]);
+  function mapStatus(s) {
+    if (!s) return 'new_lead';
+    if (VALID_STATUSES.has(s)) return s;
+    if (s === 'graveyard') return 'inactive';
+    return 'new_lead';
+  }
+
   // ── Field mapping ──────────────────────────────────────────────────
   // DB → JS (camelCase the UI already uses)
   function fromDb(r) {
@@ -53,7 +65,7 @@
       twitter: r.twitter,
       website: r.website,
       package: r.package,
-      status: r.status || 'prospect',
+      status: mapStatus(r.status),
       lastContact: r.last_contact,
       notes: r.notes,
       rating: r.rating,
