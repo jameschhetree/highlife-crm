@@ -1,0 +1,889 @@
+[2026-05-19T19:33:42.976753+00:00] run 1: validating IG handles [0:3] of 274 (batch_size=3)
+[2026-05-19T19:36:29.981044+00:00]   p1 https://www.instagram.com/mercedesschlapp/ -> inconclusive (block/err); kept valid
+[2026-05-19T19:36:29.981753+00:00] run 1: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-19T19:36:29.982074+00:00]   jitter sleep 11.1s
+[2026-05-19T19:36:41.051831+00:00] run 1: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-19T19:36:41.052387+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-19T19:36:41.052856+00:00] run 1: BLOCK back-off engaged - skipping IG until run 7 (~180 min).
+[2026-05-19T19:36:41.054153+00:00] run 1: done. next cursor=0 valid=0 broken=0 401s=6 inconclusive=1
+[2026-05-19T20:03:35.688901+00:00] run 2: in post-block cool-down until run 7 - skipping IG calls entirely.
+[2026-05-19T20:33:35.858244+00:00] run 3: in post-block cool-down until run 7 - skipping IG calls entirely.
+[2026-05-19T21:03:36.017670+00:00] run 4: in post-block cool-down until run 7 - skipping IG calls entirely.
+[2026-05-19T21:33:36.155119+00:00] run 5: in post-block cool-down until run 7 - skipping IG calls entirely.
+[2026-05-19T22:03:36.287652+00:00] run 6: in post-block cool-down until run 7 - skipping IG calls entirely.
+[2026-05-19T22:33:36.438345+00:00] run 7: validating IG handles [0:12] of 285 (batch_size=12)
+[2026-05-19T22:33:38.113447+00:00]   p1 https://www.instagram.com/mercedesschlapp/ -> valid (was valid)
+[2026-05-19T22:33:38.113947+00:00]   jitter sleep 23.1s
+[2026-05-19T22:36:48.971754+00:00]   p2 https://www.instagram.com/jaymeleaghfranklin/ -> inconclusive (block/err); kept valid
+[2026-05-19T22:36:48.973307+00:00] run 7: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-19T22:36:48.973578+00:00]   jitter sleep 12.6s
+[2026-05-19T22:37:01.686283+00:00] run 7: detected IG block (consecutive_401s=6) after 1 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-19T22:37:01.716977+00:00] wrote 1 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260519-183701
+[2026-05-19T22:37:01.717242+00:00] run 7: BLOCK back-off engaged - skipping IG until run 13 (~180 min).
+[2026-05-19T22:37:01.717827+00:00] run 7: done. next cursor=1 valid=1 broken=0 401s=6 inconclusive=1
+[2026-05-19T23:07:01.869520+00:00] run 8: in post-block cool-down until run 13 - skipping IG calls entirely.
+[2026-05-19T23:37:02.024869+00:00] run 9: in post-block cool-down until run 13 - skipping IG calls entirely.
+[2026-05-20T00:07:02.166860+00:00] run 10: in post-block cool-down until run 13 - skipping IG calls entirely.
+[2026-05-20T00:37:02.302471+00:00] run 11: in post-block cool-down until run 13 - skipping IG calls entirely.
+[2026-05-20T01:07:02.465088+00:00] run 12: in post-block cool-down until run 13 - skipping IG calls entirely.
+[2026-05-20T01:37:02.606064+00:00] run 13: validating IG handles [1:13] of 285 (batch_size=12)
+[2026-05-20T01:37:04.176972+00:00]   p2 https://www.instagram.com/jaymeleaghfranklin/ -> valid (was valid)
+[2026-05-20T01:37:04.177614+00:00]   jitter sleep 14.8s
+[2026-05-20T01:40:06.749380+00:00]   p4 https://www.instagram.com/rachelbovard/ -> inconclusive (block/err); kept valid
+[2026-05-20T01:40:06.750101+00:00] run 13: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T01:40:06.750488+00:00]   jitter sleep 16.1s
+[2026-05-20T01:40:22.998806+00:00] run 13: detected IG block (consecutive_401s=6) after 1 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T01:40:23.025253+00:00] wrote 1 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260519-214022
+[2026-05-20T01:40:23.025542+00:00] run 13: BLOCK back-off engaged - skipping IG until run 19 (~180 min).
+[2026-05-20T01:40:23.026245+00:00] run 13: done. next cursor=2 valid=1 broken=0 401s=6 inconclusive=1
+[2026-05-20T02:10:23.192119+00:00] run 14: in post-block cool-down until run 19 - skipping IG calls entirely.
+[2026-05-20T02:40:23.359765+00:00] run 15: in post-block cool-down until run 19 - skipping IG calls entirely.
+[2026-05-20T03:10:23.528381+00:00] run 16: in post-block cool-down until run 19 - skipping IG calls entirely.
+[2026-05-20T03:40:23.665946+00:00] run 17: in post-block cool-down until run 19 - skipping IG calls entirely.
+[2026-05-20T04:10:23.800894+00:00] run 18: in post-block cool-down until run 19 - skipping IG calls entirely.
+[2026-05-20T04:40:23.948004+00:00] run 19: validating IG handles [2:14] of 285 (batch_size=12)
+[2026-05-20T04:40:24.670062+00:00]   p4 https://www.instagram.com/rachelbovard/ -> valid (was valid)
+[2026-05-20T04:40:24.670606+00:00]   jitter sleep 12.8s
+[2026-05-20T04:40:37.838391+00:00]   p5 https://www.instagram.com/gayle_trotter/ -> valid (was valid)
+[2026-05-20T04:40:37.838944+00:00]   jitter sleep 13.6s
+[2026-05-20T04:40:52.260262+00:00]   p9 https://www.instagram.com/psb_dc/ -> valid (was valid)
+[2026-05-20T04:40:52.260949+00:00]   jitter sleep 19.2s
+[2026-05-20T04:41:12.078648+00:00]   p15 https://www.instagram.com/ckchumley/ -> valid (was valid)
+[2026-05-20T04:41:12.079369+00:00]   jitter sleep 10.8s
+[2026-05-20T04:41:23.969839+00:00]   p16 https://www.instagram.com/caseyburgat/ -> valid (was valid)
+[2026-05-20T04:41:23.970411+00:00]   jitter sleep 14.6s
+[2026-05-20T04:41:38.930174+00:00]   p19 https://www.instagram.com/deanhingson/ -> valid (was valid)
+[2026-05-20T04:41:38.930833+00:00]   jitter sleep 12.3s
+[2026-05-20T04:41:52.668230+00:00]   p20 https://www.instagram.com/dansimonssays -> valid (was valid)
+[2026-05-20T04:41:52.668862+00:00]   jitter sleep 23.3s
+[2026-05-20T04:42:17.769498+00:00]   p23 https://www.instagram.com/happyblackwoman -> valid (was valid)
+[2026-05-20T04:42:17.770123+00:00]   jitter sleep 10.4s
+[2026-05-20T04:42:29.287055+00:00]   p25 https://www.instagram.com/chrisplanteshow/ -> valid (was valid)
+[2026-05-20T04:42:29.287639+00:00]   jitter sleep 9.3s
+[2026-05-20T04:42:39.737121+00:00]   p26 https://www.instagram.com/schilling1776_/ -> valid (was valid)
+[2026-05-20T04:42:39.737690+00:00]   jitter sleep 10.5s
+[2026-05-20T04:42:51.065816+00:00]   p27 https://www.instagram.com/btdomenech/ -> valid (was valid)
+[2026-05-20T04:42:51.066397+00:00]   jitter sleep 23.6s
+[2026-05-20T04:43:16.673784+00:00]   p28 https://www.instagram.com/sheffieldcarrie/ -> inconclusive (block/err); kept valid
+[2026-05-20T04:43:16.698812+00:00] wrote 11 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-004316
+[2026-05-20T04:43:16.699345+00:00] run 19: done. next cursor=14 valid=11 broken=0 401s=0 inconclusive=1
+[2026-05-20T05:13:16.857011+00:00] run 20: validating IG handles [14:26] of 285 (batch_size=12)
+[2026-05-20T05:13:17.549908+00:00]   p29 https://www.instagram.com/ambersmithusa/ -> valid (was valid)
+[2026-05-20T05:13:17.550510+00:00]   jitter sleep 13.7s
+[2026-05-20T05:13:32.503209+00:00]   p34 https://www.instagram.com/guypbenson/ -> valid (was valid)
+[2026-05-20T05:13:32.503827+00:00]   jitter sleep 22.2s
+[2026-05-20T05:13:55.428080+00:00]   p36 https://www.instagram.com/mkhammertime/ -> valid (was valid)
+[2026-05-20T05:13:55.428657+00:00]   jitter sleep 21.9s
+[2026-05-20T05:14:18.244898+00:00]   p38 https://www.instagram.com/jimhansondc/ -> valid (was valid)
+[2026-05-20T05:14:18.245552+00:00]   jitter sleep 21.3s
+[2026-05-20T05:14:41.070144+00:00]   p39 https://www.instagram.com/nedryun/ -> valid (was valid)
+[2026-05-20T05:14:41.070717+00:00]   jitter sleep 13.0s
+[2026-05-20T05:14:54.812589+00:00]   p40 https://www.instagram.com/thehughhewittshow/ -> valid (was valid)
+[2026-05-20T05:14:54.813213+00:00]   jitter sleep 11.0s
+[2026-05-20T05:15:06.688061+00:00]   p41 https://www.instagram.com/sarahmisgur/ -> valid (was valid)
+[2026-05-20T05:15:06.688644+00:00]   jitter sleep 9.4s
+[2026-05-20T05:15:17.237764+00:00]   p42 https://www.instagram.com/rinaindc/ -> valid (was valid)
+[2026-05-20T05:15:17.238450+00:00]   jitter sleep 11.9s
+[2026-05-20T05:15:29.879467+00:00]   p43 https://www.instagram.com/rlheinrichs/ -> valid (was valid)
+[2026-05-20T05:15:29.880280+00:00]   jitter sleep 24.9s
+[2026-05-20T05:15:56.096029+00:00]   p46 https://www.instagram.com/katiepavlich/ -> inconclusive (block/err); kept valid
+[2026-05-20T05:15:56.096576+00:00]   jitter sleep 21.3s
+[2026-05-20T05:16:18.818980+00:00]   p47 https://www.instagram.com/angelarye/ -> inconclusive (block/err); kept valid
+[2026-05-20T05:16:18.819526+00:00]   jitter sleep 14.7s
+[2026-05-20T05:16:33.874603+00:00]   p48 https://www.instagram.com/officialbyronyork/ -> valid (was valid)
+[2026-05-20T05:16:33.897275+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-011633
+[2026-05-20T05:16:33.897813+00:00] run 20: done. next cursor=26 valid=10 broken=0 401s=0 inconclusive=2
+[2026-05-20T05:46:34.055838+00:00] run 21: validating IG handles [26:38] of 285 (batch_size=12)
+[2026-05-20T05:46:35.058154+00:00]   p49 https://www.instagram.com/ctb4407/ -> valid (was valid)
+[2026-05-20T05:46:35.058733+00:00]   jitter sleep 22.8s
+[2026-05-20T05:46:59.026519+00:00]   p51 https://www.instagram.com/ambermarieduke/ -> valid (was valid)
+[2026-05-20T05:46:59.027221+00:00]   jitter sleep 9.0s
+[2026-05-20T05:47:09.065595+00:00]   p52 https://www.instagram.com/emilyjashinsky/ -> valid (was valid)
+[2026-05-20T05:47:09.066174+00:00]   jitter sleep 18.1s
+[2026-05-20T05:47:28.152909+00:00]   p53 https://www.instagram.com/larryoconnorshow/ -> valid (was valid)
+[2026-05-20T05:47:28.153536+00:00]   jitter sleep 17.3s
+[2026-05-20T05:47:46.000446+00:00]   p57 https://www.instagram.com/davidmdrucker/ -> valid (was valid)
+[2026-05-20T05:47:46.001099+00:00]   jitter sleep 17.5s
+[2026-05-20T05:48:04.808258+00:00]   p59 https://www.instagram.com/mariacardonadc/ -> valid (was valid)
+[2026-05-20T05:48:04.808923+00:00]   jitter sleep 16.1s
+[2026-05-20T05:48:22.115181+00:00]   p60 https://www.instagram.com/jackmposobiec -> valid (was valid)
+[2026-05-20T05:48:22.115813+00:00]   jitter sleep 21.9s
+[2026-05-20T05:48:44.892952+00:00]   p61 https://www.instagram.com/js.reports/ -> valid (was valid)
+[2026-05-20T05:48:44.893579+00:00]   jitter sleep 23.0s
+[2026-05-20T05:49:09.325160+00:00]   p62 https://www.instagram.com/greta -> inconclusive (block/err); kept valid
+[2026-05-20T05:49:09.326664+00:00]   jitter sleep 14.5s
+[2026-05-20T05:49:24.844935+00:00]   p63 https://www.instagram.com/donnalbrazile -> valid (was valid)
+[2026-05-20T05:49:24.845555+00:00]   jitter sleep 10.0s
+[2026-05-20T05:49:35.656507+00:00]   p64 https://www.instagram.com/stevecase -> valid (was valid)
+[2026-05-20T05:49:35.657150+00:00]   jitter sleep 9.1s
+[2026-05-20T05:49:45.766842+00:00]   p69 https://www.instagram.com/raheemkassam -> inconclusive (block/err); kept valid
+[2026-05-20T05:49:45.787387+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-014945
+[2026-05-20T05:49:45.787994+00:00] run 21: done. next cursor=38 valid=10 broken=0 401s=0 inconclusive=2
+[2026-05-20T06:19:45.938627+00:00] run 22: validating IG handles [38:50] of 285 (batch_size=12)
+[2026-05-20T06:19:47.426590+00:00]   p70 https://www.instagram.com/thetarasetmayer -> inconclusive (block/err); kept valid
+[2026-05-20T06:19:47.427156+00:00]   jitter sleep 13.0s
+[2026-05-20T06:20:01.421508+00:00]   p72 https://www.instagram.com/stephen.gutowski -> valid (was valid)
+[2026-05-20T06:20:01.422117+00:00]   jitter sleep 12.5s
+[2026-05-20T06:20:14.975418+00:00]   p73 https://www.instagram.com/karaswisher/ -> valid (was valid)
+[2026-05-20T06:20:14.976007+00:00]   jitter sleep 8.1s
+[2026-05-20T06:20:23.395480+00:00]   p74 https://www.instagram.com/nataliegwinters/ -> broken (was valid)
+[2026-05-20T06:20:23.396046+00:00]   jitter sleep 17.8s
+[2026-05-20T06:20:42.276792+00:00]   p76 https://www.instagram.com/jakesherman/ -> valid (was valid)
+[2026-05-20T06:20:42.277428+00:00]   jitter sleep 15.8s
+[2026-05-20T06:20:59.306124+00:00]   p77 https://www.instagram.com/shermichael_/ -> valid (was valid)
+[2026-05-20T06:20:59.306755+00:00]   jitter sleep 11.6s
+[2026-05-20T06:21:12.607791+00:00]   p79 https://www.instagram.com/shoshanasummits/ -> valid (was valid)
+[2026-05-20T06:21:12.608551+00:00]   jitter sleep 17.2s
+[2026-05-20T06:21:30.836694+00:00]   p80 https://www.instagram.com/kayleedmcghee/ -> valid (was valid)
+[2026-05-20T06:21:30.837311+00:00]   jitter sleep 22.0s
+[2026-05-20T06:21:54.170204+00:00]   p81 https://www.instagram.com/giannocaldwell/ -> inconclusive (block/err); kept valid
+[2026-05-20T06:21:54.170743+00:00]   jitter sleep 15.4s
+[2026-05-20T06:22:11.053972+00:00]   p82 https://www.instagram.com/macconwell/ -> valid (was valid)
+[2026-05-20T06:22:11.054505+00:00]   jitter sleep 21.7s
+[2026-05-20T06:22:33.842218+00:00]   p85 https://www.instagram.com/isabelleredfield/ -> valid (was valid)
+[2026-05-20T06:22:33.842832+00:00]   jitter sleep 12.5s
+[2026-05-20T06:22:47.633965+00:00]   p86 https://www.instagram.com/thesterlingmckinley/ -> valid (was valid)
+[2026-05-20T06:22:47.655340+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-022247
+[2026-05-20T06:22:47.655890+00:00] run 22: done. next cursor=50 valid=9 broken=1 401s=0 inconclusive=2
+[2026-05-20T06:52:47.803094+00:00] run 23: validating IG handles [50:62] of 285 (batch_size=12)
+[2026-05-20T06:52:49.787537+00:00]   p87 https://www.instagram.com/jyhodges/ -> valid (was valid)
+[2026-05-20T06:52:49.787785+00:00]   jitter sleep 19.4s
+[2026-05-20T06:53:10.994825+00:00]   p89 https://www.instagram.com/daryljudy/ -> inconclusive (block/err); kept valid
+[2026-05-20T06:53:10.995428+00:00]   jitter sleep 19.4s
+[2026-05-20T06:53:31.875656+00:00]   p90 https://www.instagram.com/LiveTheDMV/ -> valid (was valid)
+[2026-05-20T06:53:31.877052+00:00]   jitter sleep 23.5s
+[2026-05-20T06:53:56.640687+00:00]   p95 https://www.instagram.com/progreshion/ -> valid (was valid)
+[2026-05-20T06:53:56.641216+00:00]   jitter sleep 8.5s
+[2026-05-20T06:54:06.681945+00:00]   p96 https://www.instagram.com/tamera.darden/ -> valid (was valid)
+[2026-05-20T06:54:06.682664+00:00]   jitter sleep 22.3s
+[2026-05-20T06:54:30.855401+00:00]   p97 https://www.instagram.com/theeangelnicole/ -> valid (was valid)
+[2026-05-20T06:54:30.856102+00:00]   jitter sleep 12.1s
+[2026-05-20T06:54:44.795355+00:00]   p98 https://www.instagram.com/karaallan/ -> inconclusive (block/err); kept valid
+[2026-05-20T06:54:44.795914+00:00]   jitter sleep 18.7s
+[2026-05-20T06:55:04.961001+00:00]   p99 https://www.instagram.com/_meghanlucas/ -> valid (was valid)
+[2026-05-20T06:55:04.961696+00:00]   jitter sleep 19.8s
+[2026-05-20T06:55:26.594323+00:00]   p100 https://www.instagram.com/7pmfitness/ -> inconclusive (block/err); kept valid
+[2026-05-20T06:55:26.595863+00:00]   jitter sleep 8.4s
+[2026-05-20T06:55:35.612277+00:00]   p102 https://www.instagram.com/averygalore/ -> valid (was valid)
+[2026-05-20T06:55:35.612882+00:00]   jitter sleep 20.2s
+[2026-05-20T06:55:56.110728+00:00]   p103 https://www.instagram.com/momspaceco/ -> broken (was valid)
+[2026-05-20T06:55:56.111166+00:00]   jitter sleep 10.5s
+[2026-05-20T06:56:07.757097+00:00]   p104 https://www.instagram.com/dcfashionfool/ -> inconclusive (block/err); kept valid
+[2026-05-20T06:56:07.779762+00:00] wrote 8 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-025607
+[2026-05-20T06:56:07.780397+00:00] run 23: done. next cursor=62 valid=7 broken=1 401s=0 inconclusive=4
+[2026-05-20T07:26:07.933197+00:00] run 24: validating IG handles [62:74] of 285 (batch_size=12)
+[2026-05-20T07:26:09.577251+00:00]   p105 https://www.instagram.com/politicsandfshn/ -> inconclusive (block/err); kept valid
+[2026-05-20T07:26:09.577911+00:00]   jitter sleep 10.5s
+[2026-05-20T07:26:21.761517+00:00]   p109 https://www.instagram.com/thecaseysamsonteam -> inconclusive (block/err); kept valid
+[2026-05-20T07:26:21.762143+00:00]   jitter sleep 23.8s
+[2026-05-20T07:26:47.055841+00:00]   p110 https://www.instagram.com/dolenperkinsvaldez -> valid (was valid)
+[2026-05-20T07:26:47.056553+00:00]   jitter sleep 17.7s
+[2026-05-20T07:27:07.447611+00:00]   p111 https://www.instagram.com/hi.mhk -> inconclusive (block/err); kept valid
+[2026-05-20T07:27:07.448290+00:00]   jitter sleep 24.1s
+[2026-05-20T07:27:33.801432+00:00]   p114 https://www.instagram.com/russelltbrazil -> valid (was valid)
+[2026-05-20T07:27:33.803032+00:00]   jitter sleep 23.7s
+[2026-05-20T07:28:00.290498+00:00]   p115 https://www.instagram.com/kaitlyndinneh -> inconclusive (block/err); kept valid
+[2026-05-20T07:28:00.291175+00:00]   jitter sleep 18.9s
+[2026-05-20T07:28:20.783968+00:00]   p119 https://www.instagram.com/iamtinnajackson/ -> valid (was valid)
+[2026-05-20T07:28:20.785975+00:00]   jitter sleep 20.8s
+[2026-05-20T07:28:43.163242+00:00]   p120 https://www.instagram.com/unionkitchendc/ -> valid (was valid)
+[2026-05-20T07:28:43.163762+00:00]   jitter sleep 23.0s
+[2026-05-20T07:29:06.690421+00:00]   p123 https://www.instagram.com/joianuri/ -> valid (was valid)
+[2026-05-20T07:29:06.691861+00:00]   jitter sleep 23.9s
+[2026-05-20T07:29:32.671644+00:00]   p128 https://www.instagram.com/chazzcscott/ -> valid (was valid)
+[2026-05-20T07:29:32.672210+00:00]   jitter sleep 19.2s
+[2026-05-20T07:29:53.759164+00:00]   p134 https://www.instagram.com/discoverarlington/ -> inconclusive (block/err); kept valid
+[2026-05-20T07:29:53.759765+00:00]   jitter sleep 15.1s
+[2026-05-20T07:30:09.590088+00:00]   p138 https://www.instagram.com/charles.h.moore/ -> valid (was valid)
+[2026-05-20T07:30:09.615725+00:00] wrote 7 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-033009
+[2026-05-20T07:30:09.616439+00:00] run 24: done. next cursor=74 valid=7 broken=0 401s=0 inconclusive=5
+[2026-05-20T08:00:09.777940+00:00] run 25: validating IG handles [74:86] of 285 (batch_size=12)
+[2026-05-20T08:00:12.588244+00:00]   p151 https://www.instagram.com/libbylivingcolorfully/ -> inconclusive (block/err); kept valid
+[2026-05-20T08:00:12.588955+00:00]   jitter sleep 18.7s
+[2026-05-20T08:00:33.677885+00:00]   p154 https://www.instagram.com/worldfootprints -> valid (was valid)
+[2026-05-20T08:00:33.678471+00:00]   jitter sleep 23.8s
+[2026-05-20T08:00:59.227235+00:00]   p155 https://www.instagram.com/jenn.chino -> inconclusive (block/err); kept valid
+[2026-05-20T08:00:59.227771+00:00]   jitter sleep 11.8s
+[2026-05-20T08:01:12.534668+00:00]   p156 https://www.instagram.com/meredithfoglethelistrealty -> valid (was valid)
+[2026-05-20T08:01:12.535225+00:00]   jitter sleep 21.1s
+[2026-05-20T08:04:21.329260+00:00]   p157 https://www.instagram.com/capitalismtheremix -> inconclusive (block/err); kept valid
+[2026-05-20T08:04:21.330783+00:00] run 25: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T08:04:21.330978+00:00]   jitter sleep 19.1s
+[2026-05-20T08:04:40.546533+00:00] run 25: detected IG block (consecutive_401s=6) after 2 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T08:04:40.577806+00:00] wrote 2 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-040440
+[2026-05-20T08:04:40.577979+00:00] run 25: BLOCK back-off engaged - skipping IG until run 31 (~180 min).
+[2026-05-20T08:04:40.578643+00:00] run 25: done. next cursor=76 valid=2 broken=0 401s=6 inconclusive=3
+[2026-05-20T08:34:40.730729+00:00] run 26: in post-block cool-down until run 31 - skipping IG calls entirely.
+[2026-05-20T09:04:40.863741+00:00] run 27: in post-block cool-down until run 31 - skipping IG calls entirely.
+[2026-05-20T09:34:41.011099+00:00] run 28: in post-block cool-down until run 31 - skipping IG calls entirely.
+[2026-05-20T10:04:41.158777+00:00] run 29: in post-block cool-down until run 31 - skipping IG calls entirely.
+[2026-05-20T10:34:41.309026+00:00] run 30: in post-block cool-down until run 31 - skipping IG calls entirely.
+[2026-05-20T11:04:41.461042+00:00] run 31: validating IG handles [76:88] of 285 (batch_size=12)
+[2026-05-20T11:07:29.290937+00:00]   p155 https://www.instagram.com/jenn.chino -> inconclusive (block/err); kept valid
+[2026-05-20T11:07:29.291401+00:00] run 31: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T11:07:29.291760+00:00]   jitter sleep 13.5s
+[2026-05-20T11:07:42.805228+00:00] run 31: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T11:07:42.806044+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-20T11:07:42.806273+00:00] run 31: BLOCK back-off engaged - skipping IG until run 37 (~180 min).
+[2026-05-20T11:07:42.807812+00:00] run 31: done. next cursor=76 valid=0 broken=0 401s=6 inconclusive=1
+[2026-05-20T11:37:42.980762+00:00] run 32: in post-block cool-down until run 37 - skipping IG calls entirely.
+[2026-05-20T12:07:43.145331+00:00] run 33: in post-block cool-down until run 37 - skipping IG calls entirely.
+[2026-05-20T12:37:43.316480+00:00] run 34: in post-block cool-down until run 37 - skipping IG calls entirely.
+[2026-05-20T13:07:43.418585+00:00] run 35: in post-block cool-down until run 37 - skipping IG calls entirely.
+[2026-05-20T13:37:43.567960+00:00] run 36: in post-block cool-down until run 37 - skipping IG calls entirely.
+[2026-05-20T14:07:43.731156+00:00] run 37: validating IG handles [76:88] of 287 (batch_size=12)
+[2026-05-20T14:10:31.528125+00:00]   p155 https://www.instagram.com/jenn.chino -> inconclusive (block/err); kept valid
+[2026-05-20T14:10:31.528754+00:00] run 37: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T14:10:31.529607+00:00]   jitter sleep 21.0s
+[2026-05-20T14:10:52.673412+00:00] run 37: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T14:10:52.674042+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-20T14:10:52.674443+00:00] run 37: BLOCK back-off engaged - skipping IG until run 43 (~180 min).
+[2026-05-20T14:10:52.675858+00:00] run 37: done. next cursor=76 valid=0 broken=0 401s=6 inconclusive=1
+[2026-05-20T14:40:52.844806+00:00] run 38: in post-block cool-down until run 43 - skipping IG calls entirely.
+[2026-05-20T15:10:53.015276+00:00] run 39: in post-block cool-down until run 43 - skipping IG calls entirely.
+[2026-05-20T15:40:53.152682+00:00] run 40: in post-block cool-down until run 43 - skipping IG calls entirely.
+[2026-05-20T16:10:53.282213+00:00] run 41: in post-block cool-down until run 43 - skipping IG calls entirely.
+[2026-05-20T16:40:53.416096+00:00] run 42: in post-block cool-down until run 43 - skipping IG calls entirely.
+[2026-05-20T17:10:53.583155+00:00] run 43: validating IG handles [76:88] of 287 (batch_size=12)
+[2026-05-20T17:10:55.262718+00:00]   p155 https://www.instagram.com/jenn.chino -> inconclusive (block/err); kept valid
+[2026-05-20T17:10:55.263343+00:00]   jitter sleep 16.4s
+[2026-05-20T17:13:59.415011+00:00]   p156 https://www.instagram.com/meredithfoglethelistrealty -> inconclusive (block/err); kept valid
+[2026-05-20T17:13:59.416120+00:00] run 43: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T17:13:59.416360+00:00]   jitter sleep 17.3s
+[2026-05-20T17:14:16.753722+00:00] run 43: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T17:14:16.754346+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-20T17:14:16.754766+00:00] run 43: BLOCK back-off engaged - skipping IG until run 49 (~180 min).
+[2026-05-20T17:14:16.756295+00:00] run 43: done. next cursor=76 valid=0 broken=0 401s=6 inconclusive=2
+[2026-05-20T17:44:19.396684+00:00] run 44: in post-block cool-down until run 49 - skipping IG calls entirely.
+[2026-05-20T18:14:19.625453+00:00] run 45: in post-block cool-down until run 49 - skipping IG calls entirely.
+[2026-05-20T18:44:19.760742+00:00] run 46: in post-block cool-down until run 49 - skipping IG calls entirely.
+[2026-05-20T19:14:19.904636+00:00] run 47: in post-block cool-down until run 49 - skipping IG calls entirely.
+[2026-05-20T19:44:20.033103+00:00] run 48: in post-block cool-down until run 49 - skipping IG calls entirely.
+[2026-05-20T20:14:20.182981+00:00] run 49: validating IG handles [76:88] of 287 (batch_size=12)
+[2026-05-20T20:14:22.164430+00:00]   p155 https://www.instagram.com/jenn.chino -> inconclusive (block/err); kept valid
+[2026-05-20T20:14:22.165273+00:00]   jitter sleep 16.7s
+[2026-05-20T20:14:40.181349+00:00]   p156 https://www.instagram.com/meredithfoglethelistrealty -> valid (was valid)
+[2026-05-20T20:14:40.181961+00:00]   jitter sleep 15.0s
+[2026-05-20T20:14:56.626428+00:00]   p157 https://www.instagram.com/capitalismtheremix -> valid (was valid)
+[2026-05-20T20:14:56.627017+00:00]   jitter sleep 18.0s
+[2026-05-20T20:15:16.284727+00:00]   p159 https://www.instagram.com/aminaluqmandawson -> valid (was valid)
+[2026-05-20T20:15:16.285387+00:00]   jitter sleep 18.6s
+[2026-05-20T20:15:36.049021+00:00]   p160 https://www.instagram.com/christinadavesofficial -> valid (was valid)
+[2026-05-20T20:15:36.049567+00:00]   jitter sleep 12.6s
+[2026-05-20T20:15:50.145141+00:00]   p162 https://www.instagram.com/coffeewithcoleman -> inconclusive (block/err); kept valid
+[2026-05-20T20:15:50.146683+00:00]   jitter sleep 17.2s
+[2026-05-20T20:16:08.444796+00:00]   p163 https://www.instagram.com/ginaschaeferdc -> valid (was valid)
+[2026-05-20T20:16:08.445230+00:00]   jitter sleep 24.8s
+[2026-05-20T20:16:34.536458+00:00]   p164 https://www.instagram.com/thenailsaloon -> valid (was valid)
+[2026-05-20T20:16:34.538138+00:00]   jitter sleep 20.6s
+[2026-05-20T20:16:57.492115+00:00]   p166 https://www.instagram.com/down2businesspodcast -> valid (was valid)
+[2026-05-20T20:16:57.492739+00:00]   jitter sleep 21.4s
+[2026-05-20T20:17:20.695500+00:00]   p167 https://www.instagram.com/tinabeliveau/ -> inconclusive (block/err); kept valid
+[2026-05-20T20:17:20.696055+00:00]   jitter sleep 18.6s
+[2026-05-20T20:17:39.692607+00:00]   p168 https://www.instagram.com/naefaces/ -> broken (was valid)
+[2026-05-20T20:17:39.693142+00:00]   jitter sleep 9.6s
+[2026-05-20T20:17:51.779717+00:00]   p171 https://www.instagram.com/themattleighton/ -> valid (was valid)
+[2026-05-20T20:17:51.803040+00:00] wrote 9 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-161751
+[2026-05-20T20:17:51.803971+00:00] run 49: done. next cursor=88 valid=8 broken=1 401s=0 inconclusive=3
+[2026-05-20T20:47:51.959725+00:00] run 50: validating IG handles [88:100] of 287 (batch_size=12)
+[2026-05-20T20:47:53.523997+00:00]   p172 https://www.instagram.com/creativemindmethod/ -> inconclusive (block/err); kept valid
+[2026-05-20T20:47:53.524527+00:00]   jitter sleep 22.2s
+[2026-05-20T20:48:18.949267+00:00]   p177 https://www.instagram.com/wendieveloz/ -> valid (was valid)
+[2026-05-20T20:48:18.951555+00:00]   jitter sleep 24.6s
+[2026-05-20T20:48:45.173251+00:00]   p181 https://www.instagram.com/fivex3/ -> valid (was valid)
+[2026-05-20T20:48:45.174946+00:00]   jitter sleep 11.6s
+[2026-05-20T20:48:57.183613+00:00]   p182 https://www.instagram.com/life_strategies_2.0/ -> broken (was valid)
+[2026-05-20T20:48:57.184225+00:00]   jitter sleep 16.6s
+[2026-05-20T20:49:15.207962+00:00]   p187 https://www.instagram.com/coachangelavharris/ -> valid (was valid)
+[2026-05-20T20:49:15.208565+00:00]   jitter sleep 18.1s
+[2026-05-20T20:49:34.559984+00:00]   p188 https://www.instagram.com/charliebirney/ -> valid (was valid)
+[2026-05-20T20:49:34.560690+00:00]   jitter sleep 13.2s
+[2026-05-20T20:49:49.403409+00:00]   p189 https://www.instagram.com/pfagell/ -> valid (was valid)
+[2026-05-20T20:49:49.404028+00:00]   jitter sleep 18.0s
+[2026-05-20T20:50:08.682411+00:00]   p193 https://www.instagram.com/gabriellewitkin/ -> valid (was valid)
+[2026-05-20T20:50:08.682946+00:00]   jitter sleep 23.0s
+[2026-05-20T20:50:33.893031+00:00]   p196 https://www.instagram.com/lawpracticequeen/ -> valid (was valid)
+[2026-05-20T20:50:33.893440+00:00]   jitter sleep 17.8s
+[2026-05-20T20:50:55.204087+00:00]   p198 https://www.instagram.com/tatumtemia/ -> inconclusive (block/err); kept valid
+[2026-05-20T20:50:55.204640+00:00]   jitter sleep 12.9s
+[2026-05-20T20:51:09.124576+00:00]   p203 https://www.instagram.com/chefmichaelrafidi/ -> valid (was valid)
+[2026-05-20T20:51:09.125241+00:00]   jitter sleep 9.0s
+[2026-05-20T20:51:19.858577+00:00]   p204 https://www.instagram.com/chefmikeydc/ -> valid (was valid)
+[2026-05-20T20:51:19.887131+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-165119
+[2026-05-20T20:51:19.888060+00:00] run 50: done. next cursor=100 valid=9 broken=1 401s=0 inconclusive=2
+[2026-05-20T21:21:20.033795+00:00] run 51: validating IG handles [100:112] of 287 (batch_size=12)
+[2026-05-20T21:21:20.288592+00:00]   p205 https://www.instagram.com/sengluangrath/ -> broken (was valid)
+[2026-05-20T21:21:20.289193+00:00]   jitter sleep 16.3s
+[2026-05-20T21:21:38.041926+00:00]   p206 https://www.instagram.com/immigrantfood/ -> valid (was valid)
+[2026-05-20T21:21:38.042499+00:00]   jitter sleep 8.3s
+[2026-05-20T21:21:47.855662+00:00]   p207 https://www.instagram.com/dukesgrocery/ -> valid (was valid)
+[2026-05-20T21:21:47.856202+00:00]   jitter sleep 8.1s
+[2026-05-20T21:21:56.349566+00:00]   p208 https://www.instagram.com/yumesushidc/ -> broken (was valid)
+[2026-05-20T21:21:56.350203+00:00]   jitter sleep 9.6s
+[2026-05-20T21:22:06.428394+00:00]   p209 https://www.instagram.com/paolofdungca/ -> broken (was valid)
+[2026-05-20T21:22:06.428938+00:00]   jitter sleep 14.7s
+[2026-05-20T21:22:21.628459+00:00]   p210 https://www.instagram.com/daruwashingtondc/ -> broken (was valid)
+[2026-05-20T21:22:21.629026+00:00]   jitter sleep 22.3s
+[2026-05-20T21:22:46.012287+00:00]   p212 https://www.instagram.com/jennsmira/ -> valid (was valid)
+[2026-05-20T21:22:46.012943+00:00]   jitter sleep 8.6s
+[2026-05-20T21:22:55.030054+00:00]   p217 https://www.instagram.com/marnieschaar/ -> broken (was valid)
+[2026-05-20T21:22:55.030716+00:00]   jitter sleep 22.1s
+[2026-05-20T21:23:17.465209+00:00]   p218 https://www.instagram.com/devonfoxrealtor/ -> broken (was valid)
+[2026-05-20T21:23:17.467547+00:00]   jitter sleep 11.5s
+[2026-05-20T21:23:29.348859+00:00]   p219 https://www.instagram.com/dustinfoxrealtor/ -> broken (was valid)
+[2026-05-20T21:23:29.349521+00:00]   jitter sleep 24.4s
+[2026-05-20T21:26:41.849253+00:00]   p221 https://www.instagram.com/brianflaxrealtor/ -> inconclusive (block/err); kept valid
+[2026-05-20T21:26:41.851568+00:00] run 51: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-20T21:26:41.851879+00:00]   jitter sleep 12.2s
+[2026-05-20T21:26:54.178968+00:00] run 51: detected IG block (consecutive_401s=6) after 10 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-20T21:26:54.204876+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-172654
+[2026-05-20T21:26:54.205048+00:00] run 51: BLOCK back-off engaged - skipping IG until run 57 (~180 min).
+[2026-05-20T21:26:54.205583+00:00] run 51: done. next cursor=110 valid=3 broken=7 401s=6 inconclusive=1
+[2026-05-20T21:56:54.401785+00:00] run 52: in post-block cool-down until run 57 - skipping IG calls entirely.
+[2026-05-20T22:26:54.587996+00:00] run 53: in post-block cool-down until run 57 - skipping IG calls entirely.
+[2026-05-20T22:56:54.743417+00:00] run 54: in post-block cool-down until run 57 - skipping IG calls entirely.
+[2026-05-20T23:26:54.886337+00:00] run 55: in post-block cool-down until run 57 - skipping IG calls entirely.
+[2026-05-20T23:56:54.986531+00:00] run 56: in post-block cool-down until run 57 - skipping IG calls entirely.
+[2026-05-21T00:26:55.153714+00:00] run 57: validating IG handles [110:122] of 287 (batch_size=12)
+[2026-05-21T00:26:55.339539+00:00]   p221 https://www.instagram.com/brianflaxrealtor/ -> broken (was valid)
+[2026-05-21T00:26:55.340250+00:00]   jitter sleep 21.9s
+[2026-05-21T00:27:18.178636+00:00]   p223 https://www.instagram.com/granthpaulsen/ -> valid (was valid)
+[2026-05-21T00:27:18.180326+00:00]   jitter sleep 16.4s
+[2026-05-21T00:27:35.017099+00:00]   p224 https://www.instagram.com/santana_moss/ -> valid (was valid)
+[2026-05-21T00:27:35.017779+00:00]   jitter sleep 17.1s
+[2026-05-21T00:27:52.313248+00:00]   p225 https://www.instagram.com/londonfletcherfoundation/ -> broken (was valid)
+[2026-05-21T00:27:52.313859+00:00]   jitter sleep 10.4s
+[2026-05-21T00:28:02.860997+00:00]   p226 https://www.instagram.com/fred_smoot_21/ -> broken (was valid)
+[2026-05-21T00:28:02.861705+00:00]   jitter sleep 20.2s
+[2026-05-21T00:28:23.281059+00:00]   p227 https://www.instagram.com/jason_wright_dmv/ -> broken (was valid)
+[2026-05-21T00:28:23.282557+00:00]   jitter sleep 16.5s
+[2026-05-21T00:28:40.040885+00:00]   p228 https://www.instagram.com/kelseynicolen/ -> broken (was valid)
+[2026-05-21T00:28:40.041432+00:00]   jitter sleep 21.8s
+[2026-05-21T00:29:04.190614+00:00]   p230 https://www.instagram.com/drmaiaplasticsurgery/ -> inconclusive (block/err); kept valid
+[2026-05-21T00:29:04.192506+00:00]   jitter sleep 14.3s
+[2026-05-21T00:29:18.906630+00:00]   p231 https://www.instagram.com/virginiafaces/ -> valid (was valid)
+[2026-05-21T00:29:18.907260+00:00]   jitter sleep 9.0s
+[2026-05-21T00:29:28.103327+00:00]   p232 https://www.instagram.com/somenek_pittman/ -> broken (was valid)
+[2026-05-21T00:29:28.104037+00:00]   jitter sleep 23.7s
+[2026-05-21T00:29:52.080012+00:00]   p233 https://www.instagram.com/culturamed/ -> valid (was valid)
+[2026-05-21T00:29:52.080652+00:00]   jitter sleep 24.5s
+[2026-05-21T00:30:17.262193+00:00]   p234 https://www.instagram.com/sherberandrad/ -> valid (was valid)
+[2026-05-21T00:30:17.285637+00:00] wrote 11 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-203017
+[2026-05-21T00:30:17.286179+00:00] run 57: done. next cursor=122 valid=5 broken=6 401s=0 inconclusive=1
+[2026-05-21T01:00:17.437122+00:00] run 58: validating IG handles [122:134] of 287 (batch_size=12)
+[2026-05-21T01:00:17.753822+00:00]   p239 https://www.instagram.com/salamandercollection/ -> valid (was valid)
+[2026-05-21T01:00:17.754463+00:00]   jitter sleep 16.1s
+[2026-05-21T01:00:34.940209+00:00]   p240 https://www.instagram.com/hypefoodies/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:00:34.940824+00:00]   jitter sleep 9.7s
+[2026-05-21T01:00:45.760655+00:00]   p241 https://www.instagram.com/dccitygirl/ -> valid (was valid)
+[2026-05-21T01:00:45.761092+00:00]   jitter sleep 11.9s
+[2026-05-21T01:00:58.814253+00:00]   p242 https://www.instagram.com/austinkgraff/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:00:58.814918+00:00]   jitter sleep 10.0s
+[2026-05-21T01:01:10.064662+00:00]   p243 https://www.instagram.com/motun_xoxo/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:01:10.065314+00:00]   jitter sleep 16.6s
+[2026-05-21T01:01:27.763637+00:00]   p244 https://www.instagram.com/nomtasticdc/ -> valid (was valid)
+[2026-05-21T01:01:27.764370+00:00]   jitter sleep 8.1s
+[2026-05-21T01:01:37.092963+00:00]   p245 https://www.instagram.com/dcfitchick/ -> valid (was valid)
+[2026-05-21T01:01:37.093688+00:00]   jitter sleep 13.6s
+[2026-05-21T01:01:51.942778+00:00]   p246 https://www.instagram.com/kaslifestyle/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:01:51.943568+00:00]   jitter sleep 11.6s
+[2026-05-21T01:02:04.525193+00:00]   p247 https://www.instagram.com/yourdcbestie/ -> valid (was valid)
+[2026-05-21T01:02:04.525721+00:00]   jitter sleep 17.2s
+[2026-05-21T01:02:22.123326+00:00]   p248 https://www.instagram.com/jennahong_/ -> valid (was valid)
+[2026-05-21T01:02:22.123887+00:00]   jitter sleep 15.1s
+[2026-05-21T01:02:37.576069+00:00]   p249 https://www.instagram.com/charlottepratt/ -> valid (was valid)
+[2026-05-21T01:02:37.576749+00:00]   jitter sleep 9.7s
+[2026-05-21T01:02:48.335255+00:00]   p250 https://www.instagram.com/djheatdc/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:02:48.354906+00:00] wrote 7 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-210248
+[2026-05-21T01:02:48.355527+00:00] run 58: done. next cursor=134 valid=7 broken=0 401s=0 inconclusive=5
+[2026-05-21T01:32:48.512856+00:00] run 59: validating IG handles [134:146] of 287 (batch_size=12)
+[2026-05-21T01:32:49.717106+00:00]   p251 https://www.instagram.com/aishabowe/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:32:49.717556+00:00]   jitter sleep 21.2s
+[2026-05-21T01:33:11.191612+00:00]   p252 https://www.instagram.com/fontagilliam/ -> broken (was valid)
+[2026-05-21T01:33:11.193206+00:00]   jitter sleep 20.1s
+[2026-05-21T01:33:32.597270+00:00]   p255 https://www.instagram.com/nasirqadree/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:33:32.597996+00:00]   jitter sleep 24.2s
+[2026-05-21T01:33:57.878015+00:00]   p256 https://www.instagram.com/blackgirlventures/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:33:57.878675+00:00]   jitter sleep 11.9s
+[2026-05-21T01:34:10.613838+00:00]   p260 https://www.instagram.com/rachelkoretsky/ -> valid (was valid)
+[2026-05-21T01:34:10.614751+00:00]   jitter sleep 18.2s
+[2026-05-21T01:34:31.262092+00:00]   p264 https://www.instagram.com/katmassetti/ -> inconclusive (block/err); kept valid
+[2026-05-21T01:34:31.262791+00:00]   jitter sleep 21.9s
+[2026-05-21T01:34:53.433377+00:00]   p265 https://www.instagram.com/charleskimrealtor/ -> broken (was valid)
+[2026-05-21T01:34:53.434185+00:00]   jitter sleep 19.5s
+[2026-05-21T01:35:13.213997+00:00]   p269 https://www.instagram.com/nicoltlee/ -> broken (was valid)
+[2026-05-21T01:35:13.214499+00:00]   jitter sleep 12.7s
+[2026-05-21T01:35:27.348804+00:00]   p272 https://www.instagram.com/thebridgedc/ -> valid (was valid)
+[2026-05-21T01:35:27.349568+00:00]   jitter sleep 8.9s
+[2026-05-21T01:35:36.747132+00:00]   p278 https://www.instagram.com/dmvceo/ -> valid (was valid)
+[2026-05-21T01:35:36.747889+00:00]   jitter sleep 15.0s
+[2026-05-21T01:35:52.096174+00:00]   p285 https://www.instagram.com/tommymcfly/ -> broken (was valid)
+[2026-05-21T01:35:52.096588+00:00]   jitter sleep 18.1s
+[2026-05-21T01:36:10.472315+00:00]   p286 https://www.instagram.com/joekrebs/ -> broken (was valid)
+[2026-05-21T01:36:10.495039+00:00] wrote 8 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-213610
+[2026-05-21T01:36:10.495684+00:00] run 59: done. next cursor=146 valid=3 broken=5 401s=0 inconclusive=4
+[2026-05-21T02:06:10.658650+00:00] run 60: validating IG handles [146:158] of 287 (batch_size=12)
+[2026-05-21T02:06:11.510891+00:00]   p295 https://www.instagram.com/golightly/ -> valid (was valid)
+[2026-05-21T02:06:11.511538+00:00]   jitter sleep 17.1s
+[2026-05-21T02:06:29.655724+00:00]   p296 https://www.instagram.com/_taylastevie/ -> valid (was valid)
+[2026-05-21T02:06:29.657084+00:00]   jitter sleep 12.1s
+[2026-05-21T02:06:42.901324+00:00]   p297 https://www.instagram.com/gymdaddyp/ -> valid (was valid)
+[2026-05-21T02:06:42.901900+00:00]   jitter sleep 22.7s
+[2026-05-21T02:07:06.712000+00:00]   p298 https://www.instagram.com/ashlirenee/ -> valid (was valid)
+[2026-05-21T02:07:06.713621+00:00]   jitter sleep 18.9s
+[2026-05-21T02:07:26.502853+00:00]   p299 https://www.instagram.com/lacemebaby/ -> valid (was valid)
+[2026-05-21T02:07:26.504401+00:00]   jitter sleep 22.3s
+[2026-05-21T02:07:49.145599+00:00]   p301 https://www.instagram.com/thompsonhospitality/ -> valid (was valid)
+[2026-05-21T02:07:49.147154+00:00]   jitter sleep 20.2s
+[2026-05-21T02:08:10.011800+00:00]   p302 https://www.instagram.com/michael_saylor/ -> valid (was valid)
+[2026-05-21T02:08:10.013697+00:00]   jitter sleep 13.9s
+[2026-05-21T02:08:24.758797+00:00]   p308 https://www.instagram.com/jennyabramson/ -> valid (was valid)
+[2026-05-21T02:08:24.760567+00:00]   jitter sleep 20.0s
+[2026-05-21T02:08:45.140769+00:00]   p310 https://www.instagram.com/pepemoncayo/ -> valid (was valid)
+[2026-05-21T02:08:45.142254+00:00]   jitter sleep 19.5s
+[2026-05-21T02:09:05.253137+00:00]   p311 https://www.instagram.com/wardrobeoxygen/ -> valid (was valid)
+[2026-05-21T02:09:05.254664+00:00]   jitter sleep 9.1s
+[2026-05-21T02:09:15.442592+00:00]   p312 https://www.instagram.com/anchyi/ -> valid (was valid)
+[2026-05-21T02:09:15.443023+00:00]   jitter sleep 15.4s
+[2026-05-21T02:09:31.993634+00:00]   p313 https://www.instagram.com/the_fashionable_man/ -> valid (was valid)
+[2026-05-21T02:09:32.016095+00:00] wrote 12 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260520-220931
+[2026-05-21T02:09:32.017382+00:00] run 60: done. next cursor=158 valid=12 broken=0 401s=0 inconclusive=0
+[2026-05-21T02:39:32.183273+00:00] run 61: validating IG handles [158:170] of 287 (batch_size=12)
+[2026-05-21T02:42:19.654351+00:00]   p314 https://www.instagram.com/thecreativegentleman/ -> inconclusive (block/err); kept valid
+[2026-05-21T02:42:19.655059+00:00] run 61: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T02:42:19.655518+00:00]   jitter sleep 14.7s
+[2026-05-21T02:42:34.477890+00:00] run 61: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T02:42:34.478557+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-21T02:42:34.478942+00:00] run 61: BLOCK back-off engaged - skipping IG until run 67 (~180 min).
+[2026-05-21T02:42:34.480216+00:00] run 61: done. next cursor=158 valid=0 broken=0 401s=6 inconclusive=1
+[2026-05-21T03:12:34.627223+00:00] run 62: in post-block cool-down until run 67 - skipping IG calls entirely.
+[2026-05-21T03:42:34.772536+00:00] run 63: in post-block cool-down until run 67 - skipping IG calls entirely.
+[2026-05-21T04:12:34.914865+00:00] run 64: in post-block cool-down until run 67 - skipping IG calls entirely.
+[2026-05-21T04:42:35.067331+00:00] run 65: in post-block cool-down until run 67 - skipping IG calls entirely.
+[2026-05-21T05:12:35.202703+00:00] run 66: in post-block cool-down until run 67 - skipping IG calls entirely.
+[2026-05-21T05:42:35.364993+00:00] run 67: validating IG handles [158:170] of 287 (batch_size=12)
+[2026-05-21T05:42:37.741941+00:00]   p314 https://www.instagram.com/thecreativegentleman/ -> inconclusive (block/err); kept valid
+[2026-05-21T05:42:37.742383+00:00]   jitter sleep 9.2s
+[2026-05-21T05:42:47.977909+00:00]   p315 https://www.instagram.com/alwaysbemyfoodie/ -> valid (was valid)
+[2026-05-21T05:42:47.978641+00:00]   jitter sleep 10.5s
+[2026-05-21T05:43:00.285691+00:00]   p316 https://www.instagram.com/juliengarman/ -> inconclusive (block/err); kept valid
+[2026-05-21T05:43:00.286152+00:00]   jitter sleep 8.6s
+[2026-05-21T05:45:56.392659+00:00]   p317 https://www.instagram.com/mattconroydc/ -> inconclusive (block/err); kept valid
+[2026-05-21T05:45:56.393163+00:00] run 67: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T05:45:56.393473+00:00]   jitter sleep 18.2s
+[2026-05-21T05:46:14.731597+00:00] run 67: detected IG block (consecutive_401s=6) after 1 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T05:46:14.757878+00:00] wrote 1 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-014614
+[2026-05-21T05:46:14.758087+00:00] run 67: BLOCK back-off engaged - skipping IG until run 73 (~180 min).
+[2026-05-21T05:46:14.758705+00:00] run 67: done. next cursor=159 valid=1 broken=0 401s=6 inconclusive=3
+[2026-05-21T06:16:14.929167+00:00] run 68: in post-block cool-down until run 73 - skipping IG calls entirely.
+[2026-05-21T06:46:15.075525+00:00] run 69: in post-block cool-down until run 73 - skipping IG calls entirely.
+[2026-05-21T07:16:15.246345+00:00] run 70: in post-block cool-down until run 73 - skipping IG calls entirely.
+[2026-05-21T07:46:15.399801+00:00] run 71: in post-block cool-down until run 73 - skipping IG calls entirely.
+[2026-05-21T08:16:15.552560+00:00] run 72: in post-block cool-down until run 73 - skipping IG calls entirely.
+[2026-05-21T08:46:15.698441+00:00] run 73: validating IG handles [159:171] of 287 (batch_size=12)
+[2026-05-21T08:46:16.662668+00:00]   p315 https://www.instagram.com/alwaysbemyfoodie/ -> valid (was valid)
+[2026-05-21T08:46:16.663374+00:00]   jitter sleep 24.4s
+[2026-05-21T08:46:42.442742+00:00]   p316 https://www.instagram.com/juliengarman/ -> inconclusive (block/err); kept valid
+[2026-05-21T08:46:42.443458+00:00]   jitter sleep 21.6s
+[2026-05-21T08:47:04.397056+00:00]   p317 https://www.instagram.com/mattconroydc/ -> broken (was valid)
+[2026-05-21T08:47:04.397676+00:00]   jitter sleep 11.3s
+[2026-05-21T08:47:17.594122+00:00]   p318 https://www.instagram.com/isabelcoss/ -> valid (was valid)
+[2026-05-21T08:47:17.594783+00:00]   jitter sleep 12.7s
+[2026-05-21T08:47:31.599446+00:00]   p319 https://www.instagram.com/chefcarlosdelgado/ -> valid (was valid)
+[2026-05-21T08:47:31.599920+00:00]   jitter sleep 17.0s
+[2026-05-21T08:47:49.386580+00:00]   p320 https://www.instagram.com/mitadc/ -> valid (was valid)
+[2026-05-21T08:47:49.387281+00:00]   jitter sleep 22.7s
+[2026-05-21T08:48:13.910431+00:00]   p321 https://www.instagram.com/2fiftytexasbbq/ -> inconclusive (block/err); kept valid
+[2026-05-21T08:48:13.911335+00:00]   jitter sleep 21.1s
+[2026-05-21T08:48:35.306469+00:00]   p322 https://www.instagram.com/shillingcanningco/ -> broken (was valid)
+[2026-05-21T08:48:35.307177+00:00]   jitter sleep 24.9s
+[2026-05-21T08:49:02.241515+00:00]   p323 https://www.instagram.com/casateresadc/ -> valid (was valid)
+[2026-05-21T08:49:02.242275+00:00]   jitter sleep 21.6s
+[2026-05-21T08:49:25.633461+00:00]   p324 https://www.instagram.com/carusosgrocery/ -> valid (was valid)
+[2026-05-21T08:49:25.633903+00:00]   jitter sleep 18.7s
+[2026-05-21T08:49:44.665399+00:00]   p329 https://www.instagram.com/katiegrieco_realestate/ -> broken (was valid)
+[2026-05-21T08:49:44.666108+00:00]   jitter sleep 10.5s
+[2026-05-21T08:49:55.558414+00:00]   p346 https://www.instagram.com/smokebarbeque/ -> valid (was valid)
+[2026-05-21T08:49:55.581939+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-044955
+[2026-05-21T08:49:55.583016+00:00] run 73: done. next cursor=171 valid=7 broken=3 401s=0 inconclusive=2
+[2026-05-21T09:19:55.735395+00:00] run 74: validating IG handles [171:183] of 287 (batch_size=12)
+[2026-05-21T09:19:56.027656+00:00]   p347 https://www.instagram.com/anjudc/ -> valid (was valid)
+[2026-05-21T09:19:56.028365+00:00]   jitter sleep 24.6s
+[2026-05-21T09:20:20.931590+00:00]   p348 https://www.instagram.com/chefwiedmaier/ -> broken (was valid)
+[2026-05-21T09:20:20.932260+00:00]   jitter sleep 11.7s
+[2026-05-21T09:20:33.304790+00:00]   p349 https://www.instagram.com/victoralbisu/ -> valid (was valid)
+[2026-05-21T09:20:33.305568+00:00]   jitter sleep 21.3s
+[2026-05-21T09:20:57.135686+00:00]   p351 https://www.instagram.com/brandenharvey/ -> inconclusive (block/err); kept valid
+[2026-05-21T09:20:57.136337+00:00]   jitter sleep 22.2s
+[2026-05-21T09:21:19.604324+00:00]   p352 https://www.instagram.com/smoothkingdc/ -> broken (was valid)
+[2026-05-21T09:21:19.605129+00:00]   jitter sleep 24.4s
+[2026-05-21T09:21:44.591560+00:00]   p354 https://www.instagram.com/nikkipeele/ -> valid (was valid)
+[2026-05-21T09:21:44.591969+00:00]   jitter sleep 9.2s
+[2026-05-21T09:21:54.418535+00:00]   p356 https://www.instagram.com/kwamechristian/ -> valid (was valid)
+[2026-05-21T09:21:54.419231+00:00]   jitter sleep 19.5s
+[2026-05-21T09:22:14.249624+00:00]   p359 https://www.instagram.com/scottklue/ -> valid (was valid)
+[2026-05-21T09:22:14.250305+00:00]   jitter sleep 18.1s
+[2026-05-21T09:22:32.648719+00:00]   p360 https://www.instagram.com/troyhaines_dc/ -> broken (was valid)
+[2026-05-21T09:22:32.649303+00:00]   jitter sleep 8.1s
+[2026-05-21T09:22:41.027144+00:00]   p362 https://www.instagram.com/theluxcurls/ -> broken (was valid)
+[2026-05-21T09:22:41.027813+00:00]   jitter sleep 14.4s
+[2026-05-21T09:22:56.560901+00:00]   p363 https://www.instagram.com/zachleonsis/ -> valid (was valid)
+[2026-05-21T09:22:56.561564+00:00]   jitter sleep 24.6s
+[2026-05-21T09:23:23.676461+00:00]   p366 https://www.instagram.com/pernellcezar/ -> valid (was valid)
+[2026-05-21T09:23:23.700131+00:00] wrote 11 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-052323
+[2026-05-21T09:23:23.700796+00:00] run 74: done. next cursor=183 valid=7 broken=4 401s=0 inconclusive=1
+[2026-05-21T09:53:23.851166+00:00] run 75: validating IG handles [183:195] of 287 (batch_size=12)
+[2026-05-21T09:53:24.170921+00:00]   p367 https://www.instagram.com/nicaeri/ -> valid (was valid)
+[2026-05-21T09:53:24.171585+00:00]   jitter sleep 21.4s
+[2026-05-21T09:53:45.804152+00:00]   p368 https://www.instagram.com/terribroussardwilliams/ -> broken (was valid)
+[2026-05-21T09:53:45.804975+00:00]   jitter sleep 17.3s
+[2026-05-21T09:54:03.419798+00:00]   p369 https://www.instagram.com/logannpaulsen/ -> broken (was valid)
+[2026-05-21T09:54:03.420544+00:00]   jitter sleep 23.6s
+[2026-05-21T09:54:27.421421+00:00]   p370 https://www.instagram.com/brendan_haywood/ -> valid (was valid)
+[2026-05-21T09:54:27.422044+00:00]   jitter sleep 19.8s
+[2026-05-21T09:54:49.175650+00:00]   p371 https://www.instagram.com/johnwall/ -> inconclusive (block/err); kept valid
+[2026-05-21T09:54:49.176225+00:00]   jitter sleep 22.8s
+[2026-05-21T09:55:13.968506+00:00]   p372 https://www.instagram.com/rickdocwalker/ -> valid (was valid)
+[2026-05-21T09:55:13.969170+00:00]   jitter sleep 21.0s
+[2026-05-21T09:55:35.297201+00:00]   p373 https://www.instagram.com/brianmitchellnfl/ -> broken (was valid)
+[2026-05-21T09:55:35.297631+00:00]   jitter sleep 21.2s
+[2026-05-21T09:58:44.223519+00:00]   p374 https://www.instagram.com/glaydsonaraujo/ -> inconclusive (block/err); kept valid
+[2026-05-21T09:58:44.224061+00:00] run 75: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T09:58:44.224453+00:00]   jitter sleep 19.3s
+[2026-05-21T09:59:03.676692+00:00] run 75: detected IG block (consecutive_401s=6) after 6 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T09:59:03.704488+00:00] wrote 6 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-055903
+[2026-05-21T09:59:03.704731+00:00] run 75: BLOCK back-off engaged - skipping IG until run 81 (~180 min).
+[2026-05-21T09:59:03.705491+00:00] run 75: done. next cursor=189 valid=3 broken=3 401s=6 inconclusive=2
+[2026-05-21T10:29:03.861417+00:00] run 76: in post-block cool-down until run 81 - skipping IG calls entirely.
+[2026-05-21T10:59:03.998435+00:00] run 77: in post-block cool-down until run 81 - skipping IG calls entirely.
+[2026-05-21T11:29:04.149470+00:00] run 78: in post-block cool-down until run 81 - skipping IG calls entirely.
+[2026-05-21T11:59:04.310113+00:00] run 79: in post-block cool-down until run 81 - skipping IG calls entirely.
+[2026-05-21T12:29:04.491023+00:00] run 80: in post-block cool-down until run 81 - skipping IG calls entirely.
+[2026-05-21T12:59:04.645791+00:00] run 81: validating IG handles [189:201] of 290 (batch_size=12)
+[2026-05-21T12:59:04.852581+00:00]   p373 https://www.instagram.com/brianmitchellnfl/ -> broken (was broken)
+[2026-05-21T12:59:04.853834+00:00]   jitter sleep 24.7s
+[2026-05-21T13:02:17.143722+00:00]   p374 https://www.instagram.com/glaydsonaraujo/ -> inconclusive (block/err); kept valid
+[2026-05-21T13:02:17.144438+00:00] run 81: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T13:02:17.144808+00:00]   jitter sleep 13.7s
+[2026-05-21T13:02:30.941248+00:00] run 81: detected IG block (consecutive_401s=6) after 1 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T13:02:30.969603+00:00] wrote 1 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-090230
+[2026-05-21T13:02:30.969906+00:00] run 81: BLOCK back-off engaged - skipping IG until run 87 (~180 min).
+[2026-05-21T13:02:30.970857+00:00] run 81: done. next cursor=190 valid=0 broken=1 401s=6 inconclusive=1
+[2026-05-21T13:32:31.100131+00:00] run 82: in post-block cool-down until run 87 - skipping IG calls entirely.
+[2026-05-21T14:02:31.242114+00:00] run 83: in post-block cool-down until run 87 - skipping IG calls entirely.
+[2026-05-21T14:32:31.389988+00:00] run 84: in post-block cool-down until run 87 - skipping IG calls entirely.
+[2026-05-21T15:02:31.532928+00:00] run 85: in post-block cool-down until run 87 - skipping IG calls entirely.
+[2026-05-21T15:32:31.702572+00:00] run 86: in post-block cool-down until run 87 - skipping IG calls entirely.
+[2026-05-21T16:02:31.844087+00:00] run 87: validating IG handles [190:202] of 290 (batch_size=12)
+[2026-05-21T16:02:32.409768+00:00]   p374 https://www.instagram.com/glaydsonaraujo/ -> valid (was valid)
+[2026-05-21T16:02:32.411018+00:00]   jitter sleep 16.6s
+[2026-05-21T16:02:49.794220+00:00]   p375 https://www.instagram.com/latoyalyn/ -> valid (was valid)
+[2026-05-21T16:02:49.794633+00:00]   jitter sleep 18.9s
+[2026-05-21T16:03:09.251037+00:00]   p376 https://www.instagram.com/joimckenzie/ -> valid (was valid)
+[2026-05-21T16:03:09.251717+00:00]   jitter sleep 23.9s
+[2026-05-21T16:03:33.443826+00:00]   p377 https://www.instagram.com/tatianamora_dc/ -> broken (was valid)
+[2026-05-21T16:03:33.444274+00:00]   jitter sleep 23.5s
+[2026-05-21T16:03:57.194747+00:00]   p378 https://www.instagram.com/jeffreymcneil/ -> broken (was valid)
+[2026-05-21T16:03:57.195152+00:00]   jitter sleep 18.0s
+[2026-05-21T16:04:15.628863+00:00]   p379 https://www.instagram.com/blonde_inthedistrict/ -> valid (was valid)
+[2026-05-21T16:04:15.630212+00:00]   jitter sleep 22.2s
+[2026-05-21T16:07:25.668565+00:00]   p380 https://www.instagram.com/glassofglam/ -> inconclusive (block/err); kept valid
+[2026-05-21T16:07:25.670165+00:00] run 87: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T16:07:25.670412+00:00]   jitter sleep 14.6s
+[2026-05-21T16:07:40.397480+00:00] run 87: detected IG block (consecutive_401s=6) after 6 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T16:07:40.424849+00:00] wrote 6 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-120740
+[2026-05-21T16:07:40.425141+00:00] run 87: BLOCK back-off engaged - skipping IG until run 93 (~180 min).
+[2026-05-21T16:07:40.425994+00:00] run 87: done. next cursor=196 valid=4 broken=2 401s=6 inconclusive=1
+[2026-05-21T16:37:40.586875+00:00] run 88: in post-block cool-down until run 93 - skipping IG calls entirely.
+[2026-05-21T17:07:40.743073+00:00] run 89: in post-block cool-down until run 93 - skipping IG calls entirely.
+[2026-05-21T17:37:40.886737+00:00] run 90: in post-block cool-down until run 93 - skipping IG calls entirely.
+[2026-05-21T18:07:41.028282+00:00] run 91: in post-block cool-down until run 93 - skipping IG calls entirely.
+[2026-05-21T18:37:41.178682+00:00] run 92: in post-block cool-down until run 93 - skipping IG calls entirely.
+[2026-05-21T19:07:41.320051+00:00] run 93: validating IG handles [196:208] of 290 (batch_size=12)
+[2026-05-21T19:07:43.113638+00:00]   p380 https://www.instagram.com/glassofglam/ -> valid (was valid)
+[2026-05-21T19:07:43.114320+00:00]   jitter sleep 10.6s
+[2026-05-21T19:07:55.855018+00:00]   p381 https://www.instagram.com/mademepretty/ -> valid (was valid)
+[2026-05-21T19:07:55.855751+00:00]   jitter sleep 13.2s
+[2026-05-21T19:08:11.287713+00:00]   p382 https://www.instagram.com/district.vy/ -> inconclusive (block/err); kept valid
+[2026-05-21T19:08:11.288495+00:00]   jitter sleep 14.4s
+[2026-05-21T19:08:26.679979+00:00]   p383 https://www.instagram.com/theondiaj/ -> valid (was valid)
+[2026-05-21T19:08:26.680658+00:00]   jitter sleep 15.4s
+[2026-05-21T19:08:42.291484+00:00]   p384 https://www.instagram.com/styled2be/ -> broken (was valid)
+[2026-05-21T19:08:42.292234+00:00]   jitter sleep 18.9s
+[2026-05-21T19:09:01.604680+00:00]   p385 https://www.instagram.com/compassimmigrationlaw/ -> broken (was valid)
+[2026-05-21T19:09:01.605807+00:00]   jitter sleep 10.8s
+[2026-05-21T19:09:13.494327+00:00]   p387 https://www.instagram.com/erinschrode/ -> valid (was valid)
+[2026-05-21T19:09:13.494886+00:00]   jitter sleep 17.3s
+[2026-05-21T19:09:31.090559+00:00]   p395 https://www.instagram.com/amandalitman/ -> broken (was valid)
+[2026-05-21T19:09:31.091272+00:00]   jitter sleep 21.7s
+[2026-05-21T19:09:53.691592+00:00]   p397 https://www.instagram.com/toddrowley/ -> valid (was valid)
+[2026-05-21T19:09:53.692235+00:00]   jitter sleep 17.2s
+[2026-05-21T19:10:13.302886+00:00]   p398 https://www.instagram.com/nadiabilchik/ -> valid (was valid)
+[2026-05-21T19:10:13.303379+00:00]   jitter sleep 13.9s
+[2026-05-21T19:10:27.542957+00:00]   p399 https://www.instagram.com/perrysrestaurantdc/ -> broken (was valid)
+[2026-05-21T19:10:27.543605+00:00]   jitter sleep 19.4s
+[2026-05-21T19:10:47.451219+00:00]   p402 https://www.instagram.com/nseufot/ -> valid (was valid)
+[2026-05-21T19:10:47.477525+00:00] wrote 11 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-151047
+[2026-05-21T19:10:47.478310+00:00] run 93: done. next cursor=208 valid=7 broken=4 401s=0 inconclusive=1
+[2026-05-21T19:40:47.627865+00:00] run 94: validating IG handles [208:220] of 290 (batch_size=12)
+[2026-05-21T19:40:48.593848+00:00]   p406 https://www.instagram.com/marcmorial/ -> valid (was valid)
+[2026-05-21T19:40:48.594464+00:00]   jitter sleep 22.3s
+[2026-05-21T19:41:11.360043+00:00]   p407 https://www.instagram.com/shellytbell/ -> valid (was valid)
+[2026-05-21T19:41:11.360522+00:00]   jitter sleep 24.4s
+[2026-05-21T19:41:36.172489+00:00]   p408 https://www.instagram.com/1863ventures/ -> broken (was valid)
+[2026-05-21T19:41:36.173177+00:00]   jitter sleep 16.8s
+[2026-05-21T19:41:54.737066+00:00]   p419 https://www.instagram.com/brysonbort/ -> valid (was valid)
+[2026-05-21T19:41:54.737703+00:00]   jitter sleep 21.0s
+[2026-05-21T19:42:16.243290+00:00]   p424 https://www.instagram.com/dantedisparte/ -> valid (was valid)
+[2026-05-21T19:42:16.243758+00:00]   jitter sleep 15.3s
+[2026-05-21T19:42:31.848446+00:00]   p425 https://www.instagram.com/perianneboring/ -> broken (was valid)
+[2026-05-21T19:42:31.849305+00:00]   jitter sleep 20.5s
+[2026-05-21T19:42:52.832483+00:00]   p431 https://www.instagram.com/sophisticatedfashionista/ -> valid (was valid)
+[2026-05-21T19:42:52.833081+00:00]   jitter sleep 15.0s
+[2026-05-21T19:43:09.347002+00:00]   p432 https://www.instagram.com/pattys_kloset/ -> valid (was valid)
+[2026-05-21T19:43:09.347418+00:00]   jitter sleep 9.1s
+[2026-05-21T19:43:20.013198+00:00]   p433 https://www.instagram.com/diegodowntown/ -> inconclusive (block/err); kept valid
+[2026-05-21T19:43:20.014946+00:00]   jitter sleep 10.1s
+[2026-05-21T19:43:32.055807+00:00]   p434 https://www.instagram.com/sirdapperdom/ -> valid (was valid)
+[2026-05-21T19:43:32.056549+00:00]   jitter sleep 20.8s
+[2026-05-21T19:43:54.637351+00:00]   p435 https://www.instagram.com/fashioncitizen/ -> valid (was valid)
+[2026-05-21T19:43:54.639079+00:00]   jitter sleep 19.0s
+[2026-05-21T19:44:13.948216+00:00]   p436 https://www.instagram.com/tracyshuchart/ -> valid (was valid)
+[2026-05-21T19:44:13.973785+00:00] wrote 11 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-154413
+[2026-05-21T19:44:13.975070+00:00] run 94: done. next cursor=220 valid=9 broken=2 401s=0 inconclusive=1
+[2026-05-21T20:14:14.131081+00:00] run 95: validating IG handles [220:232] of 290 (batch_size=12)
+[2026-05-21T20:14:15.749183+00:00]   p439 https://www.instagram.com/hbcubuzz/ -> inconclusive (block/err); kept valid
+[2026-05-21T20:14:15.749917+00:00]   jitter sleep 12.0s
+[2026-05-21T20:14:28.306001+00:00]   p446 https://www.instagram.com/tariqfarid/ -> valid (was valid)
+[2026-05-21T20:14:28.306810+00:00]   jitter sleep 9.0s
+[2026-05-21T20:14:38.931156+00:00]   p450 https://www.instagram.com/mayarockeymoore/ -> valid (was valid)
+[2026-05-21T20:14:38.931892+00:00]   jitter sleep 18.7s
+[2026-05-21T20:14:59.314066+00:00]   p451 https://www.instagram.com/laurenmaillian/ -> inconclusive (block/err); kept valid
+[2026-05-21T20:14:59.314732+00:00]   jitter sleep 9.5s
+[2026-05-21T20:15:09.518999+00:00]   p452 https://www.instagram.com/myriadmusings/ -> valid (was valid)
+[2026-05-21T20:15:09.519424+00:00]   jitter sleep 10.6s
+[2026-05-21T20:15:20.474480+00:00]   p453 https://www.instagram.com/thestyledigestion/ -> broken (was valid)
+[2026-05-21T20:15:20.475152+00:00]   jitter sleep 20.1s
+[2026-05-21T20:15:41.318646+00:00]   p454 https://www.instagram.com/themodalista/ -> valid (was valid)
+[2026-05-21T20:15:41.319243+00:00]   jitter sleep 16.8s
+[2026-05-21T20:15:58.658203+00:00]   p455 https://www.instagram.com/blitzandglam/ -> valid (was valid)
+[2026-05-21T20:15:58.658911+00:00]   jitter sleep 10.7s
+[2026-05-21T20:16:09.707590+00:00]   p456 https://www.instagram.com/erinkrespan/ -> broken (was valid)
+[2026-05-21T20:16:09.708885+00:00]   jitter sleep 14.4s
+[2026-05-21T20:16:25.244518+00:00]   p457 https://www.instagram.com/currently_courtney/ -> valid (was valid)
+[2026-05-21T20:16:25.245343+00:00]   jitter sleep 24.5s
+[2026-05-21T20:16:50.026649+00:00]   p458 https://www.instagram.com/theesperanzamaria/ -> broken (was valid)
+[2026-05-21T20:16:50.027266+00:00]   jitter sleep 14.3s
+[2026-05-21T20:17:04.617422+00:00]   p459 https://www.instagram.com/shopearlscloset/ -> broken (was valid)
+[2026-05-21T20:17:04.642339+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-161704
+[2026-05-21T20:17:04.643324+00:00] run 95: done. next cursor=232 valid=6 broken=4 401s=0 inconclusive=2
+[2026-05-21T20:47:04.789386+00:00] run 96: validating IG handles [232:244] of 290 (batch_size=12)
+[2026-05-21T20:47:05.828913+00:00]   p460 https://www.instagram.com/gracie_abby/ -> valid (was valid)
+[2026-05-21T20:47:05.830517+00:00]   jitter sleep 12.4s
+[2026-05-21T20:50:05.943903+00:00]   p461 https://www.instagram.com/thegellerlawgroup/ -> inconclusive (block/err); kept valid
+[2026-05-21T20:50:05.944378+00:00] run 96: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-21T20:50:05.944659+00:00]   jitter sleep 16.7s
+[2026-05-21T20:50:22.795834+00:00] run 96: detected IG block (consecutive_401s=6) after 1 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-21T20:50:22.823241+00:00] wrote 1 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-165022
+[2026-05-21T20:50:22.823634+00:00] run 96: BLOCK back-off engaged - skipping IG until run 102 (~180 min).
+[2026-05-21T20:50:22.824613+00:00] run 96: done. next cursor=233 valid=1 broken=0 401s=6 inconclusive=1
+[2026-05-21T21:20:22.977221+00:00] run 97: in post-block cool-down until run 102 - skipping IG calls entirely.
+[2026-05-21T21:50:23.143393+00:00] run 98: in post-block cool-down until run 102 - skipping IG calls entirely.
+[2026-05-21T22:20:23.288164+00:00] run 99: in post-block cool-down until run 102 - skipping IG calls entirely.
+[2026-05-21T22:50:23.441064+00:00] run 100: in post-block cool-down until run 102 - skipping IG calls entirely.
+[2026-05-21T23:20:23.590541+00:00] run 101: in post-block cool-down until run 102 - skipping IG calls entirely.
+[2026-05-21T23:50:23.730447+00:00] run 102: validating IG handles [233:245] of 290 (batch_size=12)
+[2026-05-21T23:50:24.745911+00:00]   p461 https://www.instagram.com/thegellerlawgroup/ -> valid (was valid)
+[2026-05-21T23:50:24.746578+00:00]   jitter sleep 9.1s
+[2026-05-21T23:50:35.516345+00:00]   p462 https://www.instagram.com/reshmasaujani/ -> inconclusive (block/err); kept valid
+[2026-05-21T23:50:35.517092+00:00]   jitter sleep 13.7s
+[2026-05-21T23:50:49.614012+00:00]   p465 https://www.instagram.com/errinhaines/ -> valid (was valid)
+[2026-05-21T23:50:49.614471+00:00]   jitter sleep 18.6s
+[2026-05-21T23:51:09.725621+00:00]   p472 https://www.instagram.com/pfpicardi/ -> inconclusive (block/err); kept valid
+[2026-05-21T23:51:09.726319+00:00]   jitter sleep 9.3s
+[2026-05-21T23:51:19.421349+00:00]   p478 https://www.instagram.com/gabefleisher/ -> valid (was valid)
+[2026-05-21T23:51:19.422036+00:00]   jitter sleep 14.5s
+[2026-05-21T23:51:34.212951+00:00]   p480 https://www.instagram.com/timodc/ -> broken (was valid)
+[2026-05-21T23:51:34.213817+00:00]   jitter sleep 20.6s
+[2026-05-21T23:51:55.175987+00:00]   p483 https://www.instagram.com/jamilbakr/ -> valid (was valid)
+[2026-05-21T23:51:55.176735+00:00]   jitter sleep 24.4s
+[2026-05-21T23:52:19.893071+00:00]   p484 https://www.instagram.com/thebrown_butterfly/ -> broken (was valid)
+[2026-05-21T23:52:19.894856+00:00]   jitter sleep 11.0s
+[2026-05-21T23:52:31.753096+00:00]   p485 https://www.instagram.com/naketa/ -> valid (was valid)
+[2026-05-21T23:52:31.753825+00:00]   jitter sleep 23.0s
+[2026-05-21T23:52:55.260583+00:00]   p486 https://www.instagram.com/radianthealth/ -> valid (was valid)
+[2026-05-21T23:52:55.261375+00:00]   jitter sleep 17.3s
+[2026-05-21T23:53:12.958915+00:00]   p487 https://www.instagram.com/kwamesalter/ -> valid (was valid)
+[2026-05-21T23:53:12.959609+00:00]   jitter sleep 14.2s
+[2026-05-21T23:53:27.382792+00:00]   p494 https://www.instagram.com/bryanjstevenson/ -> broken (was valid)
+[2026-05-21T23:53:27.405864+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-195327
+[2026-05-21T23:53:27.406703+00:00] run 102: done. next cursor=245 valid=7 broken=3 401s=0 inconclusive=2
+[2026-05-22T00:23:27.561512+00:00] run 103: validating IG handles [245:257] of 290 (batch_size=12)
+[2026-05-22T00:23:27.777407+00:00]   p497 https://www.instagram.com/stacybrownphilpot/ -> broken (was valid)
+[2026-05-22T00:23:27.778081+00:00]   jitter sleep 23.6s
+[2026-05-22T00:23:52.642823+00:00]   p498 https://www.instagram.com/jennifercarrollfoy/ -> valid (was valid)
+[2026-05-22T00:23:52.643586+00:00]   jitter sleep 20.4s
+[2026-05-22T00:24:14.021058+00:00]   p503 https://www.instagram.com/tysons.creamery/ -> valid (was valid)
+[2026-05-22T00:24:14.022407+00:00]   jitter sleep 9.4s
+[2026-05-22T00:24:25.503627+00:00]   p505 https://www.instagram.com/rubylathon/ -> valid (was valid)
+[2026-05-22T00:24:25.504282+00:00]   jitter sleep 13.6s
+[2026-05-22T00:24:39.815713+00:00]   p511 https://www.instagram.com/lizaachillesauthor/ -> valid (was valid)
+[2026-05-22T00:24:39.816313+00:00]   jitter sleep 18.2s
+[2026-05-22T00:24:59.712180+00:00]   p516 https://www.instagram.com/chefkevintien/ -> valid (was valid)
+[2026-05-22T00:24:59.712911+00:00]   jitter sleep 9.1s
+[2026-05-22T00:25:09.833673+00:00]   p517 https://www.instagram.com/modestbread/ -> valid (was valid)
+[2026-05-22T00:25:09.834322+00:00]   jitter sleep 13.6s
+[2026-05-22T00:25:25.428844+00:00]   p520 https://www.instagram.com/the_sky_group/ -> inconclusive (block/err); kept valid
+[2026-05-22T00:25:25.430895+00:00]   jitter sleep 19.6s
+[2026-05-22T00:28:32.691018+00:00]   p521 https://www.instagram.com/tiny_chefs/ -> inconclusive (block/err); kept valid
+[2026-05-22T00:28:32.692524+00:00] run 103: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-22T00:28:32.692760+00:00]   jitter sleep 23.3s
+[2026-05-22T00:28:56.125546+00:00] run 103: detected IG block (consecutive_401s=6) after 7 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-22T00:28:56.153845+00:00] wrote 7 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-202856
+[2026-05-22T00:28:56.154247+00:00] run 103: BLOCK back-off engaged - skipping IG until run 109 (~180 min).
+[2026-05-22T00:28:56.155041+00:00] run 103: done. next cursor=252 valid=6 broken=1 401s=6 inconclusive=2
+[2026-05-22T00:58:56.311094+00:00] run 104: in post-block cool-down until run 109 - skipping IG calls entirely.
+[2026-05-22T01:28:56.466137+00:00] run 105: in post-block cool-down until run 109 - skipping IG calls entirely.
+[2026-05-22T01:58:56.654887+00:00] run 106: in post-block cool-down until run 109 - skipping IG calls entirely.
+[2026-05-22T02:28:56.803896+00:00] run 107: in post-block cool-down until run 109 - skipping IG calls entirely.
+[2026-05-22T02:58:56.950818+00:00] run 108: in post-block cool-down until run 109 - skipping IG calls entirely.
+[2026-05-22T03:28:57.097269+00:00] run 109: validating IG handles [252:264] of 290 (batch_size=12)
+[2026-05-22T03:28:58.248404+00:00]   p520 https://www.instagram.com/the_sky_group/ -> inconclusive (block/err); kept valid
+[2026-05-22T03:28:58.249103+00:00]   jitter sleep 13.9s
+[2026-05-22T03:29:13.299621+00:00]   p521 https://www.instagram.com/tiny_chefs/ -> valid (was valid)
+[2026-05-22T03:29:13.300255+00:00]   jitter sleep 23.1s
+[2026-05-22T03:29:37.675602+00:00]   p522 https://www.instagram.com/naturallychefcat/ -> valid (was valid)
+[2026-05-22T03:29:37.676225+00:00]   jitter sleep 12.4s
+[2026-05-22T03:29:51.210854+00:00]   p523 https://www.instagram.com/citroncaterers/ -> valid (was valid)
+[2026-05-22T03:29:51.211490+00:00]   jitter sleep 17.6s
+[2026-05-22T03:30:09.303672+00:00]   p525 https://www.instagram.com/teehpop/ -> valid (was valid)
+[2026-05-22T03:30:09.305166+00:00]   jitter sleep 12.3s
+[2026-05-22T03:30:23.543363+00:00]   p526 https://www.instagram.com/melissadawnsimkins/ -> valid (was valid)
+[2026-05-22T03:30:23.544161+00:00]   jitter sleep 12.2s
+[2026-05-22T03:30:36.710966+00:00]   p527 https://www.instagram.com/fabbioliwines/ -> valid (was valid)
+[2026-05-22T03:30:36.711533+00:00]   jitter sleep 12.1s
+[2026-05-22T03:30:49.843183+00:00]   p539 https://www.instagram.com/soul_fly_yoga/ -> valid (was valid)
+[2026-05-22T03:30:49.843903+00:00]   jitter sleep 21.1s
+[2026-05-22T03:31:12.172097+00:00]   p548 https://www.instagram.com/jussrite7/ -> valid (was valid)
+[2026-05-22T03:31:12.173786+00:00]   jitter sleep 14.8s
+[2026-05-22T03:31:28.270103+00:00]   p551 https://www.instagram.com/laurafoxinteriordesign/ -> valid (was valid)
+[2026-05-22T03:31:28.270809+00:00]   jitter sleep 10.1s
+[2026-05-22T03:34:26.094101+00:00]   p559 https://www.instagram.com/daniellefarrah/ -> inconclusive (block/err); kept valid
+[2026-05-22T03:34:26.095755+00:00] run 109: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-22T03:34:26.095942+00:00]   jitter sleep 13.3s
+[2026-05-22T03:34:39.515377+00:00] run 109: detected IG block (consecutive_401s=6) after 9 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-22T03:34:39.543067+00:00] wrote 9 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260521-233439
+[2026-05-22T03:34:39.543376+00:00] run 109: BLOCK back-off engaged - skipping IG until run 115 (~180 min).
+[2026-05-22T03:34:39.544456+00:00] run 109: done. next cursor=261 valid=9 broken=0 401s=6 inconclusive=2
+[2026-05-22T04:04:39.701907+00:00] run 110: in post-block cool-down until run 115 - skipping IG calls entirely.
+[2026-05-22T04:34:39.858202+00:00] run 111: in post-block cool-down until run 115 - skipping IG calls entirely.
+[2026-05-22T05:04:40.008141+00:00] run 112: in post-block cool-down until run 115 - skipping IG calls entirely.
+[2026-05-22T05:34:40.154692+00:00] run 113: in post-block cool-down until run 115 - skipping IG calls entirely.
+[2026-05-22T06:04:40.305410+00:00] run 114: in post-block cool-down until run 115 - skipping IG calls entirely.
+[2026-05-22T06:34:40.470316+00:00] run 115: validating IG handles [261:273] of 290 (batch_size=12)
+[2026-05-22T06:37:28.001707+00:00]   p551 https://www.instagram.com/laurafoxinteriordesign/ -> inconclusive (block/err); kept valid
+[2026-05-22T06:37:28.003372+00:00] run 115: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-22T06:37:28.003695+00:00]   jitter sleep 17.0s
+[2026-05-22T06:37:45.134667+00:00] run 115: detected IG block (consecutive_401s=6) after 0 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-22T06:37:45.135262+00:00] no IG statuses resolved this run (nothing written).
+[2026-05-22T06:37:45.135645+00:00] run 115: BLOCK back-off engaged - skipping IG until run 121 (~180 min).
+[2026-05-22T06:37:45.136692+00:00] run 115: done. next cursor=261 valid=0 broken=0 401s=6 inconclusive=1
+[2026-05-22T07:07:45.292370+00:00] run 116: in post-block cool-down until run 121 - skipping IG calls entirely.
+[2026-05-22T07:37:45.466139+00:00] run 117: in post-block cool-down until run 121 - skipping IG calls entirely.
+[2026-05-22T08:07:45.607544+00:00] run 118: in post-block cool-down until run 121 - skipping IG calls entirely.
+[2026-05-22T08:37:45.746779+00:00] run 119: in post-block cool-down until run 121 - skipping IG calls entirely.
+[2026-05-22T09:07:45.894469+00:00] run 120: in post-block cool-down until run 121 - skipping IG calls entirely.
+[2026-05-22T09:37:46.041981+00:00] run 121: validating IG handles [261:273] of 290 (batch_size=12)
+[2026-05-22T09:37:47.535097+00:00]   p551 https://www.instagram.com/laurafoxinteriordesign/ -> valid (was valid)
+[2026-05-22T09:37:47.535609+00:00]   jitter sleep 8.7s
+[2026-05-22T09:37:57.482038+00:00]   p559 https://www.instagram.com/daniellefarrah/ -> valid (was valid)
+[2026-05-22T09:37:57.482648+00:00]   jitter sleep 12.4s
+[2026-05-22T09:38:11.470766+00:00]   p566 https://www.instagram.com/deshawnsheeo/ -> valid (was valid)
+[2026-05-22T09:38:11.471371+00:00]   jitter sleep 19.8s
+[2026-05-22T09:38:32.417211+00:00]   p574 https://www.instagram.com/roseprevite/ -> valid (was valid)
+[2026-05-22T09:38:32.417878+00:00]   jitter sleep 22.6s
+[2026-05-22T09:38:56.154977+00:00]   p575 https://www.instagram.com/allisonshapira/ -> valid (was valid)
+[2026-05-22T09:38:56.155506+00:00]   jitter sleep 18.5s
+[2026-05-22T09:39:15.821174+00:00]   p578 https://www.instagram.com/michellecthomasesq/ -> valid (was valid)
+[2026-05-22T09:39:15.821811+00:00]   jitter sleep 23.3s
+[2026-05-22T09:39:41.266986+00:00]   p581 https://www.instagram.com/chefalexmccoy/ -> valid (was valid)
+[2026-05-22T09:39:41.267705+00:00]   jitter sleep 24.4s
+[2026-05-22T09:40:07.889352+00:00]   p583 https://www.instagram.com/andrewrobyevents/ -> inconclusive (block/err); kept valid
+[2026-05-22T09:40:07.890075+00:00]   jitter sleep 11.6s
+[2026-05-22T09:40:20.690082+00:00]   p584 https://www.instagram.com/sonia_everyday/ -> valid (was valid)
+[2026-05-22T09:40:20.690904+00:00]   jitter sleep 23.8s
+[2026-05-22T09:40:45.591218+00:00]   p598 https://www.instagram.com/preparewithrahul/ -> valid (was valid)
+[2026-05-22T09:40:45.592001+00:00]   jitter sleep 17.3s
+[2026-05-22T09:41:03.165256+00:00]   p602 https://www.instagram.com/chadwsmithmd/ -> broken (was valid)
+[2026-05-22T09:41:03.165893+00:00]   jitter sleep 20.9s
+[2026-05-22T09:41:27.046383+00:00]   p609 https://www.instagram.com/impackt_fitness/ -> inconclusive (block/err); kept valid
+[2026-05-22T09:41:27.070772+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260522-054127
+[2026-05-22T09:41:27.071518+00:00] run 121: done. next cursor=273 valid=9 broken=1 401s=0 inconclusive=2
+[2026-05-22T10:11:27.234089+00:00] run 122: validating IG handles [273:285] of 290 (batch_size=12)
+[2026-05-22T10:11:27.547635+00:00]   p611 https://www.instagram.com/staceychampagne/ -> valid (was valid)
+[2026-05-22T10:11:27.548124+00:00]   jitter sleep 10.5s
+[2026-05-22T10:11:40.035328+00:00]   p616 https://www.instagram.com/deliasullivanyoga/ -> valid (was valid)
+[2026-05-22T10:11:40.035896+00:00]   jitter sleep 12.3s
+[2026-05-22T10:11:54.598496+00:00]   p619 https://www.instagram.com/thekerishull/ -> inconclusive (block/err); kept valid
+[2026-05-22T10:11:54.599170+00:00]   jitter sleep 21.4s
+[2026-05-22T10:12:17.190152+00:00]   p627 https://www.instagram.com/chefanthonyj/ -> valid (was valid)
+[2026-05-22T10:12:17.190784+00:00]   jitter sleep 12.7s
+[2026-05-22T10:12:31.526517+00:00]   p628 https://www.instagram.com/sonamjainmakharia/ -> valid (was valid)
+[2026-05-22T10:12:31.527038+00:00]   jitter sleep 17.8s
+[2026-05-22T10:12:49.801374+00:00]   p629 https://www.instagram.com/theexplorer37/ -> valid (was valid)
+[2026-05-22T10:12:49.801795+00:00]   jitter sleep 20.5s
+[2026-05-22T10:13:12.313116+00:00]   p630 https://www.instagram.com/changecoaches/ -> valid (was valid)
+[2026-05-22T10:13:12.313391+00:00]   jitter sleep 15.8s
+[2026-05-22T10:13:29.061345+00:00]   p636 https://www.instagram.com/lauriejcameron/ -> valid (was valid)
+[2026-05-22T10:13:29.062062+00:00]   jitter sleep 16.1s
+[2026-05-22T10:13:47.020591+00:00]   p649 https://www.instagram.com/1to1_fit/ -> inconclusive (block/err); kept valid
+[2026-05-22T10:13:47.021089+00:00]   jitter sleep 14.8s
+[2026-05-22T10:14:03.285253+00:00]   p671 https://www.instagram.com/zaneilia_harris/ -> valid (was valid)
+[2026-05-22T10:14:03.285752+00:00]   jitter sleep 14.8s
+[2026-05-22T10:14:18.928277+00:00]   p682 https://www.instagram.com/kgh12019/ -> valid (was valid)
+[2026-05-22T10:14:18.928709+00:00]   jitter sleep 12.6s
+[2026-05-22T10:14:32.992524+00:00]   p683 https://www.instagram.com/jon_bassford/ -> valid (was valid)
+[2026-05-22T10:14:33.013007+00:00] wrote 10 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260522-061432
+[2026-05-22T10:14:33.014242+00:00] run 122: done. next cursor=285 valid=10 broken=0 401s=0 inconclusive=2
+[2026-05-22T10:44:33.165061+00:00] run 123: validating IG handles [285:290] of 290 (batch_size=12)
+[2026-05-22T10:44:34.200592+00:00]   p707 https://www.instagram.com/eddiebradyrealestate/ -> valid (was None)
+[2026-05-22T10:44:34.201333+00:00]   jitter sleep 11.2s
+[2026-05-22T10:44:47.430016+00:00]   p712 https://www.instagram.com/chefdavidguas/ -> valid (was None)
+[2026-05-22T10:44:47.430528+00:00]   jitter sleep 15.1s
+[2026-05-22T10:45:06.783981+00:00]   p716 https://www.instagram.com/diningtraveler/ -> inconclusive (block/err); kept None
+[2026-05-22T10:45:06.784470+00:00]   jitter sleep 20.0s
+[2026-05-22T10:45:27.656093+00:00]   p718 https://www.instagram.com/jeffreyjameshiggins/ -> valid (was None)
+[2026-05-22T10:45:27.656509+00:00]   jitter sleep 9.7s
+[2026-05-22T10:45:39.858984+00:00]   p721 https://www.instagram.com/digitalempathstudios/ -> inconclusive (block/err); kept None
+[2026-05-22T10:45:39.878029+00:00] wrote 3 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260522-064539
+[2026-05-22T10:45:39.878274+00:00] run 123: full sweep complete - cursor wraps to 0.
+[2026-05-22T10:45:39.878845+00:00] run 123: done. next cursor=0 valid=3 broken=0 401s=0 inconclusive=2
+[2026-05-22T11:15:40.029525+00:00] run 124: validating IG handles [0:12] of 290 (batch_size=12)
+[2026-05-22T11:15:41.808706+00:00]   p1 https://www.instagram.com/mercedesschlapp/ -> valid (was valid)
+[2026-05-22T11:15:41.809358+00:00]   jitter sleep 19.9s
+[2026-05-22T11:16:03.503145+00:00]   p2 https://www.instagram.com/jaymeleaghfranklin/ -> valid (was valid)
+[2026-05-22T11:16:03.503746+00:00]   jitter sleep 17.5s
+[2026-05-22T11:16:21.927903+00:00]   p4 https://www.instagram.com/rachelbovard/ -> valid (was valid)
+[2026-05-22T11:16:21.928549+00:00]   jitter sleep 17.5s
+[2026-05-22T11:16:39.793685+00:00]   p5 https://www.instagram.com/gayle_trotter/ -> valid (was valid)
+[2026-05-22T11:16:39.794466+00:00]   jitter sleep 24.2s
+[2026-05-22T11:17:05.055638+00:00]   p9 https://www.instagram.com/psb_dc/ -> valid (was valid)
+[2026-05-22T11:17:05.056068+00:00]   jitter sleep 12.2s
+[2026-05-22T11:17:17.946987+00:00]   p15 https://www.instagram.com/ckchumley/ -> valid (was valid)
+[2026-05-22T11:17:17.947428+00:00]   jitter sleep 15.3s
+[2026-05-22T11:17:35.555684+00:00]   p16 https://www.instagram.com/caseyburgat/ -> valid (was valid)
+[2026-05-22T11:17:35.556259+00:00]   jitter sleep 10.1s
+[2026-05-22T11:17:46.261950+00:00]   p19 https://www.instagram.com/deanhingson/ -> valid (was valid)
+[2026-05-22T11:17:46.262661+00:00]   jitter sleep 16.0s
+[2026-05-22T11:20:49.901527+00:00]   p20 https://www.instagram.com/dansimonssays -> inconclusive (block/err); kept valid
+[2026-05-22T11:20:49.902175+00:00] run 124: saw 6 401(s) - flagging block, will finish loop guard then back off.
+[2026-05-22T11:20:49.902496+00:00]   jitter sleep 21.6s
+[2026-05-22T11:21:11.528933+00:00] run 124: detected IG block (consecutive_401s=6) after 8 handles - aborting rest of batch, NOT marking remaining broken.
+[2026-05-22T11:21:11.548028+00:00] wrote 8 resolved IG statuses back; backup=/Users/james/highlife-crm/prospects.json.bak.20260522-072111
+[2026-05-22T11:21:11.548235+00:00] run 124: BLOCK back-off engaged - skipping IG until run 130 (~180 min).
+[2026-05-22T11:21:11.548872+00:00] run 124: done. next cursor=8 valid=8 broken=0 401s=6 inconclusive=1
+[2026-05-22T11:51:11.669871+00:00] run 125: in post-block cool-down until run 130 - skipping IG calls entirely.
+[2026-05-22T12:21:11.844075+00:00] run 126: in post-block cool-down until run 130 - skipping IG calls entirely.
+[2026-05-22T12:51:11.981829+00:00] run 127: in post-block cool-down until run 130 - skipping IG calls entirely.
+[2026-05-22T13:21:12.088152+00:00] run 128: in post-block cool-down until run 130 - skipping IG calls entirely.
+[2026-05-22T13:51:12.252691+00:00] run 129: in post-block cool-down until run 130 - skipping IG calls entirely.

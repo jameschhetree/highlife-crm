@@ -1,0 +1,41 @@
+{
+  "run_date": "2026-05-18",
+  "data_file": "/Users/james/highlife-crm/prospects.json",
+  "backup_file": "/Users/james/highlife-crm/prospects.json.bak-pre-validation-2026-05-19",
+  "linkedin": {
+    "method": "syntactic regex match against ^https://(www\\.)?linkedin.com/in/[A-Za-z0-9\\-_%.]+/?$",
+    "reliable": true,
+    "broken_count": 3,
+    "valid_count": 611,
+    "missing_count": 65,
+    "note": "Syntactic valid still needs manual spot-check per spec; LI cannot be auto-verified."
+  },
+  "instagram": {
+    "method": "GET https://www.instagram.com/api/v1/users/web_profile_info/?username=X with public X-IG-App-ID",
+    "reliable": false,
+    "reason": "Instagram rate-limited the source IP after the first batch and returned HTTP 401 for ALL subsequent requests, including known-good handles (e.g. zuck, mercedesschlapp). The validator gracefully falls back to \"valid\" on 401 to avoid false-positive broken marks. As a result, the 274 instagram_status=valid records on this run are NOT independently verified.",
+    "recommendation": "Re-run validate_links.py from a different IP (e.g. residential proxy or after 24h cooldown). Confirmed working signal: 200+JSON with data.user object = valid; 404 = broken.",
+    "inconclusive_file": "/Users/james/highlife-crm/_ig_inconclusive.json",
+    "broken_count": 0,
+    "valid_count": 274,
+    "missing_count": 405
+  },
+  "youtube": {
+    "method": "HTTP GET, look for 404 or dead-channel HTML markers",
+    "reliable": true,
+    "note": "No youtube field present on any prospect in this dataset; all 679 marked missing.",
+    "broken_count": 0,
+    "valid_count": 0,
+    "missing_count": 679
+  },
+  "files_touched": [
+    "/Users/james/highlife-crm/prospects.json",
+    "/Users/james/highlife-crm/prospects.json.bak-pre-validation-2026-05-19 (backup, written once)",
+    "/Users/james/highlife-crm/validate_links.py (new script)",
+    "/Users/james/highlife-crm/_li_suspicious.json (sidecar)",
+    "/Users/james/highlife-crm/_validation_log.json (this file)"
+  ],
+  "files_NOT_touched": [
+    "/Users/james/highlife-crm/index.html"
+  ]
+}

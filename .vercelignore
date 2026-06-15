@@ -1,0 +1,32 @@
+# Migration / setup scripts — never deploy
+_apply_schema.py
+_migrate_seed.py
+_migrate_actions.py
+_extract_localstorage.mjs
+_verify_local.mjs
+_supabase_schema.sql
+_localstorage_dump.json
+_pre_deploy_dump.json
+_pre_deploy_dump_after.json
+.pgconn.json
+
+# Local server / temp
+_li_method_test.py
+_li_suspicious.json
+_ig_revalidate_cursor.json
+_ig_revalidate_launchd.*
+_ig_revalidate_log.txt
+_validation_log.json
+_graveyard_check_log.txt
+
+# Backups (large)
+*.bak
+*.bak-*
+*.bak.*
+
+# Node + Playwright artifacts
+node_modules
+test-results
+clay-batches
+clay-batches-new274
+clay-batches-v2

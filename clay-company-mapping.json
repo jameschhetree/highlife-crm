@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "p3",
+    "name": "Vince Coglianese",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/vincecoglianese/",
+    "current_company": "The Daily Caller / Westwood One",
+    "company_linkedin": "https://www.linkedin.com/company/the-daily-caller",
+    "company_domain_secondary": "dailycaller.com",
+    "notes": "Still at Daily Caller as editor-in-chief and Westwood One as syndicated radio host as of May 2026"
+  },
+  {
+    "id": "p4",
+    "name": "Rachel Bovard",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rachel-bovard/",
+    "current_company": "Conservative Partnership Institute",
+    "company_linkedin": "https://www.linkedin.com/company/conservative-partnership-institute",
+    "company_domain_secondary": "cpi.org",
+    "notes": "VP of Programs at CPI as of May 2026"
+  },
+  {
+    "id": "p5",
+    "name": "Gayle Trotter",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gayletrotter/",
+    "current_company": "Right in DC / Independent",
+    "company_linkedin": null,
+    "company_domain_secondary": "gayletrotter.com",
+    "notes": "Independent conservative attorney and podcast host; no LinkedIn company page for Right in DC found"
+  },
+  {
+    "id": "p6",
+    "name": "Mark Amtower",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/markamtower/",
+    "current_company": "Amtower & Company",
+    "company_linkedin": "https://www.linkedin.com/company/amtower-&-company",
+    "company_domain_secondary": "amtower.com",
+    "notes": "Still at Amtower & Company as of May 2026"
+  },
+  {
+    "id": "p8",
+    "name": "Liz Schrayer",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/lizschrayer/",
+    "current_company": "U.S. Global Leadership Coalition",
+    "company_linkedin": "https://www.linkedin.com/company/u-s-global-leadership-coalition",
+    "company_domain_secondary": "usglc.org",
+    "notes": "President and CEO at USGLC as of May 2026"
+  },
+  {
+    "id": "p10",
+    "name": "Josh Holmes",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/josh-holmes-0683655",
+    "current_company": "Cavalry LLC",
+    "company_linkedin": "https://www.linkedin.com/company/cavalry-llc",
+    "company_domain_secondary": "cavalryllc.com",
+    "notes": "Founding Partner at Cavalry LLC as of May 2026"
+  },
+  {
+    "id": "p11",
+    "name": "Kristen Soltis Anderson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kristen-soltis-anderson-5451256",
+    "current_company": "Echelon Insights",
+    "company_linkedin": "https://www.linkedin.com/company/echelon-insights",
+    "company_domain_secondary": "echeloninsights.com",
+    "notes": "Co-founder at Echelon Insights as of May 2026"
+  },
+  {
+    "id": "p15",
+    "name": "Cheryl Chumley",
+    "personal_linkedin_verified": null,
+    "current_company": "The Washington Times",
+    "company_linkedin": "https://www.linkedin.com/company/the-washington-times",
+    "company_domain_secondary": "washingtontimes.com",
+    "notes": "Online editor at The Washington Times; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p17",
+    "name": "Michael Duncan",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/michaelduncan1",
+    "current_company": "Cavalry LLC",
+    "company_linkedin": "https://www.linkedin.com/company/cavalry-llc",
+    "company_domain_secondary": "cavalryllc.com",
+    "notes": "Partner at Cavalry LLC as of May 2026"
+  },
+  {
+    "id": "p18",
+    "name": "Josh Zive",
+    "personal_linkedin_verified": null,
+    "current_company": "Bracewell LLP",
+    "company_linkedin": "https://www.linkedin.com/company/bracewell",
+    "company_domain_secondary": "bracewell.com",
+    "notes": "No personal LinkedIn URL in source data; still at Bracewell as of May 2026"
+  },
+  {
+    "id": "p19",
+    "name": "Dean Hingson",
+    "personal_linkedin_verified": null,
+    "current_company": "Mehlman Castagnetti Rosen & Thomas",
+    "company_linkedin": "https://www.linkedin.com/company/mehlman-castagnetti-rosen-&-thomas-inc.",
+    "company_domain_secondary": "mehlmancastagnetti.com",
+    "notes": "No personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p20",
+    "name": "Dan Simons",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/dansimonssays",
+    "current_company": "Farmers Restaurant Group",
+    "company_linkedin": "https://www.linkedin.com/company/farmersrestaurantgroup",
+    "company_domain_secondary": "farmersrestaurantgroup.com",
+    "notes": "Co-founder of Founding Farmers restaurants; still active as of May 2026"
+  },
+  {
+    "id": "p23",
+    "name": "Rosetta Thurman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rosettathurman",
+    "current_company": "Happy Black Woman",
+    "company_linkedin": null,
+    "company_domain_secondary": "happyblackwoman.com",
+    "notes": "No LinkedIn company page found for Happy Black Woman; personal brand/solopreneur"
+  },
+  {
+    "id": "p24",
+    "name": "Liam Donovan",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/lpdonovan",
+    "current_company": "Targeted Victory",
+    "company_linkedin": "https://www.linkedin.com/company/targeted-victory",
+    "company_domain_secondary": "targetedvictory.com",
+    "notes": "JOB CHANGE \u2014 moved from Bracewell LLP to Targeted Victory (President) in 2025; update company in CRM"
+  },
+  {
+    "id": "p25",
+    "name": "Chris Plante",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/chris-plante-4165748/",
+    "current_company": "Westwood One / 630 WMAL",
+    "company_linkedin": "https://www.linkedin.com/company/westwoodone",
+    "company_domain_secondary": "westwoodone.com",
+    "notes": "JOB CHANGE \u2014 left Newsmax Jan 2026 to focus solely on Westwood One syndicated radio show and WMAL; no longer at Newsmax"
+  },
+  {
+    "id": "p26",
+    "name": "Terry Schilling",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/terry-schilling-82a239279/",
+    "current_company": "American Principles Project",
+    "company_linkedin": "https://www.linkedin.com/company/approject",
+    "company_domain_secondary": "americanprinciplesproject.org",
+    "notes": "President at American Principles Project as of May 2026"
+  },
+  {
+    "id": "p27",
+    "name": "Ben Domenech",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/benjamin-domenech-5970105/",
+    "current_company": "The Daily Wire",
+    "company_linkedin": "https://www.linkedin.com/company/thedailywire",
+    "company_domain_secondary": "dailywire.com",
+    "notes": "JOB CHANGE \u2014 moved from Spectator World to The Daily Wire as Opinion Editor, Feb 2026; update company in CRM"
+  },
+  {
+    "id": "p28",
+    "name": "Carrie Sheffield",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/carriesheffield",
+    "current_company": "Independent Women's Forum",
+    "company_linkedin": "https://www.linkedin.com/company/independent-women-s-forum",
+    "company_domain_secondary": "iwf.org",
+    "notes": "Senior Fellow at IWF as of May 2026"
+  },
+  {
+    "id": "p29",
+    "name": "Amber Smith",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/amber-smith-usa",
+    "current_company": "Independent Women's Forum",
+    "company_linkedin": "https://www.linkedin.com/company/independent-women-s-forum",
+    "company_domain_secondary": "iwf.org",
+    "notes": "STATUS CHANGE \u2014 now Fellow Emeritus at IWF (no longer active staff); may be less reachable via IWF domain"
+  },
+  {
+    "id": "p30",
+    "name": "Tony Perkins",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tony-perkins-b37282b/",
+    "current_company": "Family Research Council",
+    "company_linkedin": "https://www.linkedin.com/company/frcdc",
+    "company_domain_secondary": "frc.org",
+    "notes": "President at FRC as of May 2026"
+  },
+  {
+    "id": "p31",
+    "name": "Patrice Onwuka",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/patricelee/",
+    "current_company": "Independent Women's Forum / 630 WMAL",
+    "company_linkedin": "https://www.linkedin.com/company/independent-women-s-forum",
+    "company_domain_secondary": "iwf.org",
+    "notes": "Senior Fellow at IWF and WMAL host as of May 2026"
+  },
+  {
+    "id": "p34",
+    "name": "Guy Benson",
+    "personal_linkedin_verified": null,
+    "current_company": "Townhall Media / Fox News Radio",
+    "company_linkedin": "https://www.linkedin.com/company/townhall-media",
+    "company_domain_secondary": "townhall.com",
+    "notes": "No personal LinkedIn URL in source data; political editor at Townhall and Fox News Radio host"
+  },
+  {
+    "id": "p36",
+    "name": "Mary Katharine Ham",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mary-katharine-ham-53564020",
+    "current_company": "Fox News",
+    "company_linkedin": "https://www.linkedin.com/company/fox-news-channel",
+    "company_domain_secondary": "foxnews.com",
+    "notes": "Fox News contributor as of May 2026"
+  },
+  {
+    "id": "p37",
+    "name": "Rachael Bade",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rachael-bade-73954958/",
+    "current_company": "The Huddle / Independent",
+    "company_linkedin": null,
+    "company_domain_secondary": "rachaelbade.com",
+    "notes": "JOB CHANGE \u2014 left Politico late 2025, now co-hosts The Huddle; independent/newsletter; no LinkedIn company page for The Huddle found"
+  },
+  {
+    "id": "p38",
+    "name": "Jim Hanson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jimhansondc/",
+    "current_company": "Middle East Forum",
+    "company_linkedin": "https://www.linkedin.com/company/middle-east-forum",
+    "company_domain_secondary": "meforum.org",
+    "notes": "Still at Middle East Forum as of May 2026"
+  },
+  {
+    "id": "p39",
+    "name": "Ned Ryun",
+    "personal_linkedin_verified": null,
+    "current_company": "American Majority",
+    "company_linkedin": "https://www.linkedin.com/company/american-majority",
+    "company_domain_secondary": "americanmajority.org",
+    "notes": "Founder and CEO at American Majority; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p41",
+    "name": "Sarah Isgur",
+    "personal_linkedin_verified": null,
+    "current_company": "The Dispatch",
+    "company_linkedin": "https://www.linkedin.com/company/thedispatch",
+    "company_domain_secondary": "thedispatch.com",
+    "notes": "Staff writer and podcast host at The Dispatch; also ABC News contributor; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p42",
+    "name": "Rina Shah",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rinaindc",
+    "current_company": "Rilax Strategies / Policy Resolution Group",
+    "company_linkedin": null,
+    "company_domain_secondary": "rilaxstrategies.com",
+    "notes": "No LinkedIn company page found for Rilax Strategies; independent consultant"
+  },
+  {
+    "id": "p43",
+    "name": "Rebeccah Heinrichs",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rebeccah-heinrichs-56414712",
+    "current_company": "Hudson Institute",
+    "company_linkedin": "https://www.linkedin.com/company/hudson-institute",
+    "company_domain_secondary": "hudson.org",
+    "notes": "Senior Fellow at Hudson Institute as of May 2026"
+  },
+  {
+    "id": "p44",
+    "name": "Matthew Continetti",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/matthew-continetti-56012623/",
+    "current_company": "American Enterprise Institute",
+    "company_linkedin": "https://www.linkedin.com/company/american-enterprise-institute",
+    "company_domain_secondary": "aei.org",
+    "notes": "Senior Fellow at AEI as of May 2026"
+  },
+  {
+    "id": "p45",
+    "name": "Seth Goldman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/seth-goldman-234bb7124/",
+    "current_company": "Tony's Chocolonely",
+    "company_linkedin": "https://www.linkedin.com/company/tonys-chocolonely",
+    "company_domain_secondary": "tonyschocolonely.com",
+    "notes": "JOB CHANGE \u2014 now Chair of Mission Guardians at Tony's Chocolonely; Eat the Change rebranded to Just Ice Tea; update company in CRM"
+  },
+  {
+    "id": "p49",
+    "name": "Christopher Bedford",
+    "personal_linkedin_verified": null,
+    "current_company": "Blaze Media",
+    "company_linkedin": "https://www.linkedin.com/company/the-blaze",
+    "company_domain_secondary": "theblaze.com",
+    "notes": "Senior editor at Blaze Media; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p50",
+    "name": "Marc Thiessen",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/marcthiessen",
+    "current_company": "American Enterprise Institute",
+    "company_linkedin": "https://www.linkedin.com/company/american-enterprise-institute",
+    "company_domain_secondary": "aei.org",
+    "notes": "Fellow at AEI and Washington Post columnist as of May 2026"
+  },
+  {
+    "id": "p51",
+    "name": "Amber Duke",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/amber-duke-4b69b0a5",
+    "current_company": "The Daily Caller",
+    "company_linkedin": "https://www.linkedin.com/company/the-daily-caller",
+    "company_domain_secondary": "dailycaller.com",
+    "notes": "Still at The Daily Caller as of May 2026"
+  },
+  {
+    "id": "p52",
+    "name": "Emily Jashinsky",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/emily-jashinsky-4b3ab9109",
+    "current_company": "UnHerd",
+    "company_linkedin": "https://www.linkedin.com/company/unherd-limited",
+    "company_domain_secondary": "unherd.com",
+    "notes": "US editor at UnHerd and co-host of Breaking Points as of May 2026"
+  },
+  {
+    "id": "p53",
+    "name": "Larry O'Connor",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/larry-o-connor-18b35b10",
+    "current_company": "630 WMAL",
+    "company_linkedin": "https://www.linkedin.com/company/630-wmal",
+    "company_domain_secondary": "wmal.com",
+    "notes": "Morning host at WMAL as of May 2026"
+  },
+  {
+    "id": "p54",
+    "name": "Eliana Johnson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/eliana-johnson-1776264",
+    "current_company": "Washington Free Beacon",
+    "company_linkedin": "https://www.linkedin.com/company/washington-free-beacon",
+    "company_domain_secondary": "freebeacon.com",
+    "notes": "Editor-in-chief at Washington Free Beacon as of May 2026"
+  },
+  {
+    "id": "p55",
+    "name": "Ramesh Ponnuru",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/ramesh-ponnuru-56269a3",
+    "current_company": "National Review / AEI",
+    "company_linkedin": "https://www.linkedin.com/company/national-review",
+    "company_domain_secondary": "nationalreview.com",
+    "notes": "Senior editor at National Review and AEI fellow as of May 2026"
+  },
+  {
+    "id": "p56",
+    "name": "Tim Carney",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tim-carney-baa64912b",
+    "current_company": "Washington Examiner",
+    "company_linkedin": "https://www.linkedin.com/company/washington-examiner",
+    "company_domain_secondary": "washingtonexaminer.com",
+    "notes": "Senior political columnist at Washington Examiner as of May 2026"
+  },
+  {
+    "id": "p57",
+    "name": "David Drucker",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/david-m-drucker-14561068",
+    "current_company": "The Dispatch",
+    "company_linkedin": "https://www.linkedin.com/company/thedispatch",
+    "company_domain_secondary": "thedispatch.com",
+    "notes": "Senior writer at The Dispatch as of May 2026"
+  },
+  {
+    "id": "p58",
+    "name": "Henry Olsen",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/henry-olsen-a768948",
+    "current_company": "Ethics and Public Policy Center",
+    "company_linkedin": "https://www.linkedin.com/company/ethics-and-public-policy-center",
+    "company_domain_secondary": "eppc.org",
+    "notes": "Senior Fellow at EPPC and Washington Post columnist as of May 2026"
+  },
+  {
+    "id": "p59",
+    "name": "Maria Cardona",
+    "personal_linkedin_verified": null,
+    "current_company": "Dewey Square Group",
+    "company_linkedin": "https://www.linkedin.com/company/dewey-square-group",
+    "company_domain_secondary": "deweysquare.com",
+    "notes": "Principal at Dewey Square Group; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p65",
+    "name": "Karen Finney",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/karen-finney-dc",
+    "current_company": "Independent / CNN",
+    "company_linkedin": null,
+    "company_domain_secondary": "cnn.com",
+    "notes": "Independent consultant and CNN contributor; no dedicated company page confirmed"
+  },
+  {
+    "id": "p66",
+    "name": "Mo Elleithee",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mo-elleithee-12242b4",
+    "current_company": "Georgetown University Institute of Politics and Public Service",
+    "company_linkedin": "https://www.linkedin.com/company/gupolitics",
+    "company_domain_secondary": "politics.georgetown.edu",
+    "notes": "Executive Director at Georgetown Institute of Politics as of May 2026"
+  },
+  {
+    "id": "p68",
+    "name": "Brad Todd",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/brad-todd-45019a7",
+    "current_company": "OnMessage Public Strategies",
+    "company_linkedin": "https://www.linkedin.com/company/onmessage-public-strategies",
+    "company_domain_secondary": "onmessageinc.com",
+    "notes": "Founding Partner at OnMessage as of May 2026"
+  },
+  {
+    "id": "p69",
+    "name": "Raheem Kassam",
+    "personal_linkedin_verified": "https://uk.linkedin.com/in/raheemkassam",
+    "current_company": "The National Pulse",
+    "company_linkedin": "https://www.linkedin.com/company/the-national-pulse",
+    "company_domain_secondary": "thenationalpulse.com",
+    "notes": "Editor-in-chief at The National Pulse as of May 2026"
+  },
+  {
+    "id": "p70",
+    "name": "Tara Setmayer",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tara-setmayer-a4036b5",
+    "current_company": "The Seneca Project",
+    "company_linkedin": "https://www.linkedin.com/company/seneca-project",
+    "company_domain_secondary": "thesenecaproject.org",
+    "notes": "Senior adviser at The Seneca Project and MSNBC contributor as of May 2026"
+  },
+  {
+    "id": "p71",
+    "name": "Brendan Buck",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/brendanbuck",
+    "current_company": "PCMA",
+    "company_linkedin": "https://www.linkedin.com/company/pcma-2",
+    "company_domain_secondary": "pcmanet.org",
+    "notes": "JOB CHANGE \u2014 moved from Seven Letter to PCMA as Chief Communications Officer, Jan 2026; update company in CRM"
+  },
+  {
+    "id": "p72",
+    "name": "Stephen Gutowski",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/stephengutowski",
+    "current_company": "The Reload",
+    "company_linkedin": null,
+    "company_domain_secondary": "thereload.com",
+    "notes": "Founder of The Reload; no dedicated LinkedIn company page found"
+  },
+  {
+    "id": "p74",
+    "name": "Natalie Winters",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/natalie-winters-5b56ba186/",
+    "current_company": "War Room",
+    "company_linkedin": "https://www.linkedin.com/company/warroomofficial",
+    "company_domain_secondary": "warroom.org",
+    "notes": "Still at War Room as of May 2026"
+  },
+  {
+    "id": "p75",
+    "name": "Walter Russell Mead",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/walter-mead-b3015b2a/",
+    "current_company": "Hudson Institute",
+    "company_linkedin": "https://www.linkedin.com/company/hudson-institute",
+    "company_domain_secondary": "hudson.org",
+    "notes": "Distinguished Fellow at Hudson Institute and WSJ columnist as of May 2026"
+  },
+  {
+    "id": "p76",
+    "name": "Jake Sherman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jake-sherman-6baa0b9",
+    "current_company": "Punchbowl News",
+    "company_linkedin": "https://www.linkedin.com/company/punchbowl-news",
+    "company_domain_secondary": "punchbowl.news",
+    "notes": "Co-founder at Punchbowl News as of May 2026"
+  },
+  {
+    "id": "p77",
+    "name": "Shermichael Singleton",
+    "personal_linkedin_verified": null,
+    "current_company": "Global Impact Strategies",
+    "company_linkedin": "https://www.linkedin.com/company/global-impact-strategies",
+    "company_domain_secondary": "globalimpactstrategies.com",
+    "notes": "No personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p78",
+    "name": "Oren Cass",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/orencass/",
+    "current_company": "American Compass",
+    "company_linkedin": "https://www.linkedin.com/company/american-compass",
+    "company_domain_secondary": "americacompass.org",
+    "notes": "Executive director at American Compass as of May 2026"
+  },
+  {
+    "id": "p79",
+    "name": "Shoshana Weissmann",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/shoshanaw",
+    "current_company": "Abundance Institute",
+    "company_linkedin": "https://www.linkedin.com/company/abundance-institute",
+    "company_domain_secondary": "abundanceinstitute.org",
+    "notes": "Fellow at Abundance Institute as of May 2026"
+  },
+  {
+    "id": "p80",
+    "name": "Kaylee McGhee White",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kaylee-mcghee-white-525494146/",
+    "current_company": "Washington Examiner",
+    "company_linkedin": "https://www.linkedin.com/company/washington-examiner",
+    "company_domain_secondary": "washingtonexaminer.com",
+    "notes": "Opinion editor at Washington Examiner as of May 2026"
+  },
+  {
+    "id": "p81",
+    "name": "Gianno Caldwell",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/giannocaldwell/",
+    "current_company": "Caldwell Strategic Consulting",
+    "company_linkedin": null,
+    "company_domain_secondary": "caldwellstrategicconsulting.com",
+    "notes": "No LinkedIn company page found for Caldwell Strategic Consulting; personal brand operation"
+  },
+  {
+    "id": "p82",
+    "name": "Mac Conwell",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mckeever",
+    "current_company": "RareBreed Ventures",
+    "company_linkedin": "https://www.linkedin.com/company/rarebreedvc",
+    "company_domain_secondary": "rarebreedvc.com",
+    "notes": "Managing Partner at RareBreed Ventures as of May 2026"
+  },
+  {
+    "id": "p83",
+    "name": "Miles Yu",
+    "personal_linkedin_verified": null,
+    "current_company": "Hudson Institute",
+    "company_linkedin": "https://www.linkedin.com/company/hudson-institute",
+    "company_domain_secondary": "hudson.org",
+    "notes": "Senior Fellow at Hudson Institute; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p85",
+    "name": "Isabelle Redfield",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/isabelle-redfield/",
+    "current_company": "The Conservateur",
+    "company_linkedin": "https://www.linkedin.com/company/the-conservateur",
+    "company_domain_secondary": "theconservateur.com",
+    "notes": "Founder at The Conservateur as of May 2026"
+  },
+  {
+    "id": "p86",
+    "name": "Sterling McKinley",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/sterlingmckinley/",
+    "current_company": "McKinley Media Group",
+    "company_linkedin": "https://www.linkedin.com/company/mckinley-media-group",
+    "company_domain_secondary": "mckinleymediagroup.com",
+    "notes": "CEO at McKinley Media Group as of May 2026"
+  },
+  {
+    "id": "p87",
+    "name": "Gerald Hodges",
+    "personal_linkedin_verified": null,
+    "current_company": "Hodges Fitness",
+    "company_linkedin": "https://www.linkedin.com/company/hodges-fitness",
+    "company_domain_secondary": "hodgesfitness.com",
+    "notes": "Company LinkedIn already present in source data; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p88",
+    "name": "Bianca Wise",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/hhtowson/",
+    "current_company": "The Mindset Snob",
+    "company_linkedin": null,
+    "company_domain_secondary": "themindsetsnob.com",
+    "notes": "No LinkedIn company page found for The Mindset Snob; personal brand/podcast"
+  },
+  {
+    "id": "p90",
+    "name": "Joshua Baumgardner",
+    "personal_linkedin_verified": null,
+    "current_company": "TTR Sotheby's International Realty",
+    "company_linkedin": "https://www.linkedin.com/company/ttrsir",
+    "company_domain_secondary": "ttrsir.com",
+    "notes": "No personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p91",
+    "name": "Mia Horm",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/b2bleadgenerationexpert/",
+    "current_company": "Creative Analytics / BRAND-E",
+    "company_linkedin": "https://www.linkedin.com/company/creativeanalytics",
+    "company_domain_secondary": "creativeanalytics.com",
+    "notes": "Founder at Creative Analytics as of May 2026"
+  },
+  {
+    "id": "p92",
+    "name": "Jon Chan",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jonathankchan/",
+    "current_company": "DMV Spotlight Show / Meta",
+    "company_linkedin": null,
+    "company_domain_secondary": "dmvspotlightshow.com",
+    "notes": "Hosts DMV Spotlight Show; LinkedIn profile shows Meta as employer; no company page for DMV Spotlight Show"
+  },
+  {
+    "id": "p93",
+    "name": "Anthony Millin",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/anthonymillin/",
+    "current_company": "NEXT powered by Shulman Rogers",
+    "company_linkedin": "https://www.linkedin.com/company/next-by-shulman-rogers",
+    "company_domain_secondary": "shulmanrogers.com",
+    "notes": "Co-founder at NEXT / Shulman Rogers as of May 2026"
+  },
+  {
+    "id": "p94",
+    "name": "Mark McMahon",
+    "personal_linkedin_verified": null,
+    "current_company": "Capital Workspaces",
+    "company_linkedin": "https://www.linkedin.com/company/capital-workspaces",
+    "company_domain_secondary": "capitalworkspaces.com",
+    "notes": "Director at Capital Workspaces; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p95",
+    "name": "Gresham Harkless Jr.",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gabordigresham/",
+    "current_company": "Blue 16 Media / CBNation",
+    "company_linkedin": "https://www.linkedin.com/company/blue16media",
+    "company_domain_secondary": "blue16media.com",
+    "notes": "CEO at Blue 16 Media as of May 2026"
+  },
+  {
+    "id": "p96",
+    "name": "Tamera Darden",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tamera-darden/",
+    "current_company": "Darden Creative / KIN Productions",
+    "company_linkedin": null,
+    "company_domain_secondary": "dardencreative.com",
+    "notes": "No LinkedIn company page found for Darden Creative; KIN Productions is her podcast production company"
+  },
+  {
+    "id": "p98",
+    "name": "Kara Allan",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/karaallan/",
+    "current_company": "Glamhive / Style by Kara Allan",
+    "company_linkedin": "https://www.linkedin.com/company/glamhive",
+    "company_domain_secondary": "karaallan.com",
+    "notes": "Personal stylist at Glamhive; hosts Fabulous Over 40 podcast as of May 2026"
+  },
+  {
+    "id": "p99",
+    "name": "Meghan Lucas",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/meghanolivialucas/",
+    "current_company": "Dear Strong Woman",
+    "company_linkedin": "https://www.linkedin.com/company/dear-strong-woman",
+    "company_domain_secondary": "dearstrongwoman.com",
+    "notes": "Founder and coach at Dear Strong Woman; hosts The May We Know Them Podcast as of May 2026"
+  },
+  {
+    "id": "p100",
+    "name": "Patrice Murphy",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/patrice-murphy-595705148/",
+    "current_company": "7PM Fitness / Curves and Gains",
+    "company_linkedin": null,
+    "company_domain_secondary": "7pmfitness.com",
+    "notes": "No LinkedIn company page found for Curves and Gains or 7PM Fitness; personal brand"
+  },
+  {
+    "id": "p101",
+    "name": "Ty Howard",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tyhoward410/",
+    "current_company": "InspiraGen Institute",
+    "company_linkedin": null,
+    "company_domain_secondary": "tyhoward.com",
+    "notes": "No LinkedIn company page found for InspiraGen Institute; professional speaker/author brand"
+  },
+  {
+    "id": "p102",
+    "name": "Marcus Avery Christon",
+    "personal_linkedin_verified": null,
+    "current_company": "Chow & Company",
+    "company_linkedin": null,
+    "company_domain_secondary": "chowandcompany.com",
+    "notes": "Founder of Chow & Company food/media brand; no LinkedIn company page found; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p103",
+    "name": "Antonia Michaela",
+    "personal_linkedin_verified": null,
+    "current_company": "MomSpace&Co",
+    "company_linkedin": "https://www.linkedin.com/company/momspace",
+    "company_domain_secondary": null,
+    "notes": "Hosts Talk Space&Co podcast; MomSpace has a LinkedIn presence but small following; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p104",
+    "name": "Barnette Holston",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/barnette-holston-3872a412",
+    "current_company": "DC Fashion Fool / National Cooperative Bank",
+    "company_linkedin": null,
+    "company_domain_secondary": "dcfashionfool.com",
+    "notes": "DCFashionFool is a personal brand/blog; primary employer is National Cooperative Bank; no company LinkedIn page for DC Fashion Fool"
+  },
+  {
+    "id": "p105",
+    "name": "Tashira Halyard",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tashira-halyard-87393124",
+    "current_company": "Politics & Fashion",
+    "company_linkedin": null,
+    "company_domain_secondary": "politicsandfashionblog.com",
+    "notes": "Attorney, racial equity consultant, and founder of Politics & Fashion blog/brand; no dedicated LinkedIn company page for Politics & Fashion found"
+  },
+  {
+    "id": "p106",
+    "name": "Mahan Tavakoli",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mahan/",
+    "current_company": "Strategic Leadership Ventures",
+    "company_linkedin": "https://www.linkedin.com/company/strategic-leadership-ventures",
+    "company_domain_secondary": "mahantavakoli.com",
+    "notes": "Founder at Strategic Leadership Ventures as of May 2026"
+  },
+  {
+    "id": "p108",
+    "name": "Seema Alexander",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/seemaalexander",
+    "current_company": "Virgent AI",
+    "company_linkedin": "https://www.linkedin.com/company/virgentai",
+    "company_domain_secondary": "virgent.ai",
+    "notes": "Founder at Virgent AI as of May 2026"
+  },
+  {
+    "id": "p110",
+    "name": "Dolen Perkins-Valdez",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/dolenperkinsvaldez/",
+    "current_company": "American University",
+    "company_linkedin": "https://www.linkedin.com/school/american-university/",
+    "company_domain_secondary": "american.edu",
+    "notes": "Professor at American University as of May 2026"
+  },
+  {
+    "id": "p111",
+    "name": "Monica H. Kang",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/monicakang/",
+    "current_company": "InnovatorsBox",
+    "company_linkedin": "https://www.linkedin.com/company/innovatorsbox",
+    "company_domain_secondary": "innovatorsbox.com",
+    "notes": "Founder and CEO at InnovatorsBox as of May 2026"
+  },
+  {
+    "id": "p112",
+    "name": "Parisa Norouzi",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/parisa-norouzi-80522379/",
+    "current_company": "Empower DC",
+    "company_linkedin": "https://www.linkedin.com/company/empowerdc",
+    "company_domain_secondary": "empowerdc.org",
+    "notes": "Executive director at Empower DC as of May 2026"
+  },
+  {
+    "id": "p113",
+    "name": "Thomas Bowman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/wthomasbowman/",
+    "current_company": "Resolute Strategies Group",
+    "company_linkedin": "https://www.linkedin.com/company/resolute-strategies-group",
+    "company_domain_secondary": "resolutestrategiesgroup.com",
+    "notes": "Founder at Resolute Strategies Group as of May 2026"
+  },
+  {
+    "id": "p114",
+    "name": "Russell Brazil",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/russellbrazil/",
+    "current_company": "RLAH @properties",
+    "company_linkedin": "https://www.linkedin.com/company/rlahre",
+    "company_domain_secondary": "rlah.com",
+    "notes": "Agent at RLAH @properties as of May 2026"
+  },
+  {
+    "id": "p115",
+    "name": "Kaitlyn Wozniak",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kaitlyn-wozniak-95863946/",
+    "current_company": "Kaitlyn Wozniak LLC",
+    "company_linkedin": null,
+    "company_domain_secondary": "kaitlynwozniak.com",
+    "notes": "Prenatal/postpartum trainer and birth doula; self-employed LLC; no dedicated LinkedIn company page found"
+  },
+  {
+    "id": "p116",
+    "name": "George Mocharko",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/georgemocharko/",
+    "current_company": "Pacaso / DC Entrepreneur Podcast",
+    "company_linkedin": "https://www.linkedin.com/company/pacasohomes",
+    "company_domain_secondary": "dcentrepreneur.com",
+    "notes": "LinkedIn shows Pacaso as employer; also independent podcast producer; primary company LinkedIn is Pacaso"
+  },
+  {
+    "id": "p117",
+    "name": "Jessica Du Bois",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jesdubois/",
+    "current_company": "Appian Corporation",
+    "company_linkedin": "https://www.linkedin.com/company/appian-corporation",
+    "company_domain_secondary": "appian.com",
+    "notes": "JOB CHANGE \u2014 moved from Risk Strategies to Appian Corporation; update company in CRM"
+  },
+  {
+    "id": "p118",
+    "name": "Jennifer Healy",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jennifer-healy-6265a76/",
+    "current_company": "Churchill Mortgage",
+    "company_linkedin": "https://www.linkedin.com/company/churchill-mortgage",
+    "company_domain_secondary": "churchillmortgage.com",
+    "notes": "Loan officer at Churchill Mortgage as of May 2026"
+  },
+  {
+    "id": "p119",
+    "name": "Tinna Jackson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tinna-jackson/",
+    "current_company": "Jackson Consulting Group",
+    "company_linkedin": "https://www.linkedin.com/company/tinnajacksonconsulting",
+    "company_domain_secondary": "tinnajackson.com",
+    "notes": "President and CEO at Jackson Consulting Group; named Top Coach in DC 2026 by Influence Digest"
+  },
+  {
+    "id": "p120",
+    "name": "Cullen Gilchrist",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/cullengilchristdc/",
+    "current_company": "Union Kitchen",
+    "company_linkedin": "https://www.linkedin.com/company/union-kitchen-dc",
+    "company_domain_secondary": "unionkitchendc.com",
+    "notes": "Founder at Union Kitchen as of May 2026"
+  },
+  {
+    "id": "p121",
+    "name": "Ed Offterdinger",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/ed-offterdinger/",
+    "current_company": "AO People Partners",
+    "company_linkedin": "https://www.linkedin.com/company/aopeoplepartners",
+    "company_domain_secondary": "aopeoplepartners.com",
+    "notes": "Partner at AO People Partners as of May 2026"
+  },
+  {
+    "id": "p122",
+    "name": "Bob Fabien Zinga",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/bobfabienzinga/",
+    "current_company": "U.S. Navy Reserve / Independent",
+    "company_linkedin": null,
+    "company_domain_secondary": "bobfabienzinga.com",
+    "notes": "Cybersecurity executive, Navy Commander, and podcast host; no single primary company LinkedIn page found; hosts Leadership & Success podcast independently"
+  },
+  {
+    "id": "p123",
+    "name": "Joia Jefferson Nuri",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/joiajeffersonnuri/",
+    "current_company": "In The Public Eye Coaching",
+    "company_linkedin": "https://www.linkedin.com/company/in-the-public-eye",
+    "company_domain_secondary": "inthepubliceyecoaching.com",
+    "notes": "Founder at In The Public Eye Coaching as of May 2026"
+  },
+  {
+    "id": "p124",
+    "name": "Amanda Pears Kelly",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/amanda-pears-kelly-3318464/",
+    "current_company": "Advocates for Community Health",
+    "company_linkedin": "https://www.linkedin.com/company/advocates-for-community-health",
+    "company_domain_secondary": "advocatesforcommhealth.org",
+    "notes": "CEO at Advocates for Community Health as of May 2026"
+  },
+  {
+    "id": "p125",
+    "name": "Pete Altman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/peteraltman/",
+    "current_company": "Prismatic Strategies LLC",
+    "company_linkedin": null,
+    "company_domain_secondary": "prismaticstrategies.com",
+    "notes": "No dedicated LinkedIn company page confirmed for Prismatic Strategies LLC"
+  },
+  {
+    "id": "p126",
+    "name": "Michael Becker",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/michael-becker-53925220/",
+    "current_company": "Sierra Pacific Mortgage",
+    "company_linkedin": "https://www.linkedin.com/company/sierra-pacific-mortgage",
+    "company_domain_secondary": "sierrapacificmortgage.com",
+    "notes": "Branch manager at Sierra Pacific Mortgage in Columbia, MD as of May 2026"
+  },
+  {
+    "id": "p127",
+    "name": "Brad Cox",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/bradcox/",
+    "current_company": "The Vesta Group / Long & Foster Real Estate",
+    "company_linkedin": "https://www.linkedin.com/company/the-vesta-group-of-long-foster",
+    "company_domain_secondary": "longandfoster.com",
+    "notes": "Team lead at Vesta Group of Long & Foster as of May 2026"
+  },
+  {
+    "id": "p128",
+    "name": "Chazz Scott",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/chazzcscott/",
+    "current_company": "Supra Mentem LLC",
+    "company_linkedin": "https://www.linkedin.com/company/supra-mentem-llc",
+    "company_domain_secondary": "supramentem.com",
+    "notes": "Founder at Supra Mentem LLC as of May 2026"
+  },
+  {
+    "id": "p129",
+    "name": "Chris Villar",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/chrisvillar/",
+    "current_company": "VILLAR Coaching",
+    "company_linkedin": null,
+    "company_domain_secondary": "villarcoaching.com",
+    "notes": "No LinkedIn company page found for VILLAR Coaching; personal brand/solopreneur"
+  },
+  {
+    "id": "p130",
+    "name": "Gayle Marie Morrison",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gaylemarie-tmc/",
+    "current_company": "The Marketing Consultant of Maryland",
+    "company_linkedin": null,
+    "company_domain_secondary": "themarketingconsultant.us",
+    "notes": "Founder and CEO; 2025 Alignable Local Business Person of the Year; no dedicated LinkedIn company page found"
+  },
+  {
+    "id": "p131",
+    "name": "Craig Brown",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/craigbrown33/",
+    "current_company": "Stop Hiding Start Healing",
+    "company_linkedin": null,
+    "company_domain_secondary": "stophidingstarthealing.org",
+    "notes": "Author, speaker, and podcast host; nonprofit ministry; no dedicated LinkedIn company page found"
+  },
+  {
+    "id": "p132",
+    "name": "Shuan Butcher",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/shuanbutcher/",
+    "current_company": "Move United",
+    "company_linkedin": "https://www.linkedin.com/company/move-united",
+    "company_domain_secondary": "moveunitedsport.org",
+    "notes": "Communications Manager at Move United; hosts Redefining Disability podcast as of May 2026"
+  },
+  {
+    "id": "p133",
+    "name": "Andrea P. Howe",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/andrea-howe-she-her-22a105/",
+    "current_company": "The Get Real Project",
+    "company_linkedin": null,
+    "company_domain_secondary": "getrealproject.com",
+    "notes": "No LinkedIn company page found for The Get Real Project; personal consulting brand"
+  },
+  {
+    "id": "p134",
+    "name": "Leah Davenport",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/leah-davenport-144b735a/",
+    "current_company": "TTR Sotheby's International Realty",
+    "company_linkedin": "https://www.linkedin.com/company/ttrsir",
+    "company_domain_secondary": "ttrsir.com",
+    "notes": "JOB CHANGE \u2014 moved from The Davenport Group to TTR Sotheby's per LinkedIn; update company in CRM"
+  },
+  {
+    "id": "p135",
+    "name": "Ghazenfer Mansoor",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gmansoor/",
+    "current_company": "Technology Rivers LLC",
+    "company_linkedin": "https://www.linkedin.com/company/technology-rivers-llc",
+    "company_domain_secondary": "technologyrivers.com",
+    "notes": "CEO at Technology Rivers as of May 2026"
+  },
+  {
+    "id": "p136",
+    "name": "Tricia Ratliff",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/triciaratlif/",
+    "current_company": "SAIC",
+    "company_linkedin": "https://www.linkedin.com/company/saicinc",
+    "company_domain_secondary": "saic.com",
+    "notes": "At SAIC as of May 2026"
+  },
+  {
+    "id": "p137",
+    "name": "Jennifer Dalton",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jennifervdalton",
+    "current_company": "BrandMirror",
+    "company_linkedin": "https://www.linkedin.com/company/brandmirror",
+    "company_domain_secondary": "brandmirror.com",
+    "notes": "Founder at BrandMirror as of May 2026"
+  },
+  {
+    "id": "p138",
+    "name": "Charles Moore",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/charlesmoore1/",
+    "current_company": "Thrive Street Advisors",
+    "company_linkedin": "https://www.linkedin.com/company/thrive-street-advisors",
+    "company_domain_secondary": "thrivestreetadvisors.com",
+    "notes": "Founder at Thrive Street Advisors as of May 2026"
+  },
+  {
+    "id": "p139",
+    "name": "David Introcaso",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/david-introcaso-1b02bb5/",
+    "current_company": "The Healthcare Policy Podcast / U.S. House of Representatives",
+    "company_linkedin": null,
+    "company_domain_secondary": "healthcarepolicypodcast.com",
+    "notes": "LinkedIn shows U.S. House of Representatives as employer; podcast is independent; no company page for Healthcare Policy Podcast"
+  },
+  {
+    "id": "p140",
+    "name": "Lauren Ober",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/oberandout/",
+    "current_company": "Slate Magazine",
+    "company_linkedin": "https://www.linkedin.com/company/slate",
+    "company_domain_secondary": "slate.com",
+    "notes": "JOB CHANGE \u2014 recently joined Slate Magazine as podcast producer/host; previously freelance/independent"
+  },
+  {
+    "id": "p141",
+    "name": "Elizabeth MacBride",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/elizabeth-macbride-85a3806/",
+    "current_company": "Times of Entrepreneurship",
+    "company_linkedin": "https://www.linkedin.com/company/times-of-entrepreneurship",
+    "company_domain_secondary": "timesofentrepreneurship.com",
+    "notes": "Founder at Times of Entrepreneurship as of May 2026"
+  },
+  {
+    "id": "p142",
+    "name": "Rob Jolles",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rob-jolles/",
+    "current_company": "Jolles Associates, Inc.",
+    "company_linkedin": null,
+    "company_domain_secondary": "jolles.com",
+    "notes": "No dedicated LinkedIn company page confirmed for Jolles Associates Inc.; professional speaker/author brand"
+  },
+  {
+    "id": "p143",
+    "name": "Kathleen Booth",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kathleenslatterybooth",
+    "current_company": "Sequel.io",
+    "company_linkedin": "https://www.linkedin.com/company/sequelio",
+    "company_domain_secondary": "sequel.io",
+    "notes": "CMO at Sequel.io as of May 2026"
+  },
+  {
+    "id": "p144",
+    "name": "Sandy Dubay",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/sandydubay/",
+    "current_company": "PPR Strategies",
+    "company_linkedin": "https://www.linkedin.com/company/pprstrategies",
+    "company_domain_secondary": "pprstrategies.com",
+    "notes": "Founder at PPR Strategies as of May 2026"
+  },
+  {
+    "id": "p145",
+    "name": "Sunil Dasgupta",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/sunildasgupta/",
+    "current_company": "UMBC",
+    "company_linkedin": "https://www.linkedin.com/school/university-of-maryland-baltimore-county/",
+    "company_domain_secondary": "umbc.edu",
+    "notes": "Political science professor at UMBC and hosts I Hate Politics podcast as of May 2026"
+  },
+  {
+    "id": "p146",
+    "name": "Ashleigh Rossi",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/ashleigh-kiggans-rossi-a4598132/",
+    "current_company": "MacRo Commercial Real Estate",
+    "company_linkedin": "https://www.linkedin.com/company/macro-report-blog",
+    "company_domain_secondary": "macroltd.com",
+    "notes": "At MacRo Commercial Real Estate as of May 2026"
+  },
+  {
+    "id": "p147",
+    "name": "Ade Toye",
+    "personal_linkedin_verified": null,
+    "current_company": "Impose Design LLC",
+    "company_linkedin": null,
+    "company_domain_secondary": "imposedesign.com",
+    "notes": "CEO of Impose Design LLC in Silver Spring MD; Friends at Work podcast host; no LinkedIn company page found; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p148",
+    "name": "Jennifer Mulchandani",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jennifermulchandani/",
+    "current_company": "Arlington Strategy",
+    "company_linkedin": "https://www.linkedin.com/company/arlington-strategy",
+    "company_domain_secondary": "arlingtonstrategy.com",
+    "notes": "Founder at Arlington Strategy as of May 2026"
+  },
+  {
+    "id": "p149",
+    "name": "Cheryl Spangler",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/cherylspangler/",
+    "current_company": "Spangler Real Estate",
+    "company_linkedin": "https://www.linkedin.com/company/spangler-real-estate",
+    "company_domain_secondary": "spanglerrealestategroup.com",
+    "notes": "Principal at Spangler Real Estate as of May 2026"
+  },
+  {
+    "id": "p150",
+    "name": "Joan Michelson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/joanmichelson/",
+    "current_company": "Green Connections Media",
+    "company_linkedin": "https://www.linkedin.com/company/green-connections-media",
+    "company_domain_secondary": "greenconnectionsmedia.com",
+    "notes": "Founder and host at Green Connections Media as of May 2026"
+  },
+  {
+    "id": "p151",
+    "name": "Libby Rasmussen",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/elizabeth-libby-rasmussen-22a70252/",
+    "current_company": "Living Colorfully Media",
+    "company_linkedin": null,
+    "company_domain_secondary": "livingcolorfully.com",
+    "notes": "No dedicated LinkedIn company page found for Living Colorfully Media; personal brand/podcast"
+  },
+  {
+    "id": "p152",
+    "name": "Aaron Dante",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/aaron-dante-4a096391/",
+    "current_company": "Aaron Dean Productions",
+    "company_linkedin": "https://www.linkedin.com/company/aaron-dean-productions",
+    "company_domain_secondary": "aarondeproductions.com",
+    "notes": "Founder at Aaron Dean Productions as of May 2026"
+  },
+  {
+    "id": "p153",
+    "name": "Zack Garber",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/zack-garber-cfa-0854a521/",
+    "current_company": "Alex. Brown / Raymond James",
+    "company_linkedin": "https://www.linkedin.com/company/alexbrown-rj",
+    "company_domain_secondary": "alexbrown.com",
+    "notes": "Financial advisor at Alex. Brown (a division of Raymond James) as of May 2026"
+  },
+  {
+    "id": "p154",
+    "name": "Tonya Fitzpatrick",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tonyafitzpatrick/",
+    "current_company": "World Footprints",
+    "company_linkedin": "https://www.linkedin.com/company/worldfootprints",
+    "company_domain_secondary": "worldfootprints.com",
+    "notes": "Co-founder at World Footprints podcast/media as of May 2026"
+  },
+  {
+    "id": "p155",
+    "name": "Jennifer Chino",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jennchino/",
+    "current_company": "Anchored Home of Compass",
+    "company_linkedin": "https://www.linkedin.com/company/compassinc",
+    "company_domain_secondary": "compass.com",
+    "notes": "Founder of Anchored Home team at Compass; hosts Anchored Annapolis Podcast; Anchor Home joined Compass in 2025"
+  },
+  {
+    "id": "p156",
+    "name": "Meredith Fogle",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mfoglekentlands/",
+    "current_company": "The List Realty",
+    "company_linkedin": "https://www.linkedin.com/company/thelistrealty",
+    "company_domain_secondary": "thelistrealty.com",
+    "notes": "Founder at The List Realty in Gaithersburg MD; podcast host and real estate coach as of May 2026"
+  },
+  {
+    "id": "p157",
+    "name": "Jeff Cherry",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jeffcherry26/",
+    "current_company": "Conscious Venture Partners",
+    "company_linkedin": "https://www.linkedin.com/company/consciousventurepartners",
+    "company_domain_secondary": "consciousventurepartners.com",
+    "notes": "Managing Partner at Conscious Venture Partners as of May 2026"
+  },
+  {
+    "id": "p158",
+    "name": "Dr. Mikah Sellers",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/mikah-sellers/",
+    "current_company": "Empathos Consulting",
+    "company_linkedin": "https://www.linkedin.com/company/empathos-consulting",
+    "company_domain_secondary": "empathosconsulting.com",
+    "notes": "Founder at Empathos Consulting as of May 2026"
+  },
+  {
+    "id": "p159",
+    "name": "Amina Luqman-Dawson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/amina-luqman-dawson-b4b1a1170/",
+    "current_company": "Independent Author",
+    "company_linkedin": null,
+    "company_domain_secondary": "aminaluqman-dawson.com",
+    "notes": "Newbery Medal-winning author; independent/self-employed; UC Berkeley affiliation on LinkedIn; no company page applicable"
+  },
+  {
+    "id": "p160",
+    "name": "Christina Daves",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/christinadaves/",
+    "current_company": "PR for Anyone",
+    "company_linkedin": "https://www.linkedin.com/company/pr-for-anyone",
+    "company_domain_secondary": "prforanyone.com",
+    "notes": "Founder at PR for Anyone as of May 2026"
+  },
+  {
+    "id": "p161",
+    "name": "Branden Beasley",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/brandenbeasley/",
+    "current_company": "The Redux Group",
+    "company_linkedin": "https://www.linkedin.com/company/the-redux-group",
+    "company_domain_secondary": "thereduxgroup.com",
+    "notes": "JOB CHANGE \u2014 moved from CENTURY 21 New Millennium to The Redux Group; update company in CRM"
+  },
+  {
+    "id": "p162",
+    "name": "John Coleman",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/johnmasoncoleman/",
+    "current_company": "Jason Martin Group / Real Broker LLC",
+    "company_linkedin": "https://www.linkedin.com/company/jason-martin-group",
+    "company_domain_secondary": "jasonmartingroup.com",
+    "notes": "Agent at Jason Martin Group under Real Broker LLC as of May 2026"
+  },
+  {
+    "id": "p163",
+    "name": "Gina Schaefer",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gina-schaefer-56380a8/",
+    "current_company": "Self-Employed / Speaker & Author",
+    "company_linkedin": null,
+    "company_domain_secondary": "ginaschaefer.com",
+    "notes": "STATUS CHANGE \u2014 retired as CEO of A Few Cool Hardware Stores; now self-employed speaker/author; no current company LinkedIn page applicable"
+  },
+  {
+    "id": "p164",
+    "name": "Andrea Vieira",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/andr%C3%A9a-vieira-4263005/",
+    "current_company": "nailsaloon",
+    "company_linkedin": "https://www.linkedin.com/company/nailsaloon",
+    "company_domain_secondary": "nailsaloon.com",
+    "notes": "Founder at nailsaloon as of May 2026"
+  },
+  {
+    "id": "p165",
+    "name": "Rina Meushaw",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/rina-meushaw/",
+    "current_company": "Independent Practice / U.S. OPM",
+    "company_linkedin": null,
+    "company_domain_secondary": "balancedworkingmoms.com",
+    "notes": "ADHD and executive function coach; hosts Balanced Working Moms podcast; LinkedIn shows Independent Practice; also coach at OPM Executive Development Program"
+  },
+  {
+    "id": "p166",
+    "name": "Tamar Turner",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tamar-turner-32326b166/",
+    "current_company": "Down 2 Business Podcast LLC / Radcast Network",
+    "company_linkedin": "https://www.linkedin.com/company/down2biz",
+    "company_domain_secondary": "down2bizpodcast.com",
+    "notes": "Host of Down 2 Business podcast as of May 2026"
+  },
+  {
+    "id": "p167",
+    "name": "Tina Beliveau",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tinabeliveau",
+    "current_company": "The Beliveau Group / Cummings & Co Realtors",
+    "company_linkedin": "https://www.linkedin.com/company/the-beliveau-group-of-cummings-&-co-realtors",
+    "company_domain_secondary": "tinabeliveau.com",
+    "notes": "Team lead at Beliveau Group of Cummings & Co. as of May 2026"
+  },
+  {
+    "id": "p168",
+    "name": "Vena\u00e9 Breonna",
+    "personal_linkedin_verified": null,
+    "current_company": "Naefaces",
+    "company_linkedin": null,
+    "company_domain_secondary": "naefaces.com",
+    "notes": "CEO and founder of Naefaces beauty education company; hosts The Beauty Boss Podcast; no LinkedIn company page found; no personal LinkedIn URL in source data"
+  },
+  {
+    "id": "p169",
+    "name": "Troy LeMaile-Stovall",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/troy-stovall-b82ba",
+    "current_company": "TEDCO (Maryland Technology Development Corporation)",
+    "company_linkedin": "https://www.linkedin.com/company/tedcomd",
+    "company_domain_secondary": "tedcomd.com",
+    "notes": "CEO at TEDCO as of May 2026"
+  },
+  {
+    "id": "p170",
+    "name": "Adrian M. White",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/adrianmwhite",
+    "current_company": "AMW Marketing & Design",
+    "company_linkedin": "https://www.linkedin.com/company/brandwithamw",
+    "company_domain_secondary": "amwmarketingdesign.com",
+    "notes": "Founder at AMW Marketing & Design as of May 2026"
+  },
+  {
+    "id": "p171",
+    "name": "Matt Leighton",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/themattleighton",
+    "current_company": "Real Broker LLC",
+    "company_linkedin": "https://www.linkedin.com/company/realbroker-llc",
+    "company_domain_secondary": "onereal.com",
+    "notes": "Agent at Real Broker LLC as of May 2026"
+  },
+  {
+    "id": "p172",
+    "name": "Debra Berndt Maldonado",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/debramaldonado",
+    "current_company": "CreativeMind",
+    "company_linkedin": "https://www.linkedin.com/company/creativemind",
+    "company_domain_secondary": "creativemind.com",
+    "notes": "Founder at CreativeMind as of May 2026"
+  },
+  {
+    "id": "p173",
+    "name": "Jonathan Katz",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jonkatz5",
+    "current_company": "Jon Katz, P.C.",
+    "company_linkedin": null,
+    "company_domain_secondary": "jonkatz.net",
+    "notes": "Jon Katz P.C. criminal defense firm in Fairfax VA; no dedicated LinkedIn company page found; use domain enrichment instead"
+  },
+  {
+    "id": "p174",
+    "name": "Eric Wilson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/ericjwilson1",
+    "current_company": "Center for Campaign Innovation",
+    "company_linkedin": "https://www.linkedin.com/company/center-for-campaign-innovation",
+    "company_domain_secondary": "campaigninnovation.org",
+    "notes": "Executive director at Center for Campaign Innovation as of May 2026"
+  },
+  {
+    "id": "p175",
+    "name": "Joanna Pineda",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/joannapineda",
+    "current_company": "Matrix Group International",
+    "company_linkedin": "https://www.linkedin.com/company/matrix-group-international",
+    "company_domain_secondary": "matrixgroup.net",
+    "notes": "CEO at Matrix Group International as of May 2026"
+  },
+  {
+    "id": "p176",
+    "name": "Yesim Sayin Taylor",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/yesim-sayin-290765b",
+    "current_company": "D.C. Policy Center",
+    "company_linkedin": "https://www.linkedin.com/company/d.c.-policy-center",
+    "company_domain_secondary": "dcpolicycenter.org",
+    "notes": "Executive director at D.C. Policy Center as of May 2026"
+  },
+  {
+    "id": "p177",
+    "name": "Wendie Veloz",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/wendieveloz",
+    "current_company": "Wendie Veloz Enterprises",
+    "company_linkedin": "https://www.linkedin.com/company/wendie-veloz-enterprises",
+    "company_domain_secondary": "wendieveloz.com",
+    "notes": "Founder at Wendie Veloz Enterprises as of May 2026"
+  },
+  {
+    "id": "p178",
+    "name": "Brittany Alexandra",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/brittanyjohnson13",
+    "current_company": "Podcast Village / Podville Media",
+    "company_linkedin": "https://www.linkedin.com/company/podcastvillage",
+    "company_domain_secondary": "podcastvillage.com",
+    "notes": "Founder at Podcast Village as of May 2026"
+  },
+  {
+    "id": "p179",
+    "name": "Kate Scharff",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/katescharff/",
+    "current_company": "The Chrysalis Group",
+    "company_linkedin": "https://www.linkedin.com/company/the-chrysalis-group-inc.",
+    "company_domain_secondary": "chrysalisgroup.com",
+    "notes": "Therapist at The Chrysalis Group as of May 2026"
+  },
+  {
+    "id": "p180",
+    "name": "Ed Robinson",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/edrobinson/",
+    "current_company": "Capacity Building Solutions Inc.",
+    "company_linkedin": "https://www.linkedin.com/company/capacity-building-solutions-inc",
+    "company_domain_secondary": "capacitybuildingsolutions.com",
+    "notes": "Founder at Capacity Building Solutions as of May 2026"
+  },
+  {
+    "id": "p181",
+    "name": "Emily Socolinsky",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/emily-socolinsky-698a98143/",
+    "current_company": "Fivex3 Training",
+    "company_linkedin": "https://www.linkedin.com/company/fivex3-training",
+    "company_domain_secondary": "fivex3training.com",
+    "notes": "Owner at Fivex3 Training (Starting Strength gym) as of May 2026"
+  },
+  {
+    "id": "p182",
+    "name": "Antomius Wise",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/antomius-wise-71a08528/",
+    "current_company": "Wise Tax Strategies",
+    "company_linkedin": null,
+    "company_domain_secondary": "wisetaxstrategies.com",
+    "notes": "No dedicated LinkedIn company page found for Wise Tax Strategies; personal brand/solopreneur"
+  },
+  {
+    "id": "p183",
+    "name": "David Massey",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/david-massey-466529b3/",
+    "current_company": "Real Broker LLC",
+    "company_linkedin": "https://www.linkedin.com/company/realbroker-llc",
+    "company_domain_secondary": "onereal.com",
+    "notes": "Agent at Real Broker LLC as of May 2026"
+  },
+  {
+    "id": "p184",
+    "name": "Derek Winn",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/derekwinn/",
+    "current_company": "Business Benefits Group",
+    "company_linkedin": "https://www.linkedin.com/company/bbg",
+    "company_domain_secondary": "bbg.com",
+    "notes": "At Business Benefits Group as of May 2026"
+  },
+  {
+    "id": "p185",
+    "name": "Peter Arundel",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/peterarundel/",
+    "current_company": "The Alternative Board Northern Virginia",
+    "company_linkedin": "https://www.linkedin.com/company/the-alternative-board-worldwide-",
+    "company_domain_secondary": "thealternativeboard.com",
+    "notes": "TAB facilitator/coach in Northern Virginia as of May 2026"
+  },
+  {
+    "id": "p186",
+    "name": "Buwa Binitie",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/buwa-binitie-3483b320/",
+    "current_company": "Dantes Partners",
+    "company_linkedin": "https://www.linkedin.com/company/dantespartners",
+    "company_domain_secondary": "dantespartners.com",
+    "notes": "Managing Principal at Dantes Partners as of May 2026"
+  },
+  {
+    "id": "p187",
+    "name": "Angela V. Harris",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/angelavharris/",
+    "current_company": "2638 Management Group LLC",
+    "company_linkedin": "https://www.linkedin.com/company/2638managementgroup",
+    "company_domain_secondary": "2638managementgroup.com",
+    "notes": "Founder at 2638 Management Group as of May 2026"
+  },
+  {
+    "id": "p188",
+    "name": "Charlie Birney",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/charliebirney/",
+    "current_company": "Podville Media",
+    "company_linkedin": "https://www.linkedin.com/company/podvillemedia",
+    "company_domain_secondary": "podvillemedia.com",
+    "notes": "Founder at Podville Media as of May 2026"
+  },
+  {
+    "id": "p189",
+    "name": "Phyllis Fagell",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/phyllis-fagell/",
+    "current_company": "The Chrysalis Group",
+    "company_linkedin": "https://www.linkedin.com/company/the-chrysalis-group-inc.",
+    "company_domain_secondary": "chrysalisgroup.com",
+    "notes": "Counselor at The Chrysalis Group; also author and journalist as of May 2026"
+  },
+  {
+    "id": "p190",
+    "name": "Jonathan Horn",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/jonathan-horn-283b2a42/",
+    "current_company": "Independent Author / Scribner",
+    "company_linkedin": null,
+    "company_domain_secondary": "jonathanhornauthor.com",
+    "notes": "Independent author published by Scribner; former White House speechwriter; no company page applicable"
+  },
+  {
+    "id": "p191",
+    "name": "Kevin Kinnally",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kevink410/",
+    "current_company": "Maryland Association of Counties (MACo)",
+    "company_linkedin": "https://www.linkedin.com/company/mdcounties",
+    "company_domain_secondary": "mdcounties.org",
+    "notes": "Legislative Director at MACo as of May 2026"
+  },
+  {
+    "id": "p192",
+    "name": "David Gendell",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/david-gendell-b35818bb/",
+    "current_company": "SpinSheet / PropTalk",
+    "company_linkedin": "https://www.linkedin.com/company/spinsheet-publishing-company",
+    "company_domain_secondary": "spinsheet.com",
+    "notes": "Publisher at SpinSheet Publishing as of May 2026"
+  },
+  {
+    "id": "p193",
+    "name": "Gabrielle Witkin",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/gabriellewitkin/",
+    "current_company": "TTR Sotheby's International Realty",
+    "company_linkedin": "https://www.linkedin.com/company/ttrsir",
+    "company_domain_secondary": "ttrsir.com",
+    "notes": "Agent at TTR Sotheby's as of May 2026"
+  },
+  {
+    "id": "p194",
+    "name": "Carl Grant III",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/carlgrant/",
+    "current_company": "Rainmakers Group",
+    "company_linkedin": "https://www.linkedin.com/company/letsmakeitrain",
+    "company_domain_secondary": "rainmakersgroup.io",
+    "notes": "Chairman and CEO at Rainmakers Group; former Cooley LLP global head of BD as of May 2026"
+  },
+  {
+    "id": "p195",
+    "name": "J. Kendall Lott",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kendalllott/",
+    "current_company": "M Powered Strategies",
+    "company_linkedin": "https://www.linkedin.com/company/m-powered-strategies",
+    "company_domain_secondary": "mpoweredstrategies.com",
+    "notes": "President and CEO at M Powered Strategies as of May 2026"
+  },
+  {
+    "id": "p196",
+    "name": "Katie Lipp",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/katie-lipp-5757a5a/",
+    "current_company": "The Lipp Law Firm",
+    "company_linkedin": "https://www.linkedin.com/company/lipplawfirm",
+    "company_domain_secondary": "lipplawfirm.com",
+    "notes": "Founder of Lipp Law Firm and Law Practice Queen coaching brand as of May 2026"
+  },
+  {
+    "id": "p197",
+    "name": "Belinda Jackson Farrier",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/belinda-jackson-farrier/",
+    "current_company": "Sweetgrass Advisory Group",
+    "company_linkedin": null,
+    "company_domain_secondary": "sweetgrassadvisorygroup.com",
+    "notes": "Founder at Sweetgrass Advisory Group; former U.S. diplomat; co-hosts Leadership Tea Podcast; no dedicated LinkedIn company page found"
+  },
+  {
+    "id": "p198",
+    "name": "Tatum Ayomike",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/tatum-ayomike-mba-190018190",
+    "current_company": "Anchored Media Studios",
+    "company_linkedin": "https://www.linkedin.com/company/anchored-media-studios",
+    "company_domain_secondary": "anchoredmediastudios.com",
+    "notes": "Co-founder at Anchored Media Studios in Laurel MD as of May 2026"
+  },
+  {
+    "id": "p199",
+    "name": "Scott MacMullan",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/scott-macmullan-82682619/",
+    "current_company": "Scott MacMullan Law, LLC",
+    "company_linkedin": "https://www.linkedin.com/company/scott-macmullan-law",
+    "company_domain_secondary": "macmullanlaw.com",
+    "notes": "Founder at Scott MacMullan Law in Annapolis MD; 2024 Capital Gazette Best Attorney as of May 2026"
+  },
+  {
+    "id": "p200",
+    "name": "Kate Livie",
+    "personal_linkedin_verified": "https://www.linkedin.com/in/kate-livie-2129811b3/",
+    "current_company": "Washington College / Center for Environment and Society",
+    "company_linkedin": "https://www.linkedin.com/company/washington-college-ces",
+    "company_domain_secondary": "washcoll.edu",
+    "notes": "Adjunct faculty at Washington College CES; author and Chesapeake Bay educator as of May 2026"
+  }
+]
