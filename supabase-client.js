@@ -37,14 +37,13 @@
 
   // ── Status mapping ──────────────────────────────────────────────────
   const VALID_STATUSES = new Set([
-    'new_lead', 'contacted', 'call_booked', 'call_completed',
-    'proposal_sent', 'closed_won', 'closed_lost', 'inactive',
+    'prospect', 'added_to_crm', 'contacted', 'tour_booked',
+    'demo', 'client', 'lost', 'graveyard',
   ]);
   function mapStatus(s) {
-    if (!s) return 'new_lead';
+    if (!s) return 'prospect';
     if (VALID_STATUSES.has(s)) return s;
-    if (s === 'graveyard') return 'inactive';
-    return 'new_lead';
+    return 'prospect';
   }
 
   // ── Field mapping ──────────────────────────────────────────────────
