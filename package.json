@@ -4,8 +4,5 @@
   "type": "module",
   "description": "HighLife DMV Podcast Studio — Prospect CRM",
   "private": true,
-  "dependencies": {
-    "@vercel/functions": "^3.4.4",
-    "playwright": "^1.59.1"
-  }
+  "dependencies": {}
 }
