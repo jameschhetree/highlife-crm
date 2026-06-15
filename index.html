@@ -1126,28 +1126,35 @@ function getAuthUser() {
 /* -- Boot -- */
 renderBoard();
 
-(async function initKVSync() {
-  // Try to load from KV first
+(async function initData() {
+  // Try Supabase first (HLDB is defined in supabase-client.js)
+  if (window.HLDB) {
+    try {
+      const rows = await window.HLDB.boot();
+      if (rows && rows.length > 0) {
+        saveLeadsLocal(rows);
+        updateSyncBadge('synced');
+        renderBoard();
+        return;
+      }
+    } catch (e) {
+      console.warn('Supabase boot failed, falling back:', e);
+    }
+  }
+  // Fallback: KV endpoint
   const kvData = await fetchFromKV();
   if (kvData && kvData.kvAvailable) {
     if (kvData.source === 'kv' && kvData.leads.length > 0) {
-      // KV has data — use it as source of truth
       saveLeadsLocal(kvData.leads);
       renderBoard();
     } else if (kvData.source === 'empty') {
-      // KV is available but empty — seed it with local data or leads.json
       await loadSeedData();
       const current = loadLeads();
-      if (current.length > 0) {
-        syncToKV(current);
-      }
+      if (current.length > 0) syncToKV(current);
     }
   } else {
-    // KV not available — fall back to localStorage + seed
     await loadSeedData();
   }
-
-  // Start polling every 60 seconds
   syncPollTimer = setInterval(pollKV, 60000);
 })();
 
