@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bright Entertainment — Sales CRM</title>
+<title>HighLife Records — Sales CRM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -440,9 +440,9 @@ a{color:var(--highlight);text-decoration:none}
   <!-- Header -->
   <header class="header">
     <div class="brand">
-      <div class="brand-icon">B</div>
+      <div class="brand-icon">H</div>
       <div>
-        <h1>Bright Entertainment</h1>
+        <h1>HighLife Records</h1>
         <p>Sales CRM</p>
       </div>
     </div>
@@ -583,7 +583,7 @@ a{color:var(--highlight);text-decoration:none}
           <select id="f-assignedTo">
             <option value="">Select...</option>
             <option value="Jordy">Jordy</option>
-            <option value="Bright Owner">Bright Owner</option>
+            <option value="James">James</option>
             <option value="Other">Other</option>
           </select>
         </div>
@@ -611,6 +611,10 @@ a{color:var(--highlight);text-decoration:none}
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase-client.js"></script>
+
 <script>
 /* -- Data -- */
 const COLUMNS = [
@@ -624,7 +628,7 @@ const COLUMNS = [
 const GRAVEYARD_STATUSES = ['closed_lost', 'inactive'];
 let currentView = 'pipeline';
 
-const STORAGE_KEY = 'bright_ent_crm_leads';
+const STORAGE_KEY = 'highlife_crm_leads';
 let kvAvailable = false;
 let syncPollTimer = null;
 
@@ -1082,7 +1086,7 @@ function exportData() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `bright-ent-crm-export-${new Date().toISOString().slice(0,10)}.json`;
+  a.download = `highlife-crm-export-${new Date().toISOString().slice(0,10)}.json`;
   a.click();
   URL.revokeObjectURL(url);
   toast('Data exported');
