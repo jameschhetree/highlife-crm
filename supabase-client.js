@@ -131,6 +131,7 @@
       return [];
     }
     prospectsCache = data.map(fromDb);
+    takeCacheSnapshot();
     return prospectsCache;
   }
 
@@ -148,13 +149,22 @@
     return actionsCache;
   }
 
+  // ── Snapshot for diff ───────────────────────────────────────────
+  // Keep a pristine JSON snapshot of the cache so that in-place mutations
+  // (e.g. markAddedToCRM mutating the object before calling setProspects)
+  // are still detected by the JSON.stringify diff in setProspects().
+  let cacheSnapshot = '[]';
+  function takeCacheSnapshot() { cacheSnapshot = JSON.stringify(prospectsCache); }
+
   // ── Optimistic write API ──────────────────────────────────────────
   // Mirrors the old loadProspects() / saveProspects(arr) shape.
   function getProspects() { return prospectsCache; }
 
   function setProspects(arr) {
-    // Diff against cache to figure out what changed.
-    const oldById = new Map(prospectsCache.map(p => [p.id, p]));
+    // Diff against the last-known-clean snapshot (not the live cache, which
+    // may have been mutated in-place by callers like markAddedToCRM).
+    const oldById = new Map();
+    for (const p of JSON.parse(cacheSnapshot)) oldById.set(p.id, p);
     const newById = new Map(arr.map(p => [p.id, p]));
 
     // Inserts + updates
@@ -171,6 +181,7 @@
       }
     }
     prospectsCache = arr;
+    takeCacheSnapshot();
     scheduleFlush();
   }
 
