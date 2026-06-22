@@ -533,7 +533,7 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-label{
 
 /* Socials: 3-col grid */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icons{
-  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;
+  display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:6px;
   margin:0 0 14px 0;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .social-icon{
@@ -652,7 +652,7 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .rbp-opt.is-brok
 
 /* Sellers: 3-col grid */
 body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-row{
-  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;margin:0 0 14px 0;
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));gap:6px;margin:0 0 14px 0;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .seller-btn{
   padding:9px 0;text-align:center;border-radius:11px;
@@ -710,7 +710,7 @@ body[data-glass-bg="1"]:not([data-theme="dark"]) .prospect-card .glass-feedback-
   color:#d4d4d8;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-row{
-  display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:nowrap;
+  display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:wrap;
 }
 body[data-glass-bg="1"]:not([data-theme="dark"]) .glass-footer .graveyard-btn{
   flex:0 0 auto;padding:5px 9px;border-radius:999px;
@@ -922,7 +922,7 @@ body[data-glass-bg="1"][data-theme="dark"] .glass-label{
 
 /* Socials: 3-col grid — monochrome white icons, no brand colours */
 body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icons{
-  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;
+  display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:6px;
   margin:0 0 14px 0;
 }
 body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon{
@@ -933,6 +933,7 @@ body[data-glass-bg="1"][data-theme="dark"] .prospect-card .social-icon{
   color:#d4d4d4;
   display:flex;align-items:center;justify-content:center;gap:6px;
   font-size:11px;font-weight:600;
+  min-width:0;overflow:hidden;
   box-shadow:none;
   text-decoration:none;
   transition:color 200ms var(--ease), border-color 200ms var(--ease),
@@ -1041,7 +1042,7 @@ body[data-glass-bg="1"][data-theme="dark"] .prospect-card .rbp-opt.is-broken{
 
 /* Sellers: 3-col grid — active = white-fill black-text + checkmark */
 body[data-glass-bg="1"][data-theme="dark"] .seller-row{
-  display:grid;grid-template-columns:repeat(3, 1fr);gap:6px;margin:0 0 14px 0;
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(60px, 1fr));gap:6px;margin:0 0 14px 0;
 }
 body[data-glass-bg="1"][data-theme="dark"] .seller-btn{
   padding:9px 0;text-align:center;border-radius:11px;
@@ -1102,7 +1103,7 @@ body[data-glass-bg="1"][data-theme="dark"] .prospect-card .glass-feedback-row .r
   color:#d4d4d4;
 }
 body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-row{
-  display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:nowrap;
+  display:flex;gap:5px;margin:0;flex:0 1 auto;flex-wrap:wrap;
 }
 body[data-glass-bg="1"][data-theme="dark"] .glass-footer .graveyard-btn{
   flex:0 0 auto;padding:5px 9px;border-radius:999px;
@@ -3671,6 +3672,7 @@ function moveToGraveyard(id, reason) {
   if (idx > -1) {
     prospects[idx].status = 'graveyard';
     prospects[idx].graveyard_reason = reason;
+    prospects[idx].updatedAt = new Date().toISOString();
     prospects[idx].ratedAt = new Date().toISOString();
     saveProspects(prospects);
     renderBoard();
@@ -3718,6 +3720,7 @@ function markAddedToCRM(id) {
   const idx = prospects.findIndex(p => p.id === id);
   if (idx > -1) {
     prospects[idx].status = 'added_to_crm';
+    prospects[idx].updatedAt = new Date().toISOString();
     saveProspects(prospects);
     renderBoard();
     toast('Moved to Added to CRM');
@@ -3764,6 +3767,7 @@ function handleDrop(e) {
     const idx = prospects.findIndex(p => p.id === draggedId);
     if (idx > -1 && prospects[idx].status !== newStatus) {
       prospects[idx].status = newStatus;
+      prospects[idx].updatedAt = new Date().toISOString();
       saveProspects(prospects);
       renderBoard();
       toast(`Moved to ${COLUMNS.find(c => c.id === newStatus).label}`);
@@ -3848,7 +3852,7 @@ function saveProspect(e) {
 
 function editProspect(id) { openModal(id); }
 
-const SELLERS = ['Jaco', 'Liam', 'Hayden'];
+const SELLERS = ['Jaco', 'Liam', 'Hayden', 'Tre'];
 
 function renderSellerRow(p) {
   const active = p.seller || '';
